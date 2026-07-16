@@ -1,0 +1,6 @@
+torch>=2.8
+transformers>=5.5
+transformer-lens
+matplotlib
+jupyterlab
+jlens @ git+https://github.com/anthropics/jacobian-lens.git
