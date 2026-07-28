@@ -36,6 +36,7 @@ wandb/
 runs/
 outputs/
 slices/
+.runpod/
 
 # Editors and operating systems
 .DS_Store

@@ -38,6 +38,41 @@ Matrix maximum absolute error:  6.20e-6
 The notebook recomputes cosine similarity, norm ratio, relative L2 error, and
 maximum absolute error using float64 reductions for a stable comparison.
 
+## Fast RunPod setup
+
+The repository includes a launcher that rents one explicitly selected GPU,
+waits for direct SSH, configures the `jlens-runpod` SSH alias, creates the
+remote environment, registers the Jupyter kernel, and downloads Qwen3-8B:
+
+```bash
+OPEN_VSCODE=1 bash scripts/runpod_launch.sh "NVIDIA GeForce RTX 3090"
+```
+
+This command creates a billable RunPod pod. It never falls back to a different
+or more expensive GPU automatically. Query live inventory before launching:
+
+```bash
+runpodctl gpu list -o json
+```
+
+Useful overrides:
+
+```bash
+CLOUD_TYPE=SECURE bash scripts/runpod_launch.sh "NVIDIA L4"
+MODEL_ID=Qwen/Qwen3-8B PRELOAD_MODEL=0 bash scripts/runpod_launch.sh "GPU ID"
+RUNPOD_NETWORK_VOLUME_ID=VOLUME_ID bash scripts/runpod_launch.sh "GPU ID"
+```
+
+The current pod ID is saved in `.runpod/pod-id`. Delete the pod when finished:
+
+```bash
+runpodctl pod delete "$(cat .runpod/pod-id)"
+```
+
+Stopping a pod releases its GPU and does not guarantee that it can restart.
+For a short break, leave it running. Before deleting a pod, commit or copy any
+notebook changes that are not already preserved elsewhere.
+
 ## Run it
 
 Create an environment with Python 3.10 or newer, then install the dependencies:
