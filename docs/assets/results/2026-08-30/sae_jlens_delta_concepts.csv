@@ -1,0 +1,541 @@
+comparison,before_condition,after_condition,layer,position,direction,rank,token_id,token,delta_logit
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,1,78929, Haiti,8.21875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,2,159319, Haitian,7.84375
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,3,210118, isra,7.671875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,4,23670, toe,7.609375
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,5,110240, dictator,7.34375
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,6,111372, Inca,7.296875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,7,104932, israel,7.15625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,8,128803, gorilla,7.0
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,9,130192, Mysore,6.984375
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,10,170093, esclav,6.953125
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,11,12307, Israel,6.90625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,12,71916,Sto,6.875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,13,186892,Ethiop,6.875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,14,50794, Palestinian,6.78125
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,15,52413, extinction,6.765625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,16,63272, ants,6.75
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,17,46619, insane,6.75
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,18,90847,Thai,6.71875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,19,232928,Alz,6.6875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,20,236773,S,6.6875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,21,179481, synapse,6.65625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,22,190788, Ants,6.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,23,34230,Continue,6.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,24,62818,Israel,6.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,25,110500,Singapore,6.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,26,33722, Israeli,6.56640625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,27,36723, Venezuela,6.5625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,28,54876, Louisville,6.5625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,29,152680, racking,6.53125
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,30,227558, wou,6.5
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,1,167404, watercolour,-9.59375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,2,99724, folklore,-8.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,3,212464, folklor,-8.4609375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,4,177453, Hoyt,-8.125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,5,176333, VFX,-8.0
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,6,60719, sketches,-8.0
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,7,53063, soundtrack,-7.9375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,8,163474, musicals,-7.796875
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,9,76473,klore,-7.6875
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,10,223666, sketchbook,-7.6875
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,11,31633, watercolor,-7.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,12,78225,Watercolor,-7.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,13,171435, bpy,-7.53125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,14,15583, guitar,-7.5234375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,15,224014, Folklore,-7.4375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,16,71253, Beatles,-7.421875
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,17,178937, Henson,-7.40625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,18,188177, AudioManager,-7.40234375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,19,212232, soundtracks,-7.3974609375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,20,160424, compositor,-7.390625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,21,214813, Tait,-7.390625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,22,97376, melodies,-7.375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,23,221408, telas,-7.34375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,24,61517,mtrl,-7.328125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,25,116422, muzy,-7.328125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,26,145916, Melody,-7.3125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,27,21753, spectral,-7.3125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,28,51045, colourful,-7.28515625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,29,175651,ukiyoe,-7.28125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,30,138916, ballad,-7.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,1,232377, supon,34.875
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,2,93369,llr,32.1875
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,3,99159, ij,30.5625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,4,27349,LR,29.6875
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,5,27166,lr,28.09375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,6,67701,nden,28.0625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,7,80859,edil,27.9375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,8,39036,TODO,27.375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,9,150861, depolarization,27.203125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,10,75923,elius,27.1875
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,11,154189, allerede,27.171875
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,12,90797,RIAL,27.0625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,13,14054,Ant,27.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,14,16682, suppose,26.9375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,15,176994, Coronation,26.90625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,16,1636,ij,26.5625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,17,68020,already,26.40625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,18,50889,iali,26.3125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,19,131596, mesmos,26.3125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,20,12211,nn,26.125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,21,138445,rnn,25.9375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,22,150347, measles,25.8125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,23,41300,ivated,25.8125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,24,110422, passports,25.8125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,25,205647,Corruption,25.6953125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,26,177320,iteurs,25.650390625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,27,2923,mn,25.625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,28,117571, rutas,25.5625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,29,211305,Jn,25.5625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,30,217658, Polarization,25.5625
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,1,32261, spider,-59.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,2,40046, Spider,-57.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,3,48587,spider,-52.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,4,92664, spiders,-51.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,5,86757,Spider,-48.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,6,76566, Webs,-45.625
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,7,227652, webbing,-45.125
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,8,6940, Web,-44.0625
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,9,134588, arach,-42.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,10,15743, webs,-41.75
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,11,4108, web,-39.375
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,12,212571, Arach,-39.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,13,65336, robotic,-38.625
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,14,185454, dragonfly,-37.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,15,130501, feline,-37.375
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,16,141140, crawler,-37.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,17,101513, webhook,-36.78125
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,18,58151, Webb,-36.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,19,27373, silk,-36.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,20,165161, Tarant,-35.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,21,56101, spinner,-35.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,22,103141, WEB,-35.1875
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,23,103796, crabs,-34.75
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,24,177451, WebView,-34.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,25,43695, crab,-33.75
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,26,133589, Selenium,-33.375
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,27,60400, webpage,-33.3125
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,28,196258,WebService,-33.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,29,6721,Web,-32.75
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,30,57031,webs,-32.125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,1,71170, hlav,21.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,2,236732, gax,20.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,3,30937, bhi,20.53125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,4,184711,ostok,19.890625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,5,13097, aussi,19.875
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,6,57117,methylsulfanyl,19.59375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,7,128099, lahat,19.4375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,8,12873, juga,19.28125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,9,172688, Gorman,18.9375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,10,123516,Germain,18.90625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,11,53120, pk,18.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,12,100352, probablemente,18.70703125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,13,207606,ullary,18.625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,14,218975, auricular,18.5625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,15,23681,also,18.4375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,16,88173, Mikh,18.375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,17,179754, Gaur,18.34375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,18,100550, probablement,18.3125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,19,48484, geral,18.03125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,20,40951,elian,18.03125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,21,99464,odeal,18.0
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,22,21101,aq,17.9921875
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,23,230398,getLong,17.96875
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,24,190139, kontrak,17.84375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,25,128264, Rous,17.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,26,142211, tuku,17.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,27,169721, corroborated,17.6953125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,28,78604,ahua,17.6640625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,29,58299, maggior,17.65625
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,30,83860, maioria,17.640625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,1,92664, spiders,-58.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,2,32261, spider,-54.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,3,40046, Spider,-49.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,4,48587,spider,-48.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,5,86757,Spider,-45.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,6,184225, weavers,-40.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,7,76566, Webs,-34.875
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,8,15743, webs,-33.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,9,195052, wasps,-33.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,10,103796, crabs,-31.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,11,6940, Web,-31.015625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,12,72628, weaving,-30.9375
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,13,135988, mites,-30.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,14,214510, weaver,-30.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,15,72146, weave,-29.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,16,180021, weaves,-29.625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,17,57031,webs,-29.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,18,11421, artists,-28.8125
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,19,60496, dancers,-28.5625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,20,4108, web,-28.375
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,21,186952,weaver,-28.0
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,22,50067, builders,-27.90625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,23,212571, Arach,-27.875
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,24,48858, technicians,-27.78125
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,25,63272, ants,-27.75
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,26,45168, architects,-27.625
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,27,134588, arach,-27.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,28,37136, robots,-27.375
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,29,27373, silk,-27.25
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,30,81574, spaghetti,-26.75
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,1,147161,Bacteria,11.75
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,2,28878,atte,11.5625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,3,204121,Coconut,11.5
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,4,151703,bacteria,11.5
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,5,70851, Buhari,11.375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,6,70465,Covid,11.359375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,7,157930,Chips,11.25
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,8,173321,Glucose,11.125
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,9,78134,Ou,11.09375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,10,24829,Split,11.0
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,11,111927,Bush,10.9375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,12,85129,atau,10.90625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,13,155693,Diabetes,10.875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,14,91270,Trail,10.875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,15,118594,glucose,10.875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,16,64775,Football,10.84375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,17,117183,Mental,10.84375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,18,125449,Divide,10.78125
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,19,62372,baseball,10.75
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,20,235637, Sms,10.738525390625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,21,17657,amsung,10.70703125
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,22,82063,Samsung,10.703125
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,23,166507,ajouter,10.6875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,24,123455, arroz,10.6875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,25,74362,mental,10.6875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,26,144008,ewalk,10.6875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,27,53526,Fu,10.65625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,28,207334,muslim,10.625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,29,122261, mentale,10.625
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,30,113873,Coronavirus,10.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,1,32261, spider,-12.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,2,206499, Dragonfly,-12.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,3,40046, Spider,-11.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,4,30835, specialists,-11.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,5,79781, Weaver,-11.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,6,185454, dragonfly,-11.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,7,20727, specialist,-10.875
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,8,37358, specialty,-10.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,9,177109, Aria,-10.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,10,189597, Paisley,-10.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,11,177898, Atelier,-10.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,12,134588, arach,-10.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,13,92664, spiders,-10.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,14,6940, Web,-10.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,15,207571, Maest,-10.40625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,16,88066, maest,-10.3125
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,17,177591, Lyric,-10.25
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,18,69597, spun,-10.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,19,197638, Opus,-10.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,20,106825, Lindsey,-9.875
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,21,116193, Maestro,-9.8125
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,22,85526, maestro,-9.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,23,4108, web,-9.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,24,149211, Landschaft,-9.75
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,25,216308, Mavic,-9.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,26,28132, harmonic,-9.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,27,234552, Moira,-9.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,28,102496, Specialty,-9.625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,29,50895, Specialist,-9.5625
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,30,202337, paisley,-9.5
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,1,71170, hlav,19.15625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,2,30937, bhi,19.125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,3,12873, juga,18.9375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,4,135020, meeste,18.546875
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,5,58299, maggior,18.34375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,6,83860, maioria,18.203125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,7,13097, aussi,17.75
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,8,236732, gax,17.4375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,9,100352, probablemente,17.33203125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,10,128099, lahat,17.28125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,11,148028, dalje,17.15625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,12,23633, daha,17.140625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,13,184711,ostok,17.03125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,14,141948, maggiori,17.03125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,15,25954, semua,16.6875
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,16,88173, Mikh,16.625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,17,20328, toutes,16.53125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,18,160769, tambien,16.5
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,19,57117,methylsulfanyl,16.453125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,20,169721, corroborated,16.3828125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,21,40951,elian,16.333984375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,22,48484, geral,16.28125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,23,141780, Semua,16.28125
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,24,122860, entrambi,16.12109375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,25,221040,Majority,16.015625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,26,16221, lebih,16.0
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,27,102276, davantage,15.96875
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,28,199244, rohkem,15.96875
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,29,100550, probablement,15.9375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,30,23681,also,15.9375
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,1,92664, spiders,-48.0
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,2,32261, spider,-42.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,3,48587,spider,-37.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,4,40046, Spider,-35.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,5,86757,Spider,-34.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,6,184225, weavers,-34.0
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,7,195052, wasps,-29.0
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,8,135988, mites,-26.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,9,60496, dancers,-26.125
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,10,72628, weaving,-26.125
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,11,76566, Webs,-25.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,12,11421, artists,-25.65625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,13,180021, weaves,-25.625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,14,50067, builders,-25.40625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,15,45168, architects,-25.34375
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,16,63272, ants,-25.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,17,214510, weaver,-25.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,18,15743, webs,-25.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,19,37136, robots,-25.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,20,103796, crabs,-25.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,21,48858, technicians,-25.15625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,22,72146, weave,-25.0
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,23,79760, monks,-24.5625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,24,76657, hackers,-24.228515625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,25,90760, artisans,-23.875
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,26,48034, priests,-23.8125
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,27,7146, trees,-23.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,28,186952,weaver,-23.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,29,19443, computers,-23.5
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,30,148693, moths,-23.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,1,99159, ij,29.875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,2,93369,llr,28.0625
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,3,232377, supon,28.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,4,175963, Byl,25.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,5,131596, mesmos,25.6875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,6,27349,LR,25.359375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,7,169551, Edad,25.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,8,67701,nden,24.4375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,9,138611,Edad,24.375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,10,75923,elius,24.34375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,11,89910,ipated,24.09375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,12,157605, pracov,23.875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,13,150861, depolarization,23.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,14,41300,ivated,23.4375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,15,83337,pq,23.3125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,16,16682, suppose,23.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,17,14054,Ant,22.9375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,18,55902, presumed,22.8125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,19,117253, potenc,22.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,20,117571, rutas,22.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,21,132818,onin,22.46875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,22,31617,ipation,22.421875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,23,24178,ROW,22.37890625
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,24,176994, Coronation,22.1875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,25,217658, Polarization,22.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,26,14013,iox,22.10546875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,27,85623,otu,22.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,28,115057, HILL,22.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,29,169779,vaa,22.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,30,110422, passports,22.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,1,32261, spider,-46.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,2,40046, Spider,-45.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,3,48587,spider,-43.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,4,86757,Spider,-41.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,5,92664, spiders,-40.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,6,227652, webbing,-39.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,7,76566, Webs,-37.625
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,8,103796, crabs,-36.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,9,65336, robotic,-35.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,10,141140, crawler,-34.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,11,146173, catfish,-34.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,12,6940, Web,-33.5625
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,13,15743, webs,-33.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,14,130501, feline,-33.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,15,43695, crab,-32.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,16,134588, arach,-31.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,17,212571, Arach,-31.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,18,119971, zebrafish,-31.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,19,186625, tilapia,-31.125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,20,41652, tiger,-30.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,21,65705, octopus,-30.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,22,101513, webhook,-30.28125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,23,30502, Unlike,-30.1875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,24,35338, pumpkin,-30.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,25,196258,WebService,-30.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,26,78792, WebDriver,-29.8623046875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,27,27373, silk,-29.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,28,165161, Tarant,-29.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,29,4108, web,-29.625
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,30,94596,tiger,-29.5625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,1,44933,kotlin,5.732421875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,2,25188,Fun,5.7109375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,3,93875,Kot,5.701171875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,4,15170,fun,5.6875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,5,61253,FUN,5.171875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,6,51836,Think,5.09375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,7,156563,Ear,5.0546875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,8,39981, Kot,4.921875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,9,28660,kot,4.8203125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,10,49111,Suspend,4.75
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,11,43279,Loss,4.71875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,12,207212,Kotlin,4.626953125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,13,16298,apply,4.625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,14,32680,Mu,4.625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,15,803,ear,4.625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,16,230398,getLong,4.58984375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,17,23395,Short,4.5625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,18,128264, Rous,4.5625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,19,78937, kotlin,4.548828125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,20,36606, FUN,4.5390625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,21,54887,mutable,4.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,22,3633,aur,4.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,23,117183,Mental,4.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,24,13070, Fun,4.46875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,25,93420,kitchen,4.4609375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,26,34089,Hope,4.4140625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,27,2317, fun,4.40625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,28,114631, listOf,4.40625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,29,70603,Aur,4.40625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,30,66580,sus,4.390625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,1,40046, Spider,-13.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,2,32261, spider,-12.0
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,3,86757,Spider,-11.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,4,48587,spider,-11.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,5,92664, spiders,-10.75
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,6,6940, Web,-9.515625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,7,76566, Webs,-9.125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,8,15743, webs,-8.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,9,103141, WEB,-8.125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,10,4108, web,-8.125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,11,165161, Tarant,-7.875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,12,61690, Silk,-7.5625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,13,134588, arach,-7.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,14,6721,Web,-7.4375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,15,58151, Webb,-7.3125
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,16,227652, webbing,-7.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,17,54736,WEB,-7.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,18,211222,Silk,-7.0
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,19,28457, Sony,-6.7978515625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,20,57031,webs,-6.75
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,21,166213, Venom,-6.6875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,22,210575, Spaghetti,-6.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,23,27373, silk,-6.5
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,24,107480, Venezuelan,-6.46875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,25,5166,web,-6.375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,26,212571, Arach,-6.375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,27,67163, crawl,-6.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,28,184225, weavers,-6.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,29,81574, spaghetti,-6.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,30,63979, Sergio,-6.140625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,1,232377, supon,30.8125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,2,93369,llr,29.8125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,3,99159, ij,29.3125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,4,27349,LR,26.6875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,5,175963, Byl,25.6875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,6,67701,nden,25.5
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,7,131596, mesmos,25.375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,8,150861, depolarization,25.203125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,9,75923,elius,25.0625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,10,138611,Edad,24.875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,11,41300,ivated,24.8125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,12,169551, Edad,24.625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,13,16682, suppose,24.5625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,14,157605, pracov,24.4375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,15,176994, Coronation,24.15625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,16,14054,Ant,24.0
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,17,83337,pq,23.4375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,18,110422, passports,23.4375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,19,117571, rutas,23.3125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,20,217658, Polarization,23.3125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,21,224443,yming,23.28125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,22,89910,ipated,23.25
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,23,90797,RIAL,23.1875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,24,31617,ipation,23.1875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,25,132818,onin,23.0
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,26,55902, presumed,22.953125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,27,27166,lr,22.90625
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,28,24178,ROW,22.86273193359375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,29,115057, HILL,22.734375
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,30,233439,HEA,22.6875
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,1,32261, spider,-54.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,2,40046, Spider,-53.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,3,48587,spider,-50.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,4,92664, spiders,-47.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,5,86757,Spider,-47.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,6,227652, webbing,-43.625
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,7,76566, Webs,-43.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,8,6940, Web,-40.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,9,15743, webs,-38.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,10,103796, crabs,-38.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,11,134588, arach,-37.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,12,141140, crawler,-37.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,13,65336, robotic,-36.875
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,14,212571, Arach,-35.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,15,4108, web,-35.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,16,43695, crab,-35.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,17,130501, feline,-34.875
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,18,165161, Tarant,-34.375
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,19,27373, silk,-34.25
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,20,101513, webhook,-33.9375
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,21,146173, catfish,-33.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,22,103141, WEB,-33.625
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,23,58151, Webb,-32.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,24,65705, octopus,-32.25
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,25,78792, WebDriver,-31.837890625
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,26,160202,WebServer,-31.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,27,196258,WebService,-31.625
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,28,6721,Web,-31.375
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,29,41652, tiger,-31.375
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,30,54736,WEB,-31.25
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,1,44933,kotlin,11.90625
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,2,93875,Kot,11.7109375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,3,15170,fun,11.5390625
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,4,25188,Fun,11.51171875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,5,51836,Think,11.1640625
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,6,61253,FUN,11.0
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,7,49111,Suspend,10.71875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,8,16298,apply,10.4375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,9,54887,mutable,10.25
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,10,156563,Ear,10.193359375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,11,36345,think,10.0625
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,12,28660,kot,9.96875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,13,23938, batteries,9.9375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,14,43279,Loss,9.875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,15,23395,Short,9.861328125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,16,39981, Kot,9.78125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,17,32010, appliances,9.75
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,18,193505,workouts,9.75
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,19,66580,sus,9.71875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,20,27090,Sus,9.65234375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,21,117183,Mental,9.55859375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,22,207212,Kotlin,9.540283203125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,23,93420,kitchen,9.53125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,24,135598, fuselage,9.5
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,25,6972, thinking,9.48046875
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,26,32680,Mu,9.453125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,27,224587,suspended,9.4375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,28,94562,Pairs,9.4375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,29,132748, applicator,9.375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,30,120474,Thinking,9.3564453125
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,1,40046, Spider,-23.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,2,32261, spider,-19.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,3,86757,Spider,-19.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,4,6940, Web,-18.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,5,48587,spider,-18.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,6,76566, Webs,-16.25
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,7,92664, spiders,-16.0
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,8,103141, WEB,-15.5625
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,9,4108, web,-15.125
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,10,15743, webs,-14.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,11,165161, Tarant,-14.25
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,12,61690, Silk,-14.125
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,13,107480, Venezuelan,-14.01953125
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,14,58151, Webb,-13.75
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,15,6721,Web,-13.75
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,16,28457, Sony,-13.5625
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,17,54736,WEB,-13.25
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,18,36723, Venezuela,-12.96875
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,19,91646, Colombian,-12.96875
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,20,63979, Sergio,-12.9375
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,21,211222,Silk,-12.625
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,22,166213, Venom,-12.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,23,134588, arach,-12.0
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,24,210575, Spaghetti,-11.875
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,25,41541, Zimbabwe,-11.875
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,26,200634, Zimbabwean,-11.78125
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,27,227652, webbing,-11.75
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,28,86376, Itali,-11.71875
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,29,27373, silk,-11.625
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,30,2177, Sp,-11.59375

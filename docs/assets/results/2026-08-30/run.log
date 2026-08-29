@@ -1,0 +1,11 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading model google/gemma-3-4b-it
+Running clean
+Running L7_only
+Running L22_only
+Running L7_L22
+Clean output: P(Six)=0.000014% P(Eight)=99.998248%
+Full edit output: P(Six)=90.416551% P(Eight)=9.529834%
+Saved results to results/sae_jlens_before_after
