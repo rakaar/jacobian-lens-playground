@@ -1,0 +1,4652 @@
+{
+  "experiment": "one added ant layer on frozen L7+L22 SAE intervention",
+  "model": "google/gemma-3-4b-it",
+  "source_base_manifest": "results/spider_ant_layer_specific_optimization/spider_ant_layer_specific_manifest.json",
+  "source_coverage_manifest": "results/spider_ant_full_window_coverage_sweep/spider_ant_full_window_coverage_manifest.json",
+  "selection_cutoff": 0.4,
+  "target_probability": 0.99,
+  "candidate_layers": [
+    24,
+    26,
+    27
+  ],
+  "candidate_factors": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "clean_baseline": {
+    "p_six": 1.1253320053583593e-07,
+    "p_eight": 0.999982476234436,
+    "p_four": 1.6701407730579376e-05,
+    "log_p_six_minus_log_p_eight": -16.000000019046855,
+    "top_token": " Eight",
+    "top_token_id": 38923,
+    "top_probability": 0.999982476234436,
+    "top_tokens": [
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 0.999982476234436
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 1.6701407730579376e-05
+      },
+      {
+        "token": "Eight",
+        "token_id": 80357,
+        "probability": 6.47583874524571e-07
+      },
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 1.1253320053583593e-07
+      },
+      {
+        "token": " Many",
+        "token_id": 8732,
+        "probability": 4.3633860968839144e-09
+      },
+      {
+        "token": " Two",
+        "token_id": 8512,
+        "probability": 1.6051998619204255e-09
+      },
+      {
+        "token": " Legs",
+        "token_id": 156403,
+        "probability": 5.905200772815533e-10
+      },
+      {
+        "token": " None",
+        "token_id": 5450,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Typically",
+        "token_id": 50338,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Usually",
+        "token_id": 34645,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Some",
+        "token_id": 4943,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": "\n\n",
+        "token_id": 108,
+        "probability": 2.789419251136849e-10
+      }
+    ]
+  },
+  "post_sweep_baseline": {
+    "p_six": 1.1253320053583593e-07,
+    "p_eight": 0.999982476234436,
+    "p_four": 1.6701407730579376e-05,
+    "log_p_six_minus_log_p_eight": -16.000000019046855,
+    "top_token": " Eight",
+    "top_token_id": 38923,
+    "top_probability": 0.999982476234436,
+    "top_tokens": [
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 0.999982476234436
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 1.6701407730579376e-05
+      },
+      {
+        "token": "Eight",
+        "token_id": 80357,
+        "probability": 6.47583874524571e-07
+      },
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 1.1253320053583593e-07
+      },
+      {
+        "token": " Many",
+        "token_id": 8732,
+        "probability": 4.3633860968839144e-09
+      },
+      {
+        "token": " Two",
+        "token_id": 8512,
+        "probability": 1.6051998619204255e-09
+      },
+      {
+        "token": " Legs",
+        "token_id": 156403,
+        "probability": 5.905200772815533e-10
+      },
+      {
+        "token": " None",
+        "token_id": 5450,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Typically",
+        "token_id": 50338,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Usually",
+        "token_id": 34645,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": " Some",
+        "token_id": 4943,
+        "probability": 2.789419251136849e-10
+      },
+      {
+        "token": "\n\n",
+        "token_id": 108,
+        "probability": 2.789419251136849e-10
+      }
+    ]
+  },
+  "explicit_ant_reference": {
+    "p_six": 0.9999998807907104,
+    "p_eight": 1.8795284339317986e-12,
+    "p_four": 8.423463315754276e-12,
+    "log_p_six_minus_log_p_eight": 27.000000084356255,
+    "top_token": " Six",
+    "top_token_id": 19759,
+    "top_probability": 0.9999998807907104,
+    "top_tokens": [
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 0.9999998807907104
+      },
+      {
+        "token": "Six",
+        "token_id": 44955,
+        "probability": 6.825602838489431e-08
+      },
+      {
+        "token": " six",
+        "token_id": 3962,
+        "probability": 9.736199624299502e-10
+      },
+      {
+        "token": " Three",
+        "token_id": 14019,
+        "probability": 2.940077348245751e-11
+      },
+      {
+        "token": " ",
+        "token_id": 236743,
+        "probability": 1.7832471610468303e-11
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 8.423463315754276e-12
+      },
+      {
+        "token": " Two",
+        "token_id": 8512,
+        "probability": 6.5601998659736704e-12
+      },
+      {
+        "token": "\n\n",
+        "token_id": 108,
+        "probability": 6.5601998659736704e-12
+      },
+      {
+        "token": "six",
+        "token_id": 34699,
+        "probability": 3.098818727662045e-12
+      },
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 1.8795284339317986e-12
+      },
+      {
+        "token": " **",
+        "token_id": 5213,
+        "probability": 4.1937951050265154e-13
+      },
+      {
+        "token": "  ",
+        "token_id": 138,
+        "probability": 2.5436654193557173e-13
+      }
+    ]
+  },
+  "frozen_base": {
+    "tested_layers": [
+      7,
+      22
+    ],
+    "scope": "L7+L22",
+    "spider_suppression": 1.0,
+    "ant_factors": {
+      "7": 4.0,
+      "22": 4.0
+    },
+    "factor_l1": 8.0,
+    "factor_l2": 5.656854249492381,
+    "maximum_ant_factor": 4.0,
+    "overdrive": true,
+    "control": "joint",
+    "success": true,
+    "total_delta_norm": 7674.541511973184,
+    "operations": [
+      {
+        "role": "spider",
+        "layer": 7,
+        "feature": 14209,
+        "position": 16,
+        "current_preactivation": 84.83981704711914,
+        "current_activation": 84.83981704711914,
+        "reference_activation": 84.83981323242188,
+        "target_activation": 0.0,
+        "factor": -1.0,
+        "delta_norm": 84.8398208618164
+      },
+      {
+        "role": "spider",
+        "layer": 7,
+        "feature": 137239,
+        "position": 16,
+        "current_preactivation": 133.32495880126953,
+        "current_activation": 133.32495880126953,
+        "reference_activation": 133.324951171875,
+        "target_activation": 0.0,
+        "factor": -1.0,
+        "delta_norm": 133.32498168945312
+      },
+      {
+        "role": "ant",
+        "layer": 7,
+        "feature": 42685,
+        "position": 16,
+        "current_preactivation": -69.82457733154297,
+        "current_activation": 0.0,
+        "reference_activation": 126.26797485351562,
+        "target_activation": 505.0718994140625,
+        "factor": 4.0,
+        "delta_norm": 505.07196044921875
+      },
+      {
+        "role": "spider",
+        "layer": 22,
+        "feature": 23422,
+        "position": 16,
+        "current_preactivation": 1493.5412292480469,
+        "current_activation": 1493.5412292480469,
+        "reference_activation": 1855.89599609375,
+        "target_activation": 0.0,
+        "factor": -1.0,
+        "delta_norm": 1493.5413818359375
+      },
+      {
+        "role": "spider",
+        "layer": 22,
+        "feature": 23422,
+        "position": 21,
+        "current_preactivation": 1033.4325866699219,
+        "current_activation": 1033.4325866699219,
+        "reference_activation": 1739.02099609375,
+        "target_activation": 0.0,
+        "factor": -1.0,
+        "delta_norm": 1033.4327392578125
+      },
+      {
+        "role": "spider",
+        "layer": 22,
+        "feature": 60476,
+        "position": 16,
+        "current_preactivation": 247.36016845703125,
+        "current_activation": 247.36016845703125,
+        "reference_activation": 562.7435913085938,
+        "target_activation": 0.0,
+        "factor": -1.0,
+        "delta_norm": 247.36016845703125
+      },
+      {
+        "role": "ant",
+        "layer": 22,
+        "feature": 1703,
+        "position": 16,
+        "current_preactivation": -1057.4222564697266,
+        "current_activation": 0.0,
+        "reference_activation": 1823.1155242919922,
+        "target_activation": 7292.462097167969,
+        "factor": 4.0,
+        "delta_norm": 7292.462890625
+      },
+      {
+        "role": "ant",
+        "layer": 22,
+        "feature": 197021,
+        "position": 16,
+        "current_preactivation": -634.0713272094727,
+        "current_activation": 0.0,
+        "reference_activation": 360.43941497802734,
+        "target_activation": 1441.7576599121094,
+        "factor": 4.0,
+        "delta_norm": 1441.7576904296875
+      }
+    ],
+    "p_six": 0.9522210955619812,
+    "p_eight": 0.047408293932676315,
+    "p_four": 0.0003194345918018371,
+    "log_p_six_minus_log_p_eight": 3.0000000601875754,
+    "top_token": " Six",
+    "top_token_id": 19759,
+    "top_probability": 0.9522210955619812,
+    "top_tokens": [
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 0.9522210955619812
+      },
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 0.047408293932676315
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 0.0003194345918018371
+      },
+      {
+        "token": " Two",
+        "token_id": 8512,
+        "probability": 4.323077155277133e-05
+      },
+      {
+        "token": " Some",
+        "token_id": 4943,
+        "probability": 2.763650854831212e-06
+      },
+      {
+        "token": " Many",
+        "token_id": 8732,
+        "probability": 1.3054561804892728e-06
+      },
+      {
+        "token": " Zero",
+        "token_id": 31234,
+        "probability": 1.3054561804892728e-06
+      },
+      {
+        "token": " None",
+        "token_id": 5450,
+        "probability": 1.3054561804892728e-06
+      },
+      {
+        "token": " Legs",
+        "token_id": 156403,
+        "probability": 7.917992093098292e-07
+      },
+      {
+        "token": "Six",
+        "token_id": 44955,
+        "probability": 1.0715837106545223e-07
+      },
+      {
+        "token": " Typically",
+        "token_id": 50338,
+        "probability": 5.0618030655869006e-08
+      },
+      {
+        "token": " Usually",
+        "token_id": 34645,
+        "probability": 5.0618030655869006e-08
+      }
+    ]
+  },
+  "best_by_layer": {
+    "24": {
+      "candidate_layer": 24,
+      "candidate_factor": 1.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        1634.8314208984375
+      ],
+      "candidate_delta_norm": 1013.915283203125,
+      "delta_p_six_vs_base": 0.010101795196533203,
+      "delta_log_odds_vs_base": 0.24999991839072333,
+      "reaches_target_probability": false,
+      "success": true,
+      "total_delta_norm": 7741.228043438103,
+      "top_token": " Six",
+      "top_probability": 0.9623228907585144,
+      "p_six": 0.9623228907585144,
+      "p_eight": 0.0373133085668087,
+      "p_four": 0.0003228233545087278,
+      "log_p_six_minus_log_p_eight": 3.2499999785782987,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9623228907585144
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.0373133085668087
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003228233545087278
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402533184271306e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.1751666281488724e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.0274760597894783e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001991318451473e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0829517549382217e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.115501977570602e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983956986530757e-08
+        }
+      ]
+    },
+    "26": {
+      "candidate_layer": 26,
+      "candidate_factor": 4.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        5458.308410644531
+      ],
+      "candidate_delta_norm": 5001.8857421875,
+      "delta_p_six_vs_base": 0.010101795196533203,
+      "delta_log_odds_vs_base": 0.24999991839072333,
+      "reaches_target_probability": false,
+      "success": true,
+      "total_delta_norm": 9160.646723725255,
+      "top_token": " Six",
+      "top_probability": 0.9623228907585144,
+      "p_six": 0.9623228907585144,
+      "p_eight": 0.0373133085668087,
+      "p_four": 0.0003228233545087278,
+      "log_p_six_minus_log_p_eight": 3.2499999785782987,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9623228907585144
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.0373133085668087
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003228233545087278
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402533184271306e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.1751666281488724e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.0274760597894783e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001991318451473e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0829517549382217e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.115501977570602e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983956986530757e-08
+        }
+      ]
+    },
+    "27": {
+      "candidate_layer": 27,
+      "candidate_factor": 1.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        944.727783203125
+      ],
+      "candidate_delta_norm": 944.7279052734375,
+      "delta_p_six_vs_base": 0.010012507438659668,
+      "delta_log_odds_vs_base": 0.24999998426670755,
+      "reaches_target_probability": false,
+      "success": true,
+      "total_delta_norm": 7732.470383648552,
+      "top_token": " Six",
+      "top_probability": 0.9622336030006409,
+      "p_six": 0.9622336030006409,
+      "p_eight": 0.03730984404683113,
+      "p_four": 0.00041447492549195886,
+      "log_p_six_minus_log_p_eight": 3.250000044454283,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9622336030006409
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.03730984404683113
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041447492549195886
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.40221740771085e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7927103474212345e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001248374966963e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0828512841953852e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.1150273350231146e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.1150273350231146e-08
+        }
+      ]
+    }
+  },
+  "maximum_p_six_run": {
+    "candidate_layer": 24,
+    "candidate_factor": 1.0,
+    "candidate_feature_ids": [
+      209073
+    ],
+    "candidate_current_activations": [
+      620.9161987304688
+    ],
+    "candidate_target_activations": [
+      1634.8314208984375
+    ],
+    "candidate_delta_norm": 1013.915283203125,
+    "delta_p_six_vs_base": 0.010101795196533203,
+    "delta_log_odds_vs_base": 0.24999991839072333,
+    "reaches_target_probability": false,
+    "success": true,
+    "total_delta_norm": 7741.228043438103,
+    "top_token": " Six",
+    "top_probability": 0.9623228907585144,
+    "p_six": 0.9623228907585144,
+    "p_eight": 0.0373133085668087,
+    "p_four": 0.0003228233545087278,
+    "log_p_six_minus_log_p_eight": 3.2499999785782987,
+    "top_tokens": [
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 0.9623228907585144
+      },
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 0.0373133085668087
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 0.0003228233545087278
+      },
+      {
+        "token": " Two",
+        "token_id": 8512,
+        "probability": 3.402533184271306e-05
+      },
+      {
+        "token": " Some",
+        "token_id": 4943,
+        "probability": 2.1751666281488724e-06
+      },
+      {
+        "token": " Zero",
+        "token_id": 31234,
+        "probability": 1.3193052836868446e-06
+      },
+      {
+        "token": " Many",
+        "token_id": 8732,
+        "probability": 1.3193052836868446e-06
+      },
+      {
+        "token": " None",
+        "token_id": 5450,
+        "probability": 1.0274760597894783e-06
+      },
+      {
+        "token": " Legs",
+        "token_id": 156403,
+        "probability": 8.001991318451473e-07
+      },
+      {
+        "token": "Six",
+        "token_id": 44955,
+        "probability": 1.0829517549382217e-07
+      },
+      {
+        "token": " Usually",
+        "token_id": 34645,
+        "probability": 5.115501977570602e-08
+      },
+      {
+        "token": " Typically",
+        "token_id": 50338,
+        "probability": 3.983956986530757e-08
+      }
+    ]
+  },
+  "smallest_target_run": null,
+  "target_run_count": 0,
+  "run_count": 18,
+  "runs": [
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 0.0
+      },
+      "factor_l1": 8.0,
+      "factor_l2": 5.656854249492381,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7674.541511973184,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 620.9161987304688,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        }
+      ],
+      "p_six": 0.9522210955619812,
+      "p_eight": 0.047408293932676315,
+      "p_four": 0.0003194345918018371,
+      "log_p_six_minus_log_p_eight": 3.0000000601875754,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9522210955619812,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9522210955619812
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.047408293932676315
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003194345918018371
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.323077155277133e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763650854831212e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.917992093098292e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0715837106545223e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.0618030655869006e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.0618030655869006e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 0.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        620.9161987304688
+      ],
+      "candidate_delta_norm": 0.0,
+      "delta_p_six_vs_base": 0.0,
+      "delta_log_odds_vs_base": 0.0,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 0.5
+      },
+      "factor_l1": 8.5,
+      "factor_l2": 5.678908345800274,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7691.267351313298,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 1127.8738098144531,
+          "factor": 0.5,
+          "delta_norm": 506.9576416015625
+        }
+      ],
+      "p_six": 0.9521337747573853,
+      "p_eight": 0.04740394651889801,
+      "p_four": 0.00041012451401911676,
+      "log_p_six_minus_log_p_eight": 3.0000000594950507,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521337747573853,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521337747573853
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740394651889801
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041012451401911676
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.32268061558716e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7633975605567684e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305336468249152e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0165970252273837e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0714854425941667e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 6.498887472616843e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498887472616843e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 0.5,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        1127.8738098144531
+      ],
+      "candidate_delta_norm": 506.9576416015625,
+      "delta_p_six_vs_base": -8.732080459594727e-05,
+      "delta_log_odds_vs_base": -6.925247042488536e-10,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 1.0
+      },
+      "factor_l1": 9.0,
+      "factor_l2": 5.744562646538029,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7741.228043438103,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 1634.8314208984375,
+          "factor": 1.0,
+          "delta_norm": 1013.915283203125
+        }
+      ],
+      "p_six": 0.9623228907585144,
+      "p_eight": 0.0373133085668087,
+      "p_four": 0.0003228233545087278,
+      "log_p_six_minus_log_p_eight": 3.2499999785782987,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9623228907585144,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9623228907585144
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.0373133085668087
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003228233545087278
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402533184271306e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.1751666281488724e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.0274760597894783e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001991318451473e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0829517549382217e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.115501977570602e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983956986530757e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 1.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        1634.8314208984375
+      ],
+      "candidate_delta_norm": 1013.915283203125,
+      "delta_p_six_vs_base": 0.010101795196533203,
+      "delta_log_odds_vs_base": 0.24999991839072333,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 2.0
+      },
+      "factor_l1": 10.0,
+      "factor_l2": 6.0,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7937.926947575868,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 2648.7466430664062,
+          "factor": 2.0,
+          "delta_norm": 2027.83056640625
+        }
+      ],
+      "p_six": 0.9521335363388062,
+      "p_eight": 0.047403935343027115,
+      "p_four": 0.0004101244267076254,
+      "log_p_six_minus_log_p_eight": 3.0000000448487882,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521335363388062,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521335363388062
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.047403935343027115
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0004101244267076254
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.3226798879913986e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763396878435742e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.6760848211561097e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760848211561097e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.3053362408754765e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3053362408754765e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0714851583770724e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 6.498886051531372e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498886051531372e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 2.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        2648.7466430664062
+      ],
+      "candidate_delta_norm": 2027.83056640625,
+      "delta_p_six_vs_base": -8.755922317504883e-05,
+      "delta_log_odds_vs_base": -1.533878712933756e-08,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 3.0
+      },
+      "factor_l1": 11.0,
+      "factor_l2": 6.4031242374328485,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8255.350097519518,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 3662.661865234375,
+          "factor": 3.0,
+          "delta_norm": 3041.745849609375
+        }
+      ],
+      "p_six": 0.9393652677536011,
+      "p_eight": 0.06005161255598068,
+      "p_four": 0.0005195482517592609,
+      "log_p_six_minus_log_p_eight": 2.749999998390938,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9393652677536011,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9393652677536011
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.06005161255598068
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0005195482517592609
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 5.4759981139795855e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7263392894383287e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6536082512175199e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6536082512175199e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.2878314237241284e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0029640407083207e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0571163500117109e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 6.411735142819452e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.411735142819452e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 3.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        3662.661865234375
+      ],
+      "candidate_delta_norm": 3041.745849609375,
+      "delta_p_six_vs_base": -0.012855827808380127,
+      "delta_log_odds_vs_base": -0.2500000617966376,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        24
+      ],
+      "scope": "L7+L22+L24",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "24": 4.0
+      },
+      "factor_l1": 12.0,
+      "factor_l2": 6.928203230275509,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8680.26351231376,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 24,
+          "feature": 209073,
+          "position": 16,
+          "current_preactivation": 620.9161987304688,
+          "current_activation": 620.9161987304688,
+          "reference_activation": 1013.9152221679688,
+          "target_activation": 4676.577087402344,
+          "factor": 4.0,
+          "delta_norm": 4055.6611328125
+        }
+      ],
+      "p_six": 0.939471423625946,
+      "p_eight": 0.06005839630961418,
+      "p_four": 0.0004046703106723726,
+      "log_p_six_minus_log_p_eight": 2.7500000410868983,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.939471423625946,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.939471423625946
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.06005839630961418
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0004046703106723726
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 5.476616934174672e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 3.5010841656912817e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 2.1235148324194597e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6537950386918965e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.6537950386918965e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.287976942876412e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0572357922455922e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 6.412459185867192e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.412459185867192e-08
+        }
+      ],
+      "candidate_layer": 24,
+      "candidate_factor": 4.0,
+      "candidate_feature_ids": [
+        209073
+      ],
+      "candidate_current_activations": [
+        620.9161987304688
+      ],
+      "candidate_target_activations": [
+        4676.577087402344
+      ],
+      "candidate_delta_norm": 4055.6611328125,
+      "delta_p_six_vs_base": -0.012749671936035156,
+      "delta_log_odds_vs_base": -0.25000001910067704,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 0.0
+      },
+      "factor_l1": 8.0,
+      "factor_l2": 5.656854249492381,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7674.541511973184,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 456.42315673828125,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        }
+      ],
+      "p_six": 0.9522210955619812,
+      "p_eight": 0.047408293932676315,
+      "p_four": 0.0003194345918018371,
+      "log_p_six_minus_log_p_eight": 3.0000000601875754,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9522210955619812,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9522210955619812
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.047408293932676315
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003194345918018371
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.323077155277133e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763650854831212e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.917992093098292e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0715837106545223e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.0618030655869006e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.0618030655869006e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 0.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        456.42315673828125
+      ],
+      "candidate_delta_norm": 0.0,
+      "delta_p_six_vs_base": 0.0,
+      "delta_log_odds_vs_base": 0.0,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 0.5
+      },
+      "factor_l1": 8.5,
+      "factor_l2": 5.678908345800274,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7699.96799485422,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 1081.6588134765625,
+          "factor": 0.5,
+          "delta_norm": 625.2357177734375
+        }
+      ],
+      "p_six": 0.9622346758842468,
+      "p_eight": 0.03730988875031471,
+      "p_four": 0.0004144754202570766,
+      "log_p_six_minus_log_p_eight": 3.2499999612786494,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9622346758842468,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9622346758842468
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.03730988875031471
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0004144754202570766
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402221409487538e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.174967448809184e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3191844345783466e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3191844345783466e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.027381813401007e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001258038348169e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 8.43326404265099e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983591767564576e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 3.983591767564576e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 0.5,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        1081.6588134765625
+      ],
+      "candidate_delta_norm": 625.2357177734375,
+      "delta_p_six_vs_base": 0.010013580322265625,
+      "delta_log_odds_vs_base": 0.24999990109107406,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 1.0
+      },
+      "factor_l1": 9.0,
+      "factor_l2": 5.744562646538029,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7775.748596123612,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 1706.8944702148438,
+          "factor": 1.0,
+          "delta_norm": 1250.471435546875
+        }
+      ],
+      "p_six": 0.9622346758842468,
+      "p_eight": 0.03730988875031471,
+      "p_four": 0.0004144754202570766,
+      "log_p_six_minus_log_p_eight": 3.2499999612786494,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9622346758842468,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9622346758842468
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.03730988875031471
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0004144754202570766
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402221409487538e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.174967448809184e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3191844345783466e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3191844345783466e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.027381813401007e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001258038348169e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 8.43326404265099e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.1150330193650007e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983591767564576e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 1.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        1706.8944702148438
+      ],
+      "candidate_delta_norm": 1250.471435546875,
+      "delta_p_six_vs_base": 0.010013580322265625,
+      "delta_log_odds_vs_base": 0.24999990109107406,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 2.0
+      },
+      "factor_l1": 10.0,
+      "factor_l2": 6.0,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8071.759576664453,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 2957.3657836914062,
+          "factor": 2.0,
+          "delta_norm": 2500.94287109375
+        }
+      ],
+      "p_six": 0.9521337747573853,
+      "p_eight": 0.04740394651889801,
+      "p_four": 0.00041012451401911676,
+      "log_p_six_minus_log_p_eight": 3.0000000594950507,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521337747573853,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521337747573853
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740394651889801
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041012451401911676
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.32268061558716e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7633975605567684e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305336468249152e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0165970252273837e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.37581452008817e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498887472616843e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.061339081180449e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 2.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        2957.3657836914062
+      ],
+      "candidate_delta_norm": 2500.94287109375,
+      "delta_p_six_vs_base": -8.732080459594727e-05,
+      "delta_log_odds_vs_base": -6.925247042488536e-10,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 3.0
+      },
+      "factor_l1": 11.0,
+      "factor_l2": 6.4031242374328485,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8542.347260505605,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 4207.837097167969,
+          "factor": 3.0,
+          "delta_norm": 3751.414306640625
+        }
+      ],
+      "p_six": 0.9521357417106628,
+      "p_eight": 0.04740404337644577,
+      "p_four": 0.0004101253580302,
+      "log_p_six_minus_log_p_eight": 3.0000000820940453,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521357417106628,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521357417106628
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740404337644577
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0004101253580302
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.322689710534178e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.1521404960367363e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3053391967332573e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3053391967332573e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.0165991852773004e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.91728211879672e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.071487574222374e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.061349384050118e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.941782722449716e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 3.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        4207.837097167969
+      ],
+      "candidate_delta_norm": 3751.414306640625,
+      "delta_p_six_vs_base": -8.535385131835938e-05,
+      "delta_log_odds_vs_base": 2.190646997135559e-08,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        26
+      ],
+      "scope": "L7+L22+L26",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "26": 4.0
+      },
+      "factor_l1": 12.0,
+      "factor_l2": 6.928203230275509,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 9160.646723725255,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 26,
+          "feature": 73903,
+          "position": 16,
+          "current_preactivation": 456.42315673828125,
+          "current_activation": 456.42315673828125,
+          "reference_activation": 1250.4713134765625,
+          "target_activation": 5458.308410644531,
+          "factor": 4.0,
+          "delta_norm": 5001.8857421875
+        }
+      ],
+      "p_six": 0.9623228907585144,
+      "p_eight": 0.0373133085668087,
+      "p_four": 0.0003228233545087278,
+      "log_p_six_minus_log_p_eight": 3.2499999785782987,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9623228907585144,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9623228907585144
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.0373133085668087
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003228233545087278
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.402533184271306e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.1751666281488724e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3193052836868446e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.0274760597894783e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001991318451473e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0829517549382217e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.115501977570602e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 3.983956986530757e-08
+        }
+      ],
+      "candidate_layer": 26,
+      "candidate_factor": 4.0,
+      "candidate_feature_ids": [
+        73903
+      ],
+      "candidate_current_activations": [
+        456.42315673828125
+      ],
+      "candidate_target_activations": [
+        5458.308410644531
+      ],
+      "candidate_delta_norm": 5001.8857421875,
+      "delta_p_six_vs_base": 0.010101795196533203,
+      "delta_log_odds_vs_base": 0.24999991839072333,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 0.0
+      },
+      "factor_l1": 8.0,
+      "factor_l2": 5.656854249492381,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7674.541511973184,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        }
+      ],
+      "p_six": 0.9522210955619812,
+      "p_eight": 0.047408293932676315,
+      "p_four": 0.0003194345918018371,
+      "log_p_six_minus_log_p_eight": 3.0000000601875754,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9522210955619812,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9522210955619812
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.047408293932676315
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.0003194345918018371
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.323077155277133e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763650854831212e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3054561804892728e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.917992093098292e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0715837106545223e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.0618030655869006e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.0618030655869006e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 0.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        0.0
+      ],
+      "candidate_delta_norm": 0.0,
+      "delta_p_six_vs_base": 0.0,
+      "delta_log_odds_vs_base": 0.0,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 0.5
+      },
+      "factor_l1": 8.5,
+      "factor_l2": 5.678908345800274,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7689.064645504694,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 472.3638916015625,
+          "factor": 0.5,
+          "delta_norm": 472.36395263671875
+        }
+      ],
+      "p_six": 0.9521337747573853,
+      "p_eight": 0.04740394651889801,
+      "p_four": 0.00041012451401911676,
+      "log_p_six_minus_log_p_eight": 3.0000000594950507,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521337747573853,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521337747573853
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740394651889801
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041012451401911676
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.32268061558716e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7633975605567684e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305336468249152e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0165970252273837e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.37581452008817e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498887472616843e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.061339081180449e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 0.5,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        472.3638916015625
+      ],
+      "candidate_delta_norm": 472.36395263671875,
+      "delta_p_six_vs_base": -8.732080459594727e-05,
+      "delta_log_odds_vs_base": -6.925247042488536e-10,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 1.0
+      },
+      "factor_l1": 9.0,
+      "factor_l2": 5.744562646538029,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7732.470383648552,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 944.727783203125,
+          "factor": 1.0,
+          "delta_norm": 944.7279052734375
+        }
+      ],
+      "p_six": 0.9622336030006409,
+      "p_eight": 0.03730984404683113,
+      "p_four": 0.00041447492549195886,
+      "log_p_six_minus_log_p_eight": 3.250000044454283,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9622336030006409,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9622336030006409
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.03730984404683113
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041447492549195886
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 3.40221740771085e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7927103474212345e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3191829566494562e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 8.001248374966963e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.0828512841953852e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.1150273350231146e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.1150273350231146e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 1.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        944.727783203125
+      ],
+      "candidate_delta_norm": 944.7279052734375,
+      "delta_p_six_vs_base": 0.010012507438659668,
+      "delta_log_odds_vs_base": 0.24999998426670755,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 2.0
+      },
+      "factor_l1": 10.0,
+      "factor_l2": 6.0,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 7903.709931355591,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 1889.45556640625,
+          "factor": 2.0,
+          "delta_norm": 1889.455810546875
+        }
+      ],
+      "p_six": 0.9521337747573853,
+      "p_eight": 0.04740394651889801,
+      "p_four": 0.00041012451401911676,
+      "log_p_six_minus_log_p_eight": 3.0000000594950507,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521337747573853,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521337747573853
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740394651889801
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041012451401911676
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.32268061558716e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7633975605567684e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305336468249152e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0165970252273837e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.37581452008817e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498887472616843e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.061339081180449e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 2.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        1889.45556640625
+      ],
+      "candidate_delta_norm": 1889.455810546875,
+      "delta_p_six_vs_base": -8.732080459594727e-05,
+      "delta_log_odds_vs_base": -6.925247042488536e-10,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 3.0
+      },
+      "factor_l1": 11.0,
+      "factor_l2": 6.4031242374328485,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8181.148089484832,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 2834.183349609375,
+          "factor": 3.0,
+          "delta_norm": 2834.18359375
+        }
+      ],
+      "p_six": 0.9522203207015991,
+      "p_eight": 0.04740825667977333,
+      "p_four": 0.000319434329867363,
+      "log_p_six_minus_log_p_eight": 3.000000032236294,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9522203207015991,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9522203207015991
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740825667977333
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.000319434329867363
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.3230738810962066e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763648808468133e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6762376162660075e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6762376162660075e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.3054551573077333e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.917985840322217e-07
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.375939717718211e-07
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.499478644172996e-08
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.061799157601854e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 3.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        2834.183349609375
+      ],
+      "candidate_delta_norm": 2834.18359375,
+      "delta_p_six_vs_base": -7.748603820800781e-07,
+      "delta_log_odds_vs_base": -2.7951281289517738e-08,
+      "reaches_target_probability": false
+    },
+    {
+      "tested_layers": [
+        7,
+        22,
+        27
+      ],
+      "scope": "L7+L22+L27",
+      "spider_suppression": 1.0,
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0,
+        "27": 4.0
+      },
+      "factor_l1": 12.0,
+      "factor_l2": 6.928203230275509,
+      "maximum_ant_factor": 4.0,
+      "overdrive": true,
+      "control": "joint",
+      "success": true,
+      "total_delta_norm": 8554.458513490907,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "reference_activation": 84.83981323242188,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "reference_activation": 133.324951171875,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "reference_activation": 1855.89599609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "reference_activation": 1739.02099609375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "reference_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        },
+        {
+          "role": "ant",
+          "layer": 27,
+          "feature": 248182,
+          "position": 16,
+          "current_preactivation": 95.2291259765625,
+          "current_activation": 0.0,
+          "reference_activation": 944.727783203125,
+          "target_activation": 3778.9111328125,
+          "factor": 4.0,
+          "delta_norm": 3778.91162109375
+        }
+      ],
+      "p_six": 0.9521337747573853,
+      "p_eight": 0.04740394651889801,
+      "p_four": 0.00041012451401911676,
+      "log_p_six_minus_log_p_eight": 3.0000000594950507,
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9521337747573853,
+      "top_tokens": [
+        {
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9521337747573853
+        },
+        {
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740394651889801
+        },
+        {
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00041012451401911676
+        },
+        {
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.32268061558716e-05
+        },
+        {
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.7633975605567684e-06
+        },
+        {
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.6760851622166228e-06
+        },
+        {
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305336468249152e-06
+        },
+        {
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 1.0165970252273837e-06
+        },
+        {
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.37581452008817e-07
+        },
+        {
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 6.498887472616843e-08
+        },
+        {
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 6.498887472616843e-08
+        }
+      ],
+      "candidate_layer": 27,
+      "candidate_factor": 4.0,
+      "candidate_feature_ids": [
+        248182
+      ],
+      "candidate_current_activations": [
+        0.0
+      ],
+      "candidate_target_activations": [
+        3778.9111328125
+      ],
+      "candidate_delta_norm": 3778.91162109375,
+      "delta_p_six_vs_base": -8.732080459594727e-05,
+      "delta_log_odds_vs_base": -6.925247042488536e-10,
+      "reaches_target_probability": false
+    }
+  ],
+  "artifacts": {
+    "json": "spider_ant_added_layer_sweep.json",
+    "csv": "spider_ant_added_layer_sweep.csv",
+    "manifest": "spider_ant_added_layer_manifest.json",
+    "curves_figure": "spider_ant_added_layer_curves.png",
+    "summary_figure": "spider_ant_added_layer_summary.png"
+  }
+}

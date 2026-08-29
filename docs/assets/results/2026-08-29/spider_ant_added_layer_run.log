@@ -1,0 +1,58 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loaded 1 encoder/decoder row pairs from L24
+Loaded 1 encoder/decoder row pairs from L26
+Loaded 1 encoder/decoder row pairs from L27
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading Gemma-3-4B-IT in bfloat16...
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Fetching 2 files:  50%|█████     | 1/2 [00:19<00:19, 19.40s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:20<00:00,  8.62s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:20<00:00, 10.24s/it]
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 4/883 [00:00<00:24, 35.38it/s]
+Loading weights:   4%|▎         | 31/883 [00:00<00:05, 160.15it/s]
+Loading weights:   6%|▋         | 56/883 [00:00<00:04, 199.13it/s]
+Loading weights:   9%|▉         | 81/883 [00:00<00:03, 215.88it/s]
+Loading weights:  12%|█▏        | 103/883 [00:00<00:03, 214.13it/s]
+Loading weights:  14%|█▍        | 125/883 [00:00<00:03, 207.67it/s]
+Loading weights:  17%|█▋        | 147/883 [00:00<00:03, 208.83it/s]
+Loading weights:  19%|█▉        | 172/883 [00:00<00:03, 216.45it/s]
+Loading weights:  22%|██▏       | 194/883 [00:00<00:03, 215.36it/s]
+Loading weights:  24%|██▍       | 216/883 [00:01<00:03, 204.88it/s]
+Loading weights:  27%|██▋       | 238/883 [00:01<00:03, 207.22it/s]
+Loading weights:  30%|██▉       | 263/883 [00:01<00:02, 213.67it/s]
+Loading weights:  32%|███▏      | 285/883 [00:01<00:02, 212.17it/s]
+Loading weights:  35%|███▍      | 307/883 [00:01<00:02, 203.22it/s]
+Loading weights:  37%|███▋      | 329/883 [00:01<00:02, 207.41it/s]
+Loading weights:  40%|███▉      | 353/883 [00:01<00:02, 210.96it/s]
+Loading weights:  43%|████▎     | 377/883 [00:01<00:02, 218.30it/s]
+Loading weights:  45%|████▌     | 399/883 [00:01<00:02, 213.47it/s]
+Loading weights:  48%|████▊     | 421/883 [00:02<00:02, 205.33it/s]
+Loading weights:  54%|█████▍    | 481/883 [00:02<00:01, 315.95it/s]
+Loading weights:  71%|███████   | 623/883 [00:02<00:00, 630.34it/s]
+Loading weights:  87%|████████▋ | 771/883 [00:02<00:00, 875.77it/s]
+Loading weights: 100%|██████████| 883/883 [00:02<00:00, 363.80it/s]
+Frozen base: P(Six)=95.222110%, P(Eight)=4.740829%.
+add L24 factor=0: P(Six)=95.222110%, P(Eight)=4.740829%, P(Four)=0.031943%, top=' Six'
+add L24 factor=0.5: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, top=' Six'
+add L24 factor=1: P(Six)=96.232289%, P(Eight)=3.731331%, P(Four)=0.032282%, top=' Six'
+add L24 factor=2: P(Six)=95.213354%, P(Eight)=4.740394%, P(Four)=0.041012%, top=' Six'
+add L24 factor=3: P(Six)=93.936527%, P(Eight)=6.005161%, P(Four)=0.051955%, top=' Six'
+add L24 factor=4: P(Six)=93.947142%, P(Eight)=6.005840%, P(Four)=0.040467%, top=' Six'
+add L26 factor=0: P(Six)=95.222110%, P(Eight)=4.740829%, P(Four)=0.031943%, top=' Six'
+add L26 factor=0.5: P(Six)=96.223468%, P(Eight)=3.730989%, P(Four)=0.041448%, top=' Six'
+add L26 factor=1: P(Six)=96.223468%, P(Eight)=3.730989%, P(Four)=0.041448%, top=' Six'
+add L26 factor=2: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, top=' Six'
+add L26 factor=3: P(Six)=95.213574%, P(Eight)=4.740404%, P(Four)=0.041013%, top=' Six'
+add L26 factor=4: P(Six)=96.232289%, P(Eight)=3.731331%, P(Four)=0.032282%, top=' Six'
+add L27 factor=0: P(Six)=95.222110%, P(Eight)=4.740829%, P(Four)=0.031943%, top=' Six'
+add L27 factor=0.5: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, top=' Six'
+add L27 factor=1: P(Six)=96.223360%, P(Eight)=3.730984%, P(Four)=0.041447%, top=' Six'
+add L27 factor=2: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, top=' Six'
+add L27 factor=3: P(Six)=95.222032%, P(Eight)=4.740826%, P(Four)=0.031943%, top=' Six'
+add L27 factor=4: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, top=' Six'
+Maximum added-layer result: L24 factor=1, P(Six)=96.232289%, P(Eight)=3.731331%.
+Saved results/spider_ant_added_layer_sweep/spider_ant_added_layer_sweep.json, results/spider_ant_added_layer_sweep/spider_ant_added_layer_sweep.csv, results/spider_ant_added_layer_sweep/spider_ant_added_layer_manifest.json, results/spider_ant_added_layer_sweep/spider_ant_added_layer_curves.png, and results/spider_ant_added_layer_sweep/spider_ant_added_layer_summary.png.
