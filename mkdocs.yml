@@ -1,0 +1,10 @@
+site_name: Jacobian Lens Result Book
+site_description: Date-wise experimental results for SAE and Jacobian Lens research
+theme:
+  name: readthedocs
+use_directory_urls: true
+nav:
+  - Home: index.md
+  - Results:
+      - Overview: results/index.md
+      - "2026-08-29": results/2026-08-29.md

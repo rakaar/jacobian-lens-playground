@@ -37,6 +37,9 @@ runs/
 outputs/
 slices/
 .runpod/
+site/
+.mkdocs-*.log
+.mkdocs-*.pid
 
 # Editors and operating systems
 .DS_Store

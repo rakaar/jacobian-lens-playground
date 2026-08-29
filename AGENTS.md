@@ -31,3 +31,16 @@
 - Stopping a RunPod pod releases its GPU. For short breaks, leave it running;
   for durable recreation, use a network volume or preserve work in Git before
   deleting the pod.
+
+## Research direction: SAE vs. J-Lens causal localization
+
+- On multi-hop prompts with an implicit bridge entity, independently identify
+  its SAE features and J-Lens coordinates, then compare their layer-by-layer
+  causal intervention profiles on the same task.
+- Start with the canonical `web-spinner -> spider -> 8` case: test matched
+  `spider -> ant` interventions and track `log P(6) - log P(8)`, alongside
+  decodability and steerability, at each layer.
+- Ask whether SAE and J-Lens identify the same causal representation and when
+  each first becomes causally effective. A layer offset alone does not prove a
+  distributed representation; test joint SAE-feature interventions and causal
+  effects across depth before making that claim.

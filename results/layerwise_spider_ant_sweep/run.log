@@ -1,0 +1,348 @@
+Selected 26 spider feature-position instances across 12 layers at normalized activation >= 0.4.
+Fetching the corresponding transcoder rows...
+Loaded 2 encoder/decoder row pairs from L9
+Loaded 2 encoder/decoder row pairs from L23
+Loaded 2 encoder/decoder row pairs from L24
+Loaded 4 encoder/decoder row pairs from L22
+Loaded 5 encoder/decoder row pairs from L8
+Loaded 6 encoder/decoder row pairs from L7
+Loaded 2 encoder/decoder row pairs from L26
+Loaded 3 encoder/decoder row pairs from L25
+Loaded 2 encoder/decoder row pairs from L33
+Loaded 6 encoder/decoder row pairs from L27
+Loaded 5 encoder/decoder row pairs from L29
+Loaded 7 encoder/decoder row pairs from L30
+Loading Gemma-3-4B-IT in bfloat16...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:00<02:06,  6.97it/s]
+Loading weights:   3%|▎         | 29/883 [00:00<00:06, 140.15it/s]
+Loading weights:   5%|▌         | 46/883 [00:00<00:05, 151.04it/s]
+Loading weights:   7%|▋         | 66/883 [00:00<00:04, 166.67it/s]
+Loading weights:  10%|▉         | 84/883 [00:00<00:05, 157.51it/s]
+Loading weights:  12%|█▏        | 107/883 [00:00<00:04, 172.09it/s]
+Loading weights:  14%|█▍        | 125/883 [00:00<00:04, 164.78it/s]
+Loading weights:  17%|█▋        | 146/883 [00:00<00:04, 169.52it/s]
+Loading weights:  19%|█▊        | 164/883 [00:01<00:04, 159.99it/s]
+Loading weights:  21%|██        | 185/883 [00:01<00:04, 167.41it/s]
+Loading weights:  23%|██▎       | 202/883 [00:01<00:04, 156.91it/s]
+Loading weights:  25%|██▌       | 225/883 [00:01<00:03, 169.52it/s]
+Loading weights:  28%|██▊       | 243/883 [00:01<00:03, 166.85it/s]
+Loading weights:  30%|██▉       | 264/883 [00:01<00:03, 175.89it/s]
+Loading weights:  33%|███▎      | 290/883 [00:01<00:03, 195.36it/s]
+Loading weights:  36%|███▌      | 315/883 [00:01<00:02, 204.02it/s]
+Loading weights:  38%|███▊      | 336/883 [00:01<00:02, 199.79it/s]
+Loading weights:  40%|████      | 357/883 [00:02<00:02, 191.78it/s]
+Loading weights:  43%|████▎     | 382/883 [00:02<00:02, 199.61it/s]
+Loading weights:  46%|████▌     | 407/883 [00:02<00:02, 212.06it/s]
+Loading weights:  49%|████▊     | 429/883 [00:02<00:02, 212.80it/s]
+Loading weights:  55%|█████▌    | 487/883 [00:02<00:01, 315.37it/s]
+Loading weights:  71%|███████   | 629/883 [00:02<00:00, 627.27it/s]
+Loading weights:  86%|████████▌ | 761/883 [00:02<00:00, 821.84it/s]
+Loading weights: 100%|██████████| 883/883 [00:02<00:00, 316.57it/s]
+Running the clean spider prompt and calibrating the ant reference...
+Ant calibration used explicit_fallback prompt; 4 ant instances make 3 layers eligible.
+Starting isolated standard-grid layer screens...
+          L7 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+          L7 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+          L7 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+          L7 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.00 ant=1.50 P(Six)=0.0001% P(Eight)=99.9903% top=' Eight'
+          L7 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+          L7 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+          L7 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.20 ant=1.25 P(Six)=0.0000% P(Eight)=99.9876% top=' Eight'
+          L7 spider=0.20 ant=1.50 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+          L7 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.40 ant=0.75 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+          L7 spider=0.40 ant=1.00 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.40 ant=1.25 P(Six)=0.0000% P(Eight)=99.9903% top=' Eight'
+          L7 spider=0.40 ant=1.50 P(Six)=0.0001% P(Eight)=99.9903% top=' Eight'
+          L7 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+          L7 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+          L7 spider=0.60 ant=0.50 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.60 ant=0.75 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+          L7 spider=0.60 ant=1.00 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+          L7 spider=0.60 ant=1.25 P(Six)=0.0000% P(Eight)=99.9903% top=' Eight'
+          L7 spider=0.60 ant=1.50 P(Six)=0.0001% P(Eight)=99.9875% top=' Eight'
+          L7 spider=0.80 ant=0.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+          L7 spider=0.80 ant=0.25 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+          L7 spider=0.80 ant=0.50 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+          L7 spider=0.80 ant=0.75 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+          L7 spider=0.80 ant=1.00 P(Six)=0.0000% P(Eight)=99.9925% top=' Eight'
+          L7 spider=0.80 ant=1.25 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=0.80 ant=1.50 P(Six)=0.0001% P(Eight)=99.9903% top=' Eight'
+          L7 spider=1.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9992% top=' Eight'
+          L7 spider=1.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+          L7 spider=1.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9971% top=' Eight'
+          L7 spider=1.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+          L7 spider=1.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+          L7 spider=1.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+          L7 spider=1.00 ant=1.50 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+         L22 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L22 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+         L22 spider=0.00 ant=1.50 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+         L22 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+         L22 spider=0.20 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.20 ant=1.50 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.40 ant=0.75 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+         L22 spider=0.40 ant=1.00 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.40 ant=1.25 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.40 ant=1.50 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+         L22 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9994% top=' Eight'
+         L22 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.60 ant=0.50 P(Six)=0.0000% P(Eight)=99.9993% top=' Eight'
+         L22 spider=0.60 ant=0.75 P(Six)=0.0000% P(Eight)=99.9993% top=' Eight'
+         L22 spider=0.60 ant=1.00 P(Six)=0.0000% P(Eight)=99.9994% top=' Eight'
+         L22 spider=0.60 ant=1.25 P(Six)=0.0001% P(Eight)=99.9988% top=' Eight'
+         L22 spider=0.60 ant=1.50 P(Six)=0.0001% P(Eight)=99.9993% top=' Eight'
+         L22 spider=0.80 ant=0.00 P(Six)=0.0001% P(Eight)=99.9994% top=' Eight'
+         L22 spider=0.80 ant=0.25 P(Six)=0.0001% P(Eight)=99.9992% top=' Eight'
+         L22 spider=0.80 ant=0.50 P(Six)=0.0001% P(Eight)=99.9994% top=' Eight'
+         L22 spider=0.80 ant=0.75 P(Six)=0.0001% P(Eight)=99.9993% top=' Eight'
+         L22 spider=0.80 ant=1.00 P(Six)=0.0001% P(Eight)=99.9992% top=' Eight'
+         L22 spider=0.80 ant=1.25 P(Six)=0.0001% P(Eight)=99.9992% top=' Eight'
+         L22 spider=0.80 ant=1.50 P(Six)=0.0002% P(Eight)=99.9991% top=' Eight'
+         L22 spider=1.00 ant=0.00 P(Six)=0.0003% P(Eight)=99.9990% top=' Eight'
+         L22 spider=1.00 ant=0.25 P(Six)=0.0003% P(Eight)=99.9990% top=' Eight'
+         L22 spider=1.00 ant=0.50 P(Six)=0.0003% P(Eight)=99.9989% top=' Eight'
+         L22 spider=1.00 ant=0.75 P(Six)=0.0005% P(Eight)=99.9987% top=' Eight'
+         L22 spider=1.00 ant=1.00 P(Six)=0.0005% P(Eight)=99.9989% top=' Eight'
+         L22 spider=1.00 ant=1.25 P(Six)=0.0005% P(Eight)=99.9989% top=' Eight'
+         L22 spider=1.00 ant=1.50 P(Six)=0.0010% P(Eight)=99.9981% top=' Eight'
+         L27 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.00 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.20 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.20 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.40 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=1.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.60 ant=0.50 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.60 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.60 ant=1.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.60 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.60 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=0.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=0.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=1.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.80 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.80 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=1.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=1.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=1.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=1.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=1.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=1.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=1.00 ant=1.50 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+No standard-grid success. Extending isolated screens with labelled overdrive factors.
+          L7 spider=0.00 ant=2.00 P(Six)=0.0002% P(Eight)=99.9793% top=' Eight'
+          L7 spider=0.00 ant=3.00 P(Six)=0.0096% P(Eight)=99.9700% top=' Eight'
+          L7 spider=0.20 ant=2.00 P(Six)=0.0001% P(Eight)=99.9875% top=' Eight'
+          L7 spider=0.20 ant=3.00 P(Six)=0.0075% P(Eight)=99.9828% top=' Eight'
+          L7 spider=0.40 ant=2.00 P(Six)=0.0001% P(Eight)=99.9840% top=' Eight'
+          L7 spider=0.40 ant=3.00 P(Six)=0.0123% P(Eight)=99.9672% top=' Eight'
+          L7 spider=0.60 ant=2.00 P(Six)=0.0001% P(Eight)=99.9795% top=' Eight'
+          L7 spider=0.60 ant=3.00 P(Six)=0.0058% P(Eight)=99.9737% top=' Eight'
+          L7 spider=0.80 ant=2.00 P(Six)=0.0001% P(Eight)=99.9875% top=' Eight'
+          L7 spider=0.80 ant=3.00 P(Six)=0.0335% P(Eight)=99.9328% top=' Eight'
+          L7 spider=1.00 ant=2.00 P(Six)=0.0002% P(Eight)=99.9794% top=' Eight'
+          L7 spider=1.00 ant=3.00 P(Six)=0.0203% P(Eight)=99.9460% top=' Eight'
+         L22 spider=0.00 ant=2.00 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+         L22 spider=0.00 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.20 ant=2.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.20 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L22 spider=0.40 ant=2.00 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+         L22 spider=0.40 ant=3.00 P(Six)=0.0001% P(Eight)=99.9989% top=' Eight'
+         L22 spider=0.60 ant=2.00 P(Six)=0.0001% P(Eight)=99.9988% top=' Eight'
+         L22 spider=0.60 ant=3.00 P(Six)=0.0001% P(Eight)=99.9991% top=' Eight'
+         L22 spider=0.80 ant=2.00 P(Six)=0.0003% P(Eight)=99.9992% top=' Eight'
+         L22 spider=0.80 ant=3.00 P(Six)=0.0004% P(Eight)=99.9988% top=' Eight'
+         L22 spider=1.00 ant=2.00 P(Six)=0.0013% P(Eight)=99.9980% top=' Eight'
+         L22 spider=1.00 ant=3.00 P(Six)=0.0017% P(Eight)=99.9973% top=' Eight'
+         L27 spider=0.00 ant=2.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.00 ant=3.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.20 ant=2.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.20 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.40 ant=2.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.40 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=0.60 ant=2.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+         L27 spider=0.60 ant=3.00 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+         L27 spider=0.80 ant=2.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+         L27 spider=0.80 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=1.00 ant=2.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+         L27 spider=1.00 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+No isolated success. Testing greedy pair (7, 22).
+      L7+L22 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+      L7+L22 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+      L7+L22 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+      L7+L22 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+      L7+L22 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9875% top=' Eight'
+      L7+L22 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9876% top=' Eight'
+      L7+L22 spider=0.00 ant=1.50 P(Six)=0.0001% P(Eight)=99.9795% top=' Eight'
+      L7+L22 spider=0.00 ant=2.00 P(Six)=0.0002% P(Eight)=99.9661% top=' Eight'
+      L7+L22 spider=0.00 ant=3.00 P(Six)=0.0045% P(Eight)=99.9042% top=' Eight'
+      L7+L22 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9971% top=' Eight'
+      L7+L22 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+      L7+L22 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+      L7+L22 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+      L7+L22 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9903% top=' Eight'
+      L7+L22 spider=0.20 ant=1.25 P(Six)=0.0001% P(Eight)=99.9903% top=' Eight'
+      L7+L22 spider=0.20 ant=1.50 P(Six)=0.0001% P(Eight)=99.9840% top=' Eight'
+      L7+L22 spider=0.20 ant=2.00 P(Six)=0.0002% P(Eight)=99.9794% top=' Eight'
+      L7+L22 spider=0.20 ant=3.00 P(Six)=0.0158% P(Eight)=99.9410% top=' Eight'
+      L7+L22 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+      L7+L22 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+      L7+L22 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+      L7+L22 spider=0.40 ant=0.75 P(Six)=0.0001% P(Eight)=99.9972% top=' Eight'
+      L7+L22 spider=0.40 ant=1.00 P(Six)=0.0001% P(Eight)=99.9964% top=' Eight'
+      L7+L22 spider=0.40 ant=1.25 P(Six)=0.0001% P(Eight)=99.9954% top=' Eight'
+      L7+L22 spider=0.40 ant=1.50 P(Six)=0.0002% P(Eight)=99.9874% top=' Eight'
+      L7+L22 spider=0.40 ant=2.00 P(Six)=0.0005% P(Eight)=99.9791% top=' Eight'
+      L7+L22 spider=0.40 ant=3.00 P(Six)=0.3170% P(Eight)=99.5920% top=' Eight'
+      L7+L22 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9993% top=' Eight'
+      L7+L22 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+      L7+L22 spider=0.60 ant=0.50 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+      L7+L22 spider=0.60 ant=0.75 P(Six)=0.0001% P(Eight)=99.9970% top=' Eight'
+      L7+L22 spider=0.60 ant=1.00 P(Six)=0.0001% P(Eight)=99.9977% top=' Eight'
+      L7+L22 spider=0.60 ant=1.25 P(Six)=0.0002% P(Eight)=99.9962% top=' Eight'
+      L7+L22 spider=0.60 ant=1.50 P(Six)=0.0004% P(Eight)=99.9937% top=' Eight'
+      L7+L22 spider=0.60 ant=2.00 P(Six)=0.0045% P(Eight)=99.9750% top=' Eight'
+      L7+L22 spider=0.60 ant=3.00 P(Six)=1.0974% P(Eight)=98.7866% top=' Eight'
+      L7+L22 spider=0.80 ant=0.00 P(Six)=0.0001% P(Eight)=99.9994% top=' Eight'
+      L7+L22 spider=0.80 ant=0.25 P(Six)=0.0001% P(Eight)=99.9988% top=' Eight'
+      L7+L22 spider=0.80 ant=0.50 P(Six)=0.0001% P(Eight)=99.9988% top=' Eight'
+      L7+L22 spider=0.80 ant=0.75 P(Six)=0.0001% P(Eight)=99.9981% top=' Eight'
+      L7+L22 spider=0.80 ant=1.00 P(Six)=0.0002% P(Eight)=99.9970% top=' Eight'
+      L7+L22 spider=0.80 ant=1.25 P(Six)=0.0002% P(Eight)=99.9976% top=' Eight'
+      L7+L22 spider=0.80 ant=1.50 P(Six)=0.0017% P(Eight)=99.9908% top=' Eight'
+      L7+L22 spider=0.80 ant=2.00 P(Six)=0.0123% P(Eight)=99.9753% top=' Eight'
+      L7+L22 spider=0.80 ant=3.00 P(Six)=14.7646% P(Eight)=84.9644% top=' Eight'
+      L7+L22 spider=1.00 ant=0.00 P(Six)=0.0001% P(Eight)=99.9995% top=' Eight'
+      L7+L22 spider=1.00 ant=0.25 P(Six)=0.0003% P(Eight)=99.9989% top=' Eight'
+      L7+L22 spider=1.00 ant=0.50 P(Six)=0.0003% P(Eight)=99.9990% top=' Eight'
+      L7+L22 spider=1.00 ant=0.75 P(Six)=0.0004% P(Eight)=99.9986% top=' Eight'
+      L7+L22 spider=1.00 ant=1.00 P(Six)=0.0013% P(Eight)=99.9959% top=' Eight'
+      L7+L22 spider=1.00 ant=1.25 P(Six)=0.0035% P(Eight)=99.9919% top=' Eight'
+      L7+L22 spider=1.00 ant=1.50 P(Six)=0.0058% P(Eight)=99.9883% top=' Eight'
+      L7+L22 spider=1.00 ant=2.00 P(Six)=0.1501% P(Eight)=99.8163% top=' Eight'
+      L7+L22 spider=1.00 ant=3.00 P(Six)=43.6532% P(Eight)=56.0518% top=' Eight'
+No pair success. Testing greedy triple (7, 22, 27).
+  L7+L22+L27 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9954% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9941% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9903% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9875% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=1.50 P(Six)=0.0001% P(Eight)=99.9840% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=2.00 P(Six)=0.0002% P(Eight)=99.9736% top=' Eight'
+  L7+L22+L27 spider=0.00 ant=3.00 P(Six)=0.0045% P(Eight)=99.9400% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9963% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9964% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9924% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=1.25 P(Six)=0.0001% P(Eight)=99.9903% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=1.50 P(Six)=0.0001% P(Eight)=99.9902% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=2.00 P(Six)=0.0002% P(Eight)=99.9794% top=' Eight'
+  L7+L22+L27 spider=0.20 ant=3.00 P(Six)=0.0203% P(Eight)=99.9364% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9983% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9972% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=0.75 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=1.00 P(Six)=0.0001% P(Eight)=99.9964% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=1.25 P(Six)=0.0001% P(Eight)=99.9964% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=1.50 P(Six)=0.0002% P(Eight)=99.9901% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=2.00 P(Six)=0.0006% P(Eight)=99.9790% top=' Eight'
+  L7+L22+L27 spider=0.40 ant=3.00 P(Six)=0.4068% P(Eight)=99.5379% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9993% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=0.50 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=0.75 P(Six)=0.0001% P(Eight)=99.9982% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=1.00 P(Six)=0.0001% P(Eight)=99.9971% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=1.25 P(Six)=0.0002% P(Eight)=99.9952% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=1.50 P(Six)=0.0004% P(Eight)=99.9937% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=2.00 P(Six)=0.0045% P(Eight)=99.9693% top=' Eight'
+  L7+L22+L27 spider=0.60 ant=3.00 P(Six)=1.4047% P(Eight)=98.4797% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=0.00 P(Six)=0.0001% P(Eight)=99.9994% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=0.25 P(Six)=0.0001% P(Eight)=99.9988% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=0.50 P(Six)=0.0002% P(Eight)=99.9985% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=0.75 P(Six)=0.0001% P(Eight)=99.9977% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=1.00 P(Six)=0.0002% P(Eight)=99.9962% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=1.25 P(Six)=0.0002% P(Eight)=99.9976% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=1.50 P(Six)=0.0028% P(Eight)=99.9897% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=2.00 P(Six)=0.0158% P(Eight)=99.9683% top=' Eight'
+  L7+L22+L27 spider=0.80 ant=3.00 P(Six)=22.1994% P(Eight)=77.4835% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=0.00 P(Six)=0.0002% P(Eight)=99.9994% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=0.25 P(Six)=0.0005% P(Eight)=99.9987% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=0.50 P(Six)=0.0005% P(Eight)=99.9985% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=0.75 P(Six)=0.0005% P(Eight)=99.9985% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=1.00 P(Six)=0.0017% P(Eight)=99.9947% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=1.25 P(Six)=0.0035% P(Eight)=99.9919% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=1.50 P(Six)=0.0075% P(Eight)=99.9866% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=2.00 P(Six)=0.3171% P(Eight)=99.6398% top=' Eight'
+  L7+L22+L27 spider=1.00 ant=3.00 P(Six)=56.0518% P(Eight)=43.6532% top=' Six'
+{
+  "baseline": {
+    "p_six": 1.1253320053583593e-07,
+    "p_eight": 0.999982476234436,
+    "p_four": 1.6701407730579376e-05
+  },
+  "ant_reference_kind": "explicit_fallback",
+  "eligible_layers": [
+    7,
+    22,
+    27
+  ],
+  "best_run": {
+    "scope": "L7+L22+L27",
+    "spider_suppression": 1.0,
+    "ant_factor": 3.0,
+    "overdrive": true,
+    "success": true,
+    "top_token": " Six",
+    "p_six": 0.5605177283287048,
+    "p_eight": 0.4365316331386566,
+    "p_four": 0.0029413271695375443
+  },
+  "json": "results/layerwise_spider_ant_sweep/layerwise_spider_ant_sweep.json",
+  "csv": "results/layerwise_spider_ant_sweep/layerwise_spider_ant_sweep.csv",
+  "feature_manifest": "results/layerwise_spider_ant_sweep/layerwise_feature_manifest.json",
+  "overview": "results/layerwise_spider_ant_sweep/layerwise_sweep_overview.png",
+  "detail": "results/layerwise_spider_ant_sweep/layerwise_sweep_best_detail.png"
+}

@@ -1,0 +1,1086 @@
+{
+  "model": "google/gemma-3-4b-it",
+  "created_at_unix": 1788016100.4005697,
+  "window_layers": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "selection_cutoff": 0.4,
+  "spider_prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does a web-spinning animal have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+  "spider_tokens": [
+    {
+      "position": 0,
+      "token_id": 2,
+      "token": "<bos>"
+    },
+    {
+      "position": 1,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 2,
+      "token_id": 2364,
+      "token": "user"
+    },
+    {
+      "position": 3,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 4,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 5,
+      "token_id": 528,
+      "token": " in"
+    },
+    {
+      "position": 6,
+      "token_id": 886,
+      "token": " one"
+    },
+    {
+      "position": 7,
+      "token_id": 3658,
+      "token": " word"
+    },
+    {
+      "position": 8,
+      "token_id": 236787,
+      "token": ":"
+    },
+    {
+      "position": 9,
+      "token_id": 2088,
+      "token": " How"
+    },
+    {
+      "position": 10,
+      "token_id": 1551,
+      "token": " many"
+    },
+    {
+      "position": 11,
+      "token_id": 14897,
+      "token": " legs"
+    },
+    {
+      "position": 12,
+      "token_id": 1677,
+      "token": " does"
+    },
+    {
+      "position": 13,
+      "token_id": 496,
+      "token": " a"
+    },
+    {
+      "position": 14,
+      "token_id": 4108,
+      "token": " web"
+    },
+    {
+      "position": 15,
+      "token_id": 236772,
+      "token": "-"
+    },
+    {
+      "position": 16,
+      "token_id": 208971,
+      "token": "spinning"
+    },
+    {
+      "position": 17,
+      "token_id": 7626,
+      "token": " animal"
+    },
+    {
+      "position": 18,
+      "token_id": 735,
+      "token": " have"
+    },
+    {
+      "position": 19,
+      "token_id": 236881,
+      "token": "?"
+    },
+    {
+      "position": 20,
+      "token_id": 106,
+      "token": "<end_of_turn>"
+    },
+    {
+      "position": 21,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 22,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 23,
+      "token_id": 4368,
+      "token": "model"
+    },
+    {
+      "position": 24,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 25,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 26,
+      "token_id": 236787,
+      "token": ":"
+    }
+  ],
+  "spider_instances": [
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and spiders",
+      "clean_activation": 1855.89599609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6425053560439912,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 21,
+      "token": "\n",
+      "description": "spider and spiders",
+      "clean_activation": 1739.02099609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6020435986795186,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 60476,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and webs",
+      "clean_activation": 562.7435913085938,
+      "max_act_approx": 1082.1075,
+      "normalized_activation": 0.5200440726162546,
+      "learned_threshold": 104.35870361328125
+    },
+    {
+      "role": "spider",
+      "layer": 23,
+      "feature": 56900,
+      "position": 16,
+      "token": "spinning",
+      "description": "spiders",
+      "clean_activation": 568.4154052734375,
+      "max_act_approx": 1072.0922,
+      "normalized_activation": 0.5301926506632895,
+      "learned_threshold": 126.85491943359375
+    },
+    {
+      "role": "spider",
+      "layer": 23,
+      "feature": 56900,
+      "position": 21,
+      "token": "\n",
+      "description": "spiders",
+      "clean_activation": 719.163330078125,
+      "max_act_approx": 1072.0922,
+      "normalized_activation": 0.6708036212539602,
+      "learned_threshold": 126.85491943359375
+    },
+    {
+      "role": "spider",
+      "layer": 24,
+      "feature": 184534,
+      "position": 16,
+      "token": "spinning",
+      "description": "spiders webs",
+      "clean_activation": 465.2173767089844,
+      "max_act_approx": 871.0704,
+      "normalized_activation": 0.5340755198534864,
+      "learned_threshold": 158.1204833984375
+    },
+    {
+      "role": "spider",
+      "layer": 24,
+      "feature": 184534,
+      "position": 21,
+      "token": "\n",
+      "description": "spiders webs",
+      "clean_activation": 608.1962890625,
+      "max_act_approx": 871.0704,
+      "normalized_activation": 0.6982171464700213,
+      "learned_threshold": 158.1204833984375
+    },
+    {
+      "role": "spider",
+      "layer": 25,
+      "feature": 109731,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider",
+      "clean_activation": 620.8114013671875,
+      "max_act_approx": 1097.6428,
+      "normalized_activation": 0.5655860006253286,
+      "learned_threshold": 161.799072265625
+    },
+    {
+      "role": "spider",
+      "layer": 25,
+      "feature": 109731,
+      "position": 21,
+      "token": "\n",
+      "description": "spider",
+      "clean_activation": 610.472900390625,
+      "max_act_approx": 1097.6428,
+      "normalized_activation": 0.556167179696915,
+      "learned_threshold": 161.799072265625
+    },
+    {
+      "role": "spider",
+      "layer": 25,
+      "feature": 169121,
+      "position": 16,
+      "token": "spinning",
+      "description": "spiders",
+      "clean_activation": 537.923095703125,
+      "max_act_approx": 1088.2772,
+      "normalized_activation": 0.4942886754432832,
+      "learned_threshold": 143.547119140625
+    },
+    {
+      "role": "spider",
+      "layer": 26,
+      "feature": 145491,
+      "position": 16,
+      "token": "spinning",
+      "description": "spiders",
+      "clean_activation": 916.8988647460938,
+      "max_act_approx": 1588.4531,
+      "normalized_activation": 0.5772275333442919,
+      "learned_threshold": 162.29150390625
+    },
+    {
+      "role": "spider",
+      "layer": 26,
+      "feature": 145491,
+      "position": 21,
+      "token": "\n",
+      "description": "spiders",
+      "clean_activation": 702.4598388671875,
+      "max_act_approx": 1588.4531,
+      "normalized_activation": 0.44222888221703716,
+      "learned_threshold": 162.29150390625
+    },
+    {
+      "role": "spider",
+      "layer": 26,
+      "feature": 233390,
+      "position": 21,
+      "token": "\n",
+      "description": "spider webs",
+      "clean_activation": 603.0096435546875,
+      "max_act_approx": 1192.425,
+      "normalized_activation": 0.5057002692451832,
+      "learned_threshold": 181.6533203125
+    },
+    {
+      "role": "spider",
+      "layer": 27,
+      "feature": 129426,
+      "position": 16,
+      "token": "spinning",
+      "description": "spiders",
+      "clean_activation": 704.150634765625,
+      "max_act_approx": 1603.1549,
+      "normalized_activation": 0.43922807132712194,
+      "learned_threshold": 150.7977294921875
+    },
+    {
+      "role": "spider",
+      "layer": 27,
+      "feature": 129426,
+      "position": 21,
+      "token": "\n",
+      "description": "spiders",
+      "clean_activation": 703.5153198242188,
+      "max_act_approx": 1603.1549,
+      "normalized_activation": 0.43883178089916247,
+      "learned_threshold": 150.7977294921875
+    },
+    {
+      "role": "spider",
+      "layer": 27,
+      "feature": 144881,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider",
+      "clean_activation": 943.4798583984375,
+      "max_act_approx": 1178.7555,
+      "normalized_activation": 0.8004033562502466,
+      "learned_threshold": 196.2489013671875
+    },
+    {
+      "role": "spider",
+      "layer": 27,
+      "feature": 144881,
+      "position": 21,
+      "token": "\n",
+      "description": "spider",
+      "clean_activation": 952.3358764648438,
+      "max_act_approx": 1178.7555,
+      "normalized_activation": 0.8079163799997912,
+      "learned_threshold": 196.2489013671875
+    }
+  ],
+  "ant_calibration": {
+    "selected": {
+      "kind": "explicit_fallback",
+      "prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does an ant have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+      "tokens": [
+        {
+          "position": 0,
+          "token_id": 2,
+          "token": "<bos>"
+        },
+        {
+          "position": 1,
+          "token_id": 105,
+          "token": "<start_of_turn>"
+        },
+        {
+          "position": 2,
+          "token_id": 2364,
+          "token": "user"
+        },
+        {
+          "position": 3,
+          "token_id": 107,
+          "token": "\n"
+        },
+        {
+          "position": 4,
+          "token_id": 7925,
+          "token": "Answer"
+        },
+        {
+          "position": 5,
+          "token_id": 528,
+          "token": " in"
+        },
+        {
+          "position": 6,
+          "token_id": 886,
+          "token": " one"
+        },
+        {
+          "position": 7,
+          "token_id": 3658,
+          "token": " word"
+        },
+        {
+          "position": 8,
+          "token_id": 236787,
+          "token": ":"
+        },
+        {
+          "position": 9,
+          "token_id": 2088,
+          "token": " How"
+        },
+        {
+          "position": 10,
+          "token_id": 1551,
+          "token": " many"
+        },
+        {
+          "position": 11,
+          "token_id": 14897,
+          "token": " legs"
+        },
+        {
+          "position": 12,
+          "token_id": 1677,
+          "token": " does"
+        },
+        {
+          "position": 13,
+          "token_id": 614,
+          "token": " an"
+        },
+        {
+          "position": 14,
+          "token_id": 2314,
+          "token": " ant"
+        },
+        {
+          "position": 15,
+          "token_id": 735,
+          "token": " have"
+        },
+        {
+          "position": 16,
+          "token_id": 236881,
+          "token": "?"
+        },
+        {
+          "position": 17,
+          "token_id": 106,
+          "token": "<end_of_turn>"
+        },
+        {
+          "position": 18,
+          "token_id": 107,
+          "token": "\n"
+        },
+        {
+          "position": 19,
+          "token_id": 105,
+          "token": "<start_of_turn>"
+        },
+        {
+          "position": 20,
+          "token_id": 4368,
+          "token": "model"
+        },
+        {
+          "position": 21,
+          "token_id": 107,
+          "token": "\n"
+        },
+        {
+          "position": 22,
+          "token_id": 7925,
+          "token": "Answer"
+        },
+        {
+          "position": 23,
+          "token_id": 236787,
+          "token": ":"
+        }
+      ],
+      "source_to_spider_position": {
+        "14": 16,
+        "18": 21
+      },
+      "mapped_positions": {
+        "16": {
+          "reference_position": 14,
+          "reference_token": " ant",
+          "spider_position": 16
+        },
+        "21": {
+          "reference_position": 18,
+          "reference_token": "\n",
+          "spider_position": 21
+        }
+      },
+      "metrics": {
+        "p_six": 0.9999998807907104,
+        "p_eight": 1.8795284339317986e-12,
+        "p_four": 8.423463315754276e-12,
+        "log_p_six_minus_log_p_eight": 27.000000084356255,
+        "top_token": " Six",
+        "top_token_id": 19759,
+        "top_probability": 0.9999998807907104,
+        "top_tokens": [
+          {
+            "token": " Six",
+            "token_id": 19759,
+            "probability": 0.9999998807907104
+          },
+          {
+            "token": "Six",
+            "token_id": 44955,
+            "probability": 6.825602838489431e-08
+          },
+          {
+            "token": " six",
+            "token_id": 3962,
+            "probability": 9.736199624299502e-10
+          },
+          {
+            "token": " Three",
+            "token_id": 14019,
+            "probability": 2.940077348245751e-11
+          },
+          {
+            "token": " ",
+            "token_id": 236743,
+            "probability": 1.7832471610468303e-11
+          },
+          {
+            "token": " Four",
+            "token_id": 13038,
+            "probability": 8.423463315754276e-12
+          },
+          {
+            "token": " Two",
+            "token_id": 8512,
+            "probability": 6.5601998659736704e-12
+          },
+          {
+            "token": "\n\n",
+            "token_id": 108,
+            "probability": 6.5601998659736704e-12
+          },
+          {
+            "token": "six",
+            "token_id": 34699,
+            "probability": 3.098818727662045e-12
+          },
+          {
+            "token": " Eight",
+            "token_id": 38923,
+            "probability": 1.8795284339317986e-12
+          },
+          {
+            "token": " **",
+            "token_id": 5213,
+            "probability": 4.1937951050265154e-13
+          },
+          {
+            "token": "  ",
+            "token_id": 138,
+            "probability": 2.5436654193557173e-13
+          }
+        ]
+      },
+      "eligible_ant_instance_count": 3
+    },
+    "attempts": [
+      {
+        "kind": "implicit",
+        "prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does a colony-building insect have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+        "tokens": [
+          {
+            "position": 0,
+            "token_id": 2,
+            "token": "<bos>"
+          },
+          {
+            "position": 1,
+            "token_id": 105,
+            "token": "<start_of_turn>"
+          },
+          {
+            "position": 2,
+            "token_id": 2364,
+            "token": "user"
+          },
+          {
+            "position": 3,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 4,
+            "token_id": 7925,
+            "token": "Answer"
+          },
+          {
+            "position": 5,
+            "token_id": 528,
+            "token": " in"
+          },
+          {
+            "position": 6,
+            "token_id": 886,
+            "token": " one"
+          },
+          {
+            "position": 7,
+            "token_id": 3658,
+            "token": " word"
+          },
+          {
+            "position": 8,
+            "token_id": 236787,
+            "token": ":"
+          },
+          {
+            "position": 9,
+            "token_id": 2088,
+            "token": " How"
+          },
+          {
+            "position": 10,
+            "token_id": 1551,
+            "token": " many"
+          },
+          {
+            "position": 11,
+            "token_id": 14897,
+            "token": " legs"
+          },
+          {
+            "position": 12,
+            "token_id": 1677,
+            "token": " does"
+          },
+          {
+            "position": 13,
+            "token_id": 496,
+            "token": " a"
+          },
+          {
+            "position": 14,
+            "token_id": 34662,
+            "token": " colony"
+          },
+          {
+            "position": 15,
+            "token_id": 236772,
+            "token": "-"
+          },
+          {
+            "position": 16,
+            "token_id": 21125,
+            "token": "building"
+          },
+          {
+            "position": 17,
+            "token_id": 16368,
+            "token": " insect"
+          },
+          {
+            "position": 18,
+            "token_id": 735,
+            "token": " have"
+          },
+          {
+            "position": 19,
+            "token_id": 236881,
+            "token": "?"
+          },
+          {
+            "position": 20,
+            "token_id": 106,
+            "token": "<end_of_turn>"
+          },
+          {
+            "position": 21,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 22,
+            "token_id": 105,
+            "token": "<start_of_turn>"
+          },
+          {
+            "position": 23,
+            "token_id": 4368,
+            "token": "model"
+          },
+          {
+            "position": 24,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 25,
+            "token_id": 7925,
+            "token": "Answer"
+          },
+          {
+            "position": 26,
+            "token_id": 236787,
+            "token": ":"
+          }
+        ],
+        "source_to_spider_position": {
+          "16": 16,
+          "21": 21
+        },
+        "mapped_positions": {
+          "16": {
+            "reference_position": 16,
+            "reference_token": "building",
+            "spider_position": 16
+          },
+          "21": {
+            "reference_position": 21,
+            "reference_token": "\n",
+            "spider_position": 21
+          }
+        },
+        "metrics": {
+          "p_six": 0.9999713897705078,
+          "p_eight": 2.753566332103219e-05,
+          "p_four": 2.998875148207958e-09,
+          "log_p_six_minus_log_p_eight": 10.499999934796545,
+          "top_token": " Six",
+          "top_token_id": 19759,
+          "top_probability": 0.9999713897705078,
+          "top_tokens": [
+            {
+              "token": " Six",
+              "token_id": 19759,
+              "probability": 0.9999713897705078
+            },
+            {
+              "token": " Eight",
+              "token_id": 38923,
+              "probability": 2.753566332103219e-05
+            },
+            {
+              "token": "Six",
+              "token_id": 44955,
+              "probability": 1.0676734518710873e-06
+            },
+            {
+              "token": " None",
+              "token_id": 5450,
+              "probability": 2.5109272883128142e-08
+            },
+            {
+              "token": " six",
+              "token_id": 3962,
+              "probability": 1.9555121966163824e-08
+            },
+            {
+              "token": " Sixteen",
+              "token_id": 177456,
+              "probability": 9.237185238930579e-09
+            },
+            {
+              "token": " Many",
+              "token_id": 8732,
+              "probability": 9.237185238930579e-09
+            },
+            {
+              "token": " Four",
+              "token_id": 13038,
+              "probability": 2.998875148207958e-09
+            },
+            {
+              "token": " ",
+              "token_id": 236743,
+              "probability": 2.6464981317531056e-09
+            },
+            {
+              "token": " Three",
+              "token_id": 14019,
+              "probability": 2.6464981317531056e-09
+            },
+            {
+              "token": " Nine",
+              "token_id": 52584,
+              "probability": 2.061094406258235e-09
+            },
+            {
+              "token": " Sixty",
+              "token_id": 149352,
+              "probability": 1.103224511744827e-09
+            }
+          ]
+        },
+        "eligible_ant_instance_count": 0,
+        "error": "Reference answered Six but no saved same-layer ant feature passed the normalized activation cutoff 0.4 at the mapped positions"
+      },
+      {
+        "kind": "explicit_fallback",
+        "prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does an ant have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+        "tokens": [
+          {
+            "position": 0,
+            "token_id": 2,
+            "token": "<bos>"
+          },
+          {
+            "position": 1,
+            "token_id": 105,
+            "token": "<start_of_turn>"
+          },
+          {
+            "position": 2,
+            "token_id": 2364,
+            "token": "user"
+          },
+          {
+            "position": 3,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 4,
+            "token_id": 7925,
+            "token": "Answer"
+          },
+          {
+            "position": 5,
+            "token_id": 528,
+            "token": " in"
+          },
+          {
+            "position": 6,
+            "token_id": 886,
+            "token": " one"
+          },
+          {
+            "position": 7,
+            "token_id": 3658,
+            "token": " word"
+          },
+          {
+            "position": 8,
+            "token_id": 236787,
+            "token": ":"
+          },
+          {
+            "position": 9,
+            "token_id": 2088,
+            "token": " How"
+          },
+          {
+            "position": 10,
+            "token_id": 1551,
+            "token": " many"
+          },
+          {
+            "position": 11,
+            "token_id": 14897,
+            "token": " legs"
+          },
+          {
+            "position": 12,
+            "token_id": 1677,
+            "token": " does"
+          },
+          {
+            "position": 13,
+            "token_id": 614,
+            "token": " an"
+          },
+          {
+            "position": 14,
+            "token_id": 2314,
+            "token": " ant"
+          },
+          {
+            "position": 15,
+            "token_id": 735,
+            "token": " have"
+          },
+          {
+            "position": 16,
+            "token_id": 236881,
+            "token": "?"
+          },
+          {
+            "position": 17,
+            "token_id": 106,
+            "token": "<end_of_turn>"
+          },
+          {
+            "position": 18,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 19,
+            "token_id": 105,
+            "token": "<start_of_turn>"
+          },
+          {
+            "position": 20,
+            "token_id": 4368,
+            "token": "model"
+          },
+          {
+            "position": 21,
+            "token_id": 107,
+            "token": "\n"
+          },
+          {
+            "position": 22,
+            "token_id": 7925,
+            "token": "Answer"
+          },
+          {
+            "position": 23,
+            "token_id": 236787,
+            "token": ":"
+          }
+        ],
+        "source_to_spider_position": {
+          "14": 16,
+          "18": 21
+        },
+        "mapped_positions": {
+          "16": {
+            "reference_position": 14,
+            "reference_token": " ant",
+            "spider_position": 16
+          },
+          "21": {
+            "reference_position": 18,
+            "reference_token": "\n",
+            "spider_position": 21
+          }
+        },
+        "metrics": {
+          "p_six": 0.9999998807907104,
+          "p_eight": 1.8795284339317986e-12,
+          "p_four": 8.423463315754276e-12,
+          "log_p_six_minus_log_p_eight": 27.000000084356255,
+          "top_token": " Six",
+          "top_token_id": 19759,
+          "top_probability": 0.9999998807907104,
+          "top_tokens": [
+            {
+              "token": " Six",
+              "token_id": 19759,
+              "probability": 0.9999998807907104
+            },
+            {
+              "token": "Six",
+              "token_id": 44955,
+              "probability": 6.825602838489431e-08
+            },
+            {
+              "token": " six",
+              "token_id": 3962,
+              "probability": 9.736199624299502e-10
+            },
+            {
+              "token": " Three",
+              "token_id": 14019,
+              "probability": 2.940077348245751e-11
+            },
+            {
+              "token": " ",
+              "token_id": 236743,
+              "probability": 1.7832471610468303e-11
+            },
+            {
+              "token": " Four",
+              "token_id": 13038,
+              "probability": 8.423463315754276e-12
+            },
+            {
+              "token": " Two",
+              "token_id": 8512,
+              "probability": 6.5601998659736704e-12
+            },
+            {
+              "token": "\n\n",
+              "token_id": 108,
+              "probability": 6.5601998659736704e-12
+            },
+            {
+              "token": "six",
+              "token_id": 34699,
+              "probability": 3.098818727662045e-12
+            },
+            {
+              "token": " Eight",
+              "token_id": 38923,
+              "probability": 1.8795284339317986e-12
+            },
+            {
+              "token": " **",
+              "token_id": 5213,
+              "probability": 4.1937951050265154e-13
+            },
+            {
+              "token": "  ",
+              "token_id": 138,
+              "probability": 2.5436654193557173e-13
+            }
+          ]
+        },
+        "eligible_ant_instance_count": 3
+      }
+    ]
+  },
+  "eligible_ant_instances": [
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 1703,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ant agonist antarctic anticipate antenna",
+      "forced": true,
+      "reference_preactivation": 1823.1155242919922,
+      "reference_activation": 1823.1155242919922,
+      "max_act_approx": 3003.5374,
+      "normalized_reference_activation": 0.6069894532666689,
+      "learned_threshold": 76.20599365234375,
+      "clean_spider_prompt_preactivation": -1042.3992462158203,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 197021,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ANT, cannot, ant",
+      "forced": true,
+      "reference_preactivation": 360.43941497802734,
+      "reference_activation": 360.43941497802734,
+      "max_act_approx": 748.1075,
+      "normalized_reference_activation": 0.4818016327573609,
+      "learned_threshold": 134.7215576171875,
+      "clean_spider_prompt_preactivation": -659.6901626586914,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 27,
+      "feature": 248182,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "Ants",
+      "forced": false,
+      "reference_preactivation": 944.727783203125,
+      "reference_activation": 944.727783203125,
+      "max_act_approx": 1950.3706,
+      "normalized_reference_activation": 0.4843837285094048,
+      "learned_threshold": 149.5025634765625,
+      "clean_spider_prompt_preactivation": -796.5874481201172,
+      "clean_spider_prompt_activation": 0.0
+    }
+  ],
+  "eligible_ant_layers": [
+    22,
+    27
+  ],
+  "spider_only_layers": [
+    23,
+    24,
+    25,
+    26
+  ],
+  "source_manifests": {
+    "spider": "results/spider_layerwise_search/spider_layerwise_search.json",
+    "ant": "results/ant_layerwise_search/ant_layerwise_search.json"
+  }
+}

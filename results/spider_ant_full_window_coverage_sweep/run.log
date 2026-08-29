@@ -1,0 +1,215 @@
+Discovered 72 unique ant-labelled candidates across L22-L27.
+Loaded 4 encoder/decoder row pairs from L22
+Loaded 6 encoder/decoder row pairs from L23
+Loaded 14 encoder/decoder row pairs from L26
+Loaded 15 encoder/decoder row pairs from L24
+Loaded 28 encoder/decoder row pairs from L27
+Loaded 15 encoder/decoder row pairs from L25
+Loading Gemma-3-4B-IT in bfloat16...
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:02<38:02,  2.59s/it]
+Loading weights:   0%|          | 4/883 [00:02<07:50,  1.87it/s]
+Loading weights:   1%|▏         | 13/883 [00:02<01:56,  7.46it/s]
+Loading weights:   2%|▏         | 17/883 [00:03<02:01,  7.12it/s]
+Loading weights:   3%|▎         | 28/883 [00:03<01:07, 12.57it/s]
+Loading weights:   4%|▎         | 31/883 [00:04<01:09, 12.19it/s]
+Loading weights:   5%|▍         | 42/883 [00:04<00:39, 21.15it/s]
+Loading weights:   5%|▌         | 47/883 [00:04<00:39, 21.37it/s]
+Loading weights:   6%|▌         | 55/883 [00:04<00:40, 20.62it/s]
+Loading weights:   7%|▋         | 63/883 [00:05<00:31, 25.86it/s]
+Loading weights:   8%|▊         | 68/883 [00:05<00:34, 23.49it/s]
+Loading weights:   8%|▊         | 72/883 [00:05<00:38, 21.17it/s]
+Loading weights:   9%|▉         | 81/883 [00:05<00:28, 28.64it/s]
+Loading weights:  10%|▉         | 85/883 [00:05<00:31, 25.65it/s]
+Loading weights:  10%|█         | 91/883 [00:06<00:26, 29.70it/s]
+Loading weights:  11%|█         | 95/883 [00:06<00:38, 20.66it/s]
+Loading weights:  12%|█▏        | 107/883 [00:06<00:24, 31.26it/s]
+Loading weights:  13%|█▎        | 111/883 [00:06<00:26, 28.95it/s]
+Loading weights:  13%|█▎        | 115/883 [00:07<00:26, 29.37it/s]
+Loading weights:  14%|█▎        | 121/883 [00:07<00:22, 33.22it/s]
+Loading weights:  14%|█▍        | 128/883 [00:07<00:20, 37.70it/s]
+Loading weights:  15%|█▌        | 133/883 [00:07<00:24, 30.01it/s]
+Loading weights:  16%|█▌        | 137/883 [00:07<00:30, 24.50it/s]
+Loading weights:  17%|█▋        | 146/883 [00:07<00:23, 31.79it/s]
+Loading weights:  17%|█▋        | 150/883 [00:08<00:28, 25.72it/s]
+Loading weights:  18%|█▊        | 158/883 [00:08<00:21, 33.98it/s]
+Loading weights:  18%|█▊        | 163/883 [00:08<00:23, 30.22it/s]
+Loading weights:  19%|█▉        | 172/883 [00:08<00:17, 39.55it/s]
+Loading weights:  20%|██        | 177/883 [00:08<00:21, 33.46it/s]
+Loading weights:  21%|██        | 183/883 [00:09<00:20, 33.74it/s]
+Loading weights:  21%|██        | 187/883 [00:09<00:21, 32.32it/s]
+Loading weights:  22%|██▏       | 198/883 [00:09<00:16, 42.47it/s]
+Loading weights:  23%|██▎       | 203/883 [00:09<00:19, 35.02it/s]
+Loading weights:  24%|██▍       | 211/883 [00:10<00:25, 26.45it/s]
+Loading weights:  24%|██▍       | 215/883 [00:10<00:29, 22.98it/s]
+Loading weights:  25%|██▍       | 219/883 [00:10<00:28, 23.21it/s]
+Loading weights:  25%|██▌       | 224/883 [00:10<00:30, 21.58it/s]
+Loading weights:  26%|██▌       | 227/883 [00:10<00:31, 21.07it/s]
+Loading weights:  27%|██▋       | 237/883 [00:11<00:22, 28.79it/s]
+Loading weights:  27%|██▋       | 240/883 [00:11<00:25, 25.26it/s]
+Loading weights:  28%|██▊       | 248/883 [00:11<00:18, 33.93it/s]
+Loading weights:  29%|██▊       | 252/883 [00:11<00:25, 24.28it/s]
+Loading weights:  29%|██▉       | 259/883 [00:11<00:20, 30.02it/s]
+Loading weights:  30%|██▉       | 263/883 [00:12<00:23, 26.12it/s]
+Loading weights:  30%|███       | 267/883 [00:12<00:24, 25.45it/s]
+Loading weights:  31%|███▏      | 276/883 [00:12<00:17, 34.12it/s]
+Loading weights:  32%|███▏      | 280/883 [00:12<00:20, 29.85it/s]
+Loading weights:  33%|███▎      | 289/883 [00:12<00:18, 32.20it/s]
+Loading weights:  33%|███▎      | 293/883 [00:13<00:20, 29.45it/s]
+Loading weights:  34%|███▍      | 302/883 [00:13<00:20, 28.79it/s]
+Loading weights:  35%|███▍      | 305/883 [00:13<00:22, 25.90it/s]
+Loading weights:  36%|███▌      | 315/883 [00:13<00:18, 31.11it/s]
+Loading weights:  36%|███▌      | 319/883 [00:13<00:18, 30.41it/s]
+Loading weights:  36%|███▋      | 322/883 [00:14<00:19, 29.34it/s]
+Loading weights:  37%|███▋      | 328/883 [00:14<00:19, 28.14it/s]
+Loading weights:  37%|███▋      | 331/883 [00:14<00:21, 25.27it/s]
+Loading weights:  39%|███▊      | 341/883 [00:14<00:16, 32.10it/s]
+Loading weights:  39%|███▉      | 345/883 [00:14<00:19, 27.48it/s]
+Loading weights:  40%|████      | 354/883 [00:15<00:14, 37.40it/s]
+Loading weights:  41%|████      | 359/883 [00:15<00:16, 31.17it/s]
+Loading weights:  41%|████▏     | 365/883 [00:15<00:25, 20.39it/s]
+Loading weights:  42%|████▏     | 368/883 [00:15<00:25, 19.88it/s]
+Loading weights:  42%|████▏     | 374/883 [00:16<00:20, 25.05it/s]
+Loading weights:  43%|████▎     | 378/883 [00:16<00:19, 25.83it/s]
+Loading weights:  43%|████▎     | 382/883 [00:16<00:25, 19.59it/s]
+Loading weights:  45%|████▍     | 393/883 [00:16<00:17, 27.66it/s]
+Loading weights:  45%|████▍     | 397/883 [00:17<00:21, 22.40it/s]
+Loading weights:  45%|████▌     | 401/883 [00:17<00:20, 23.61it/s]
+Loading weights:  46%|████▌     | 406/883 [00:17<00:22, 21.07it/s]
+Loading weights:  46%|████▋     | 409/883 [00:17<00:25, 18.25it/s]
+Loading weights:  47%|████▋     | 419/883 [00:18<00:19, 24.25it/s]
+Loading weights:  48%|████▊     | 422/883 [00:18<00:22, 20.30it/s]
+Loading weights:  49%|████▉     | 432/883 [00:18<00:15, 29.67it/s]
+Loading weights:  49%|████▉     | 436/883 [00:18<00:18, 23.85it/s]
+Loading weights:  50%|█████     | 445/883 [00:18<00:13, 32.38it/s]
+Loading weights:  51%|█████     | 452/883 [00:19<00:11, 38.67it/s]
+Loading weights:  52%|█████▏    | 457/883 [00:19<00:12, 33.79it/s]
+Loading weights:  53%|█████▎    | 465/883 [00:19<00:10, 40.93it/s]
+Loading weights:  53%|█████▎    | 470/883 [00:19<00:11, 34.83it/s]
+Loading weights:  54%|█████▍    | 481/883 [00:19<00:08, 47.53it/s]
+Loading weights:  55%|█████▌    | 490/883 [00:19<00:07, 56.05it/s]
+Loading weights:  57%|█████▋    | 501/883 [00:19<00:05, 67.43it/s]
+Loading weights:  58%|█████▊    | 513/883 [00:19<00:04, 79.18it/s]
+Loading weights:  59%|█████▉    | 522/883 [00:20<00:04, 80.43it/s]
+Loading weights:  61%|██████    | 535/883 [00:20<00:03, 90.26it/s]
+Loading weights:  62%|██████▏   | 545/883 [00:20<00:03, 90.01it/s]
+Loading weights:  63%|██████▎   | 555/883 [00:20<00:04, 77.90it/s]
+Loading weights:  64%|██████▍   | 565/883 [00:20<00:03, 82.86it/s]
+Loading weights:  65%|██████▌   | 575/883 [00:20<00:03, 85.88it/s]
+Loading weights:  66%|██████▌   | 584/883 [00:20<00:05, 59.71it/s]
+Loading weights:  68%|██████▊   | 599/883 [00:21<00:04, 70.26it/s]
+Loading weights:  69%|██████▊   | 607/883 [00:21<00:03, 69.94it/s]
+Loading weights:  70%|██████▉   | 615/883 [00:21<00:03, 67.24it/s]
+Loading weights:  71%|███████   | 623/883 [00:21<00:04, 62.67it/s]
+Loading weights:  72%|███████▏  | 633/883 [00:21<00:03, 68.90it/s]
+Loading weights:  73%|███████▎  | 646/883 [00:21<00:03, 73.73it/s]
+Loading weights:  75%|███████▌  | 663/883 [00:21<00:02, 80.88it/s]
+Loading weights:  77%|███████▋  | 679/883 [00:22<00:02, 89.38it/s]
+Loading weights:  79%|███████▊  | 695/883 [00:22<00:02, 91.67it/s]
+Loading weights:  81%|████████  | 711/883 [00:22<00:01, 100.28it/s]
+Loading weights:  82%|████████▏ | 722/883 [00:22<00:01, 83.18it/s]
+Loading weights:  83%|████████▎ | 731/883 [00:22<00:01, 78.10it/s]
+Loading weights:  84%|████████▍ | 745/883 [00:22<00:01, 87.02it/s]
+Loading weights:  86%|████████▌ | 761/883 [00:23<00:01, 96.41it/s]
+Loading weights:  88%|████████▊ | 775/883 [00:23<00:01, 99.73it/s]
+Loading weights:  90%|████████▉ | 793/883 [00:23<00:00, 109.10it/s]
+Loading weights:  92%|█████████▏| 809/883 [00:23<00:00, 112.06it/s]
+Loading weights:  93%|█████████▎| 824/883 [00:23<00:00, 120.90it/s]
+Loading weights:  95%|█████████▌| 839/883 [00:23<00:00, 117.68it/s]
+Loading weights:  97%|█████████▋| 855/883 [00:23<00:00, 124.64it/s]
+Loading weights:  98%|█████████▊| 868/883 [00:23<00:00, 118.68it/s]
+Loading weights: 100%|█████████▉| 881/883 [00:23<00:00, 117.69it/s]
+Loading weights: 100%|██████████| 883/883 [00:23<00:00, 36.80it/s]
+Selected ant coverage targets:
+  L22 F1703 normalized=0.6070 preserved_calibrated_target
+  L22 F197021 normalized=0.4818 preserved_calibrated_target
+  L23 F82603 normalized=0.1561 expanded_search_below_cutoff_coverage
+  L24 F209073 normalized=0.7880 expanded_search_above_cutoff
+  L25 F236757 normalized=0.1848 expanded_search_below_cutoff_coverage
+  L26 F73903 normalized=0.8117 expanded_search_above_cutoff
+  L27 F248182 normalized=0.4844 preserved_calibrated_target
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=0.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=0.25 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=0.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=0.75 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=1.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=1.25 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=2.00 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=3.00 P(Six)=0.0000% P(Eight)=99.9978% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=4.00 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.00 ant=5.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=0.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=0.25 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=0.50 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=0.75 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=1.00 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=1.25 P(Six)=0.0000% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=1.50 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=2.00 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=3.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=4.00 P(Six)=0.0000% P(Eight)=99.9977% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.20 ant=5.00 P(Six)=0.0000% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=0.00 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=0.25 P(Six)=0.0000% P(Eight)=99.9993% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=0.50 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=0.75 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=1.00 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=1.25 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=1.50 P(Six)=0.0000% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=2.00 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=3.00 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=4.00 P(Six)=0.0001% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.40 ant=5.00 P(Six)=0.0000% P(Eight)=99.9989% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=0.00 P(Six)=0.0000% P(Eight)=99.9994% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=0.25 P(Six)=0.0000% P(Eight)=99.9994% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=0.50 P(Six)=0.0001% P(Eight)=99.9992% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=0.75 P(Six)=0.0001% P(Eight)=99.9992% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=1.00 P(Six)=0.0001% P(Eight)=99.9994% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=1.25 P(Six)=0.0001% P(Eight)=99.9993% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=1.50 P(Six)=0.0001% P(Eight)=99.9993% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=2.00 P(Six)=0.0001% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=3.00 P(Six)=0.0002% P(Eight)=99.9990% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=4.00 P(Six)=0.0001% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.60 ant=5.00 P(Six)=0.0001% P(Eight)=99.9985% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=0.00 P(Six)=0.0001% P(Eight)=99.9993% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=0.25 P(Six)=0.0002% P(Eight)=99.9993% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=0.50 P(Six)=0.0002% P(Eight)=99.9992% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=0.75 P(Six)=0.0002% P(Eight)=99.9991% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=1.00 P(Six)=0.0002% P(Eight)=99.9992% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=1.25 P(Six)=0.0003% P(Eight)=99.9990% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=1.50 P(Six)=0.0004% P(Eight)=99.9990% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=2.00 P(Six)=0.0005% P(Eight)=99.9987% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=3.00 P(Six)=0.0006% P(Eight)=99.9986% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=4.00 P(Six)=0.0006% P(Eight)=99.9983% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=0.80 ant=5.00 P(Six)=0.0005% P(Eight)=99.9982% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=0.00 P(Six)=0.0017% P(Eight)=99.9973% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=0.25 P(Six)=0.0013% P(Eight)=99.9980% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=0.50 P(Six)=0.0013% P(Eight)=99.9979% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=0.75 P(Six)=0.0013% P(Eight)=99.9976% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=1.00 P(Six)=0.0021% P(Eight)=99.9970% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=1.25 P(Six)=0.0021% P(Eight)=99.9970% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=1.50 P(Six)=0.0035% P(Eight)=99.9954% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=2.00 P(Six)=0.0058% P(Eight)=99.9928% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=3.00 P(Six)=0.0075% P(Eight)=99.9908% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=4.00 P(Six)=0.0075% P(Eight)=99.9903% top=' Eight'
+L22+L23+L24+L25+L26+L27 spider=1.00 ant=5.00 P(Six)=0.0045% P(Eight)=99.9937% top=' Eight'
+{
+  "below_cutoff_coverage_layers": [
+    23,
+    25
+  ],
+  "success_count": 0,
+  "smallest_success": null,
+  "maximum": {
+    "spider_suppression": 1.0,
+    "ant_factor": 3.0,
+    "top_token": " Eight",
+    "p_six": 7.484494562959298e-05,
+    "p_eight": 0.9999079704284668,
+    "p_four": 1.670016354182735e-05
+  },
+  "json": "results/spider_ant_full_window_coverage_sweep/spider_ant_full_window_coverage_sweep.json",
+  "csv": "results/spider_ant_full_window_coverage_sweep/spider_ant_full_window_coverage_sweep.csv"
+}
