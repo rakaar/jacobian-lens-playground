@@ -1,0 +1,30 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loaded 1 encoder/decoder row pairs from L24
+Loaded 1 encoder/decoder row pairs from L25
+Loaded 1 encoder/decoder row pairs from L27
+Loaded 1 encoder/decoder row pairs from L26
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading Gemma-3-4B-IT in bfloat16...
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:19<00:19, 19.89s/it]Fetching 2 files: 100%|██████████| 2/2 [00:21<00:00,  9.30s/it]Fetching 2 files: 100%|██████████| 2/2 [00:21<00:00, 10.89s/it]
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 3/883 [00:00<00:33, 26.12it/s]Loading weights:   4%|▎         | 31/883 [00:00<00:05, 157.29it/s]Loading weights:   6%|▋         | 56/883 [00:00<00:04, 193.07it/s]Loading weights:   9%|▉         | 81/883 [00:00<00:03, 209.42it/s]Loading weights:  12%|█▏        | 103/883 [00:00<00:03, 211.23it/s]Loading weights:  14%|█▍        | 125/883 [00:00<00:03, 202.67it/s]Loading weights:  17%|█▋        | 147/883 [00:00<00:03, 204.43it/s]Loading weights:  19%|█▉        | 172/883 [00:00<00:03, 211.36it/s]Loading weights:  22%|██▏       | 194/883 [00:00<00:03, 212.13it/s]Loading weights:  24%|██▍       | 216/883 [00:01<00:03, 203.69it/s]Loading weights:  27%|██▋       | 239/883 [00:01<00:03, 204.75it/s]Loading weights:  30%|███       | 265/883 [00:01<00:02, 212.09it/s]Loading weights:  33%|███▎      | 290/883 [00:01<00:02, 220.87it/s]Loading weights:  36%|███▌      | 315/883 [00:01<00:02, 222.35it/s]Loading weights:  38%|███▊      | 338/883 [00:01<00:02, 218.87it/s]Loading weights:  41%|████      | 360/883 [00:01<00:02, 208.84it/s]Loading weights:  43%|████▎     | 381/883 [00:01<00:02, 206.88it/s]Loading weights:  46%|████▌     | 406/883 [00:01<00:02, 211.93it/s]Loading weights:  48%|████▊     | 428/883 [00:02<00:02, 213.81it/s]Loading weights:  55%|█████▌    | 489/883 [00:02<00:01, 324.82it/s]Loading weights:  70%|███████   | 621/883 [00:02<00:00, 610.05it/s]Loading weights:  85%|████████▍ | 750/883 [00:02<00:00, 806.22it/s]Loading weights: 100%|██████████| 883/883 [00:02<00:00, 356.56it/s]
+Frozen base: P(Six)=95.222110%, P(Eight)=4.740829%.
+base: P(Six)=95.222110%, P(Eight)=4.740829%, P(Four)=0.031943%, log-odds=3.000000
+L24: P(Six)=96.232289%, P(Eight)=3.731331%, P(Four)=0.032282%, log-odds=3.250000
+L25*: P(Six)=96.222430%, P(Eight)=3.730949%, P(Four)=0.041447%, log-odds=3.250000
+L26: P(Six)=96.223468%, P(Eight)=3.730989%, P(Four)=0.041448%, log-odds=3.250000
+L27: P(Six)=96.223360%, P(Eight)=3.730984%, P(Four)=0.041447%, log-odds=3.250000
+L24+L25*: P(Six)=93.936527%, P(Eight)=6.005161%, P(Four)=0.051955%, log-odds=2.750000
+L24+L26: P(Six)=95.213509%, P(Eight)=4.740401%, P(Four)=0.041013%, log-odds=3.000000
+L24+L27: P(Six)=95.213377%, P(Eight)=4.740395%, P(Four)=0.041012%, log-odds=3.000000
+L25*+L26: P(Six)=95.213521%, P(Eight)=4.740402%, P(Four)=0.041013%, log-odds=3.000000
+L25*+L27: P(Six)=95.212209%, P(Eight)=4.740337%, P(Four)=0.041012%, log-odds=3.000000
+L26+L27: P(Six)=96.232289%, P(Eight)=3.731331%, P(Four)=0.032282%, log-odds=3.250000
+L24+L25*+L26: P(Six)=93.948460%, P(Eight)=6.005924%, P(Four)=0.040468%, log-odds=2.750000
+L24+L25*+L27: P(Six)=93.936443%, P(Eight)=6.005156%, P(Four)=0.051955%, log-odds=2.750000
+L24+L26+L27: P(Six)=93.936306%, P(Eight)=6.005147%, P(Four)=0.051955%, log-odds=2.750000
+L25*+L26+L27: P(Six)=95.213521%, P(Eight)=4.740402%, P(Four)=0.041013%, log-odds=3.000000
+L24+L25*+L26+L27: P(Six)=93.936485%, P(Eight)=6.005158%, P(Four)=0.051955%, log-odds=2.750000
+Full L24+L25*+L26+L27 result: P(Six)=93.936485%, P(Eight)=6.005158%, P(Four)=0.051955%.
+Maximum factorial result: L24, P(Six)=96.232289%, P(Eight)=3.731331%.
+Saved results/spider_ant_cumulative_layer_sweep/spider_ant_cumulative_layer_sweep.json, results/spider_ant_cumulative_layer_sweep/spider_ant_cumulative_layer_sweep.csv, results/spider_ant_cumulative_layer_sweep/spider_ant_cumulative_layer_manifest.json, results/spider_ant_cumulative_layer_sweep/spider_ant_cumulative_factorial.png, and results/spider_ant_cumulative_layer_sweep/spider_ant_cumulative_path.png.
