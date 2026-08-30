@@ -1,0 +1,3188 @@
+{
+  "experiment": "matched-token spider-to-ant animal-identity control",
+  "model": "google/gemma-3-4b-it",
+  "identity_prompt": "<bos><start_of_turn>user\nAnswer in one word: What animal is famous for web-spinning behavior worldwide?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+  "identity_runs": [
+    {
+      "condition": "clean",
+      "spider_suppression": 0.0,
+      "ant_factor": 0.0,
+      "total_delta_norm": 0.0,
+      "operations": [],
+      "answer": "Spider",
+      "top_token": " Spider",
+      "top_token_id": 40046,
+      "top_probability": 0.9999997615814209,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Spider",
+          "token_id": 40046,
+          "probability": 0.9999997615814209
+        },
+        {
+          "rank": 2,
+          "token": " spider",
+          "token_id": 32261,
+          "probability": 1.1253514742293191e-07
+        },
+        {
+          "rank": 3,
+          "token": " Sp",
+          "token_id": 2177,
+          "probability": 5.3157837243134054e-08
+        },
+        {
+          "rank": 4,
+          "token": "Spider",
+          "token_id": 86757,
+          "probability": 1.522997550296168e-08
+        },
+        {
+          "rank": 5,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 7.582558469998446e-10
+        },
+        {
+          "rank": 6,
+          "token": " Arach",
+          "token_id": 212571,
+          "probability": 3.7751333309410384e-11
+        },
+        {
+          "rank": 7,
+          "token": "�",
+          "token_id": 432,
+          "probability": 2.2897343743277787e-11
+        },
+        {
+          "rank": 8,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 1.0815939290031995e-11
+        },
+        {
+          "rank": 9,
+          "token": " Ar",
+          "token_id": 1572,
+          "probability": 6.5601985649310635e-12
+        },
+        {
+          "rank": 10,
+          "token": " Tarant",
+          "token_id": 165161,
+          "probability": 3.978961691381011e-12
+        },
+        {
+          "rank": 11,
+          "token": " **",
+          "token_id": 5213,
+          "probability": 3.0988185108216104e-12
+        },
+        {
+          "rank": 12,
+          "token": "spider",
+          "token_id": 48587,
+          "probability": 1.8795284339317986e-12
+        },
+        {
+          "rank": 13,
+          "token": " Weaver",
+          "token_id": 79781,
+          "probability": 1.8795284339317986e-12
+        },
+        {
+          "rank": 14,
+          "token": "\n",
+          "token_id": 107,
+          "probability": 1.139991529994222e-12
+        },
+        {
+          "rank": 15,
+          "token": " Spinner",
+          "token_id": 88464,
+          "probability": 4.193794562925429e-13
+        },
+        {
+          "rank": 16,
+          "token": " Crab",
+          "token_id": 88398,
+          "probability": 3.2661305843055544e-13
+        },
+        {
+          "rank": 17,
+          "token": " ",
+          "token_id": 236743,
+          "probability": 9.357620879340764e-14
+        },
+        {
+          "rank": 18,
+          "token": " Web",
+          "token_id": 6940,
+          "probability": 5.675683854107147e-14
+        },
+        {
+          "rank": 19,
+          "token": " Arac",
+          "token_id": 230415,
+          "probability": 3.4424764064735006e-14
+        },
+        {
+          "rank": 20,
+          "token": "蜘蛛",
+          "token_id": 182236,
+          "probability": 3.4424764064735006e-14
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 0.9999998807907104,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 0.9999997615814209,
+          "best_token_rank": 1,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 6.327397658227197e-17,
+          "best_token": " Ant",
+          "best_token_id": 5307,
+          "best_token_probability": 3.5571026197213685e-17,
+          "best_token_rank": 64,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 2.862541874035861e-20,
+          "best_token": " wasp",
+          "best_token_id": 186153,
+          "best_token_probability": 2.8625179633462795e-20,
+          "best_token_rank": 304,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 6.892418861062305e-26,
+          "best_token": " termite",
+          "best_token_id": 212513,
+          "best_token_probability": 6.887527307152352e-26,
+          "best_token_rank": 6817,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 6.307835299961461e-16,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 6.305115265409591e-16,
+          "best_token_rank": 36,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 7.698008219368321e-15,
+          "best_token": " Insect",
+          "best_token_id": 69532,
+          "best_token_probability": 7.681203085694796e-15,
+          "best_token_rank": 25,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "insect",
+        "bee",
+        "ant",
+        "wasp",
+        "termite"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 0.9999998807907104,
+      "greedy_completion": "Spider",
+      "greedy_token_ids": [
+        40046,
+        106
+      ],
+      "greedy_tokens": [
+        " Spider",
+        "<end_of_turn>"
+      ]
+    },
+    {
+      "condition": "zero_strength_control",
+      "spider_suppression": 0.0,
+      "ant_factor": 0.0,
+      "total_delta_norm": 0.0,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 96.64413833618164,
+          "current_activation": 96.64413833618164,
+          "reference_activation": 96.64413833618164,
+          "target_activation": 96.64413833618164,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 111.27387237548828,
+          "current_activation": 111.27387237548828,
+          "reference_activation": 111.27387237548828,
+          "target_activation": 111.27387237548828,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -64.96894454956055,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1472.2361755371094,
+          "current_activation": 1472.2361755371094,
+          "reference_activation": 1472.2361755371094,
+          "target_activation": 1472.2361755371094,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 299.45526123046875,
+          "current_activation": 299.45526123046875,
+          "reference_activation": 299.45526123046875,
+          "target_activation": 299.45526123046875,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1965.1733093261719,
+          "current_activation": 1965.1733093261719,
+          "reference_activation": 1965.1733093261719,
+          "target_activation": 1965.1733093261719,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -932.2526397705078,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -606.0678482055664,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        }
+      ],
+      "answer": "Spider",
+      "top_token": " Spider",
+      "top_token_id": 40046,
+      "top_probability": 0.9999997615814209,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Spider",
+          "token_id": 40046,
+          "probability": 0.9999997615814209
+        },
+        {
+          "rank": 2,
+          "token": " spider",
+          "token_id": 32261,
+          "probability": 1.1253514742293191e-07
+        },
+        {
+          "rank": 3,
+          "token": " Sp",
+          "token_id": 2177,
+          "probability": 5.3157837243134054e-08
+        },
+        {
+          "rank": 4,
+          "token": "Spider",
+          "token_id": 86757,
+          "probability": 1.522997550296168e-08
+        },
+        {
+          "rank": 5,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 7.582558469998446e-10
+        },
+        {
+          "rank": 6,
+          "token": " Arach",
+          "token_id": 212571,
+          "probability": 3.7751333309410384e-11
+        },
+        {
+          "rank": 7,
+          "token": "�",
+          "token_id": 432,
+          "probability": 2.2897343743277787e-11
+        },
+        {
+          "rank": 8,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 1.0815939290031995e-11
+        },
+        {
+          "rank": 9,
+          "token": " Ar",
+          "token_id": 1572,
+          "probability": 6.5601985649310635e-12
+        },
+        {
+          "rank": 10,
+          "token": " Tarant",
+          "token_id": 165161,
+          "probability": 3.978961691381011e-12
+        },
+        {
+          "rank": 11,
+          "token": " **",
+          "token_id": 5213,
+          "probability": 3.0988185108216104e-12
+        },
+        {
+          "rank": 12,
+          "token": "spider",
+          "token_id": 48587,
+          "probability": 1.8795284339317986e-12
+        },
+        {
+          "rank": 13,
+          "token": " Weaver",
+          "token_id": 79781,
+          "probability": 1.8795284339317986e-12
+        },
+        {
+          "rank": 14,
+          "token": "\n",
+          "token_id": 107,
+          "probability": 1.139991529994222e-12
+        },
+        {
+          "rank": 15,
+          "token": " Spinner",
+          "token_id": 88464,
+          "probability": 4.193794562925429e-13
+        },
+        {
+          "rank": 16,
+          "token": " Crab",
+          "token_id": 88398,
+          "probability": 3.2661305843055544e-13
+        },
+        {
+          "rank": 17,
+          "token": " ",
+          "token_id": 236743,
+          "probability": 9.357620879340764e-14
+        },
+        {
+          "rank": 18,
+          "token": " Web",
+          "token_id": 6940,
+          "probability": 5.675683854107147e-14
+        },
+        {
+          "rank": 19,
+          "token": " Arac",
+          "token_id": 230415,
+          "probability": 3.4424764064735006e-14
+        },
+        {
+          "rank": 20,
+          "token": "蜘蛛",
+          "token_id": 182236,
+          "probability": 3.4424764064735006e-14
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 0.9999998807907104,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 0.9999997615814209,
+          "best_token_rank": 1,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 6.327397658227197e-17,
+          "best_token": " Ant",
+          "best_token_id": 5307,
+          "best_token_probability": 3.5571026197213685e-17,
+          "best_token_rank": 64,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 2.862541874035861e-20,
+          "best_token": " wasp",
+          "best_token_id": 186153,
+          "best_token_probability": 2.8625179633462795e-20,
+          "best_token_rank": 304,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 6.892418861062305e-26,
+          "best_token": " termite",
+          "best_token_id": 212513,
+          "best_token_probability": 6.887527307152352e-26,
+          "best_token_rank": 6817,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 6.307835299961461e-16,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 6.305115265409591e-16,
+          "best_token_rank": 36,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 7.698008219368321e-15,
+          "best_token": " Insect",
+          "best_token_id": 69532,
+          "best_token_probability": 7.681203085694796e-15,
+          "best_token_rank": 25,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "insect",
+        "bee",
+        "ant",
+        "wasp",
+        "termite"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 0.9999998807907104,
+      "greedy_completion": "Spider",
+      "greedy_token_ids": [
+        40046,
+        106
+      ],
+      "greedy_tokens": [
+        " Spider",
+        "<end_of_turn>"
+      ]
+    },
+    {
+      "condition": "spider_suppression_only",
+      "spider_suppression": 1.0,
+      "ant_factor": 0.0,
+      "total_delta_norm": 2514.4113895425758,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 96.64413833618164,
+          "current_activation": 96.64413833618164,
+          "reference_activation": 96.64413833618164,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 96.64413452148438
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 111.27387237548828,
+          "current_activation": 111.27387237548828,
+          "reference_activation": 111.27387237548828,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 111.27388000488281
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -64.96894454956055,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1551.7729187011719,
+          "current_activation": 1551.7729187011719,
+          "reference_activation": 1551.7729187011719,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1551.7730712890625
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 327.13092041015625,
+          "current_activation": 327.13092041015625,
+          "reference_activation": 327.13092041015625,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 327.13092041015625
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1945.6432800292969,
+          "current_activation": 1945.6432800292969,
+          "reference_activation": 1945.6432800292969,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1945.6434326171875
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -957.2371368408203,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -608.5321426391602,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 0.0,
+          "factor": 0.0,
+          "delta_norm": 0.0
+        }
+      ],
+      "answer": "Spider",
+      "top_token": " Spider",
+      "top_token_id": 40046,
+      "top_probability": 0.9999997615814209,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Spider",
+          "token_id": 40046,
+          "probability": 0.9999997615814209
+        },
+        {
+          "rank": 2,
+          "token": " spider",
+          "token_id": 32261,
+          "probability": 1.4449798868554353e-07
+        },
+        {
+          "rank": 3,
+          "token": " Sp",
+          "token_id": 2177,
+          "probability": 1.1253514742293191e-07
+        },
+        {
+          "rank": 4,
+          "token": "Spider",
+          "token_id": 86757,
+          "probability": 1.522997550296168e-08
+        },
+        {
+          "rank": 5,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 5.905302358222286e-10
+        },
+        {
+          "rank": 6,
+          "token": " Arach",
+          "token_id": 212571,
+          "probability": 3.7751333309410384e-11
+        },
+        {
+          "rank": 7,
+          "token": "�",
+          "token_id": 432,
+          "probability": 1.3887940276957611e-11
+        },
+        {
+          "rank": 8,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 6.5601985649310635e-12
+        },
+        {
+          "rank": 9,
+          "token": " Ar",
+          "token_id": 1572,
+          "probability": 5.1090876321269185e-12
+        },
+        {
+          "rank": 10,
+          "token": "spider",
+          "token_id": 48587,
+          "probability": 3.978961691381011e-12
+        },
+        {
+          "rank": 11,
+          "token": " **",
+          "token_id": 5213,
+          "probability": 1.139991529994222e-12
+        },
+        {
+          "rank": 12,
+          "token": " Spinner",
+          "token_id": 88464,
+          "probability": 1.139991529994222e-12
+        },
+        {
+          "rank": 13,
+          "token": " Weaver",
+          "token_id": 79781,
+          "probability": 1.139991529994222e-12
+        },
+        {
+          "rank": 14,
+          "token": " Tarant",
+          "token_id": 165161,
+          "probability": 8.878263250446106e-13
+        },
+        {
+          "rank": 15,
+          "token": "\n",
+          "token_id": 107,
+          "probability": 5.384939456148929e-13
+        },
+        {
+          "rank": 16,
+          "token": " Sil",
+          "token_id": 7966,
+          "probability": 1.9810084020237262e-13
+        },
+        {
+          "rank": 17,
+          "token": " Insect",
+          "token_id": 69532,
+          "probability": 7.287721722750926e-14
+        },
+        {
+          "rank": 18,
+          "token": " Spin",
+          "token_id": 42293,
+          "probability": 7.287721722750926e-14
+        },
+        {
+          "rank": 19,
+          "token": " Beetle",
+          "token_id": 128740,
+          "probability": 7.287721722750926e-14
+        },
+        {
+          "rank": 20,
+          "token": " ",
+          "token_id": 236743,
+          "probability": 5.675683854107147e-14
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 0.9999998807907104,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 0.9999997615814209,
+          "best_token_rank": 1,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 2.659757569761388e-16,
+          "best_token": " Ant",
+          "best_token_id": 5307,
+          "best_token_probability": 1.806445858436667e-16,
+          "best_token_rank": 45,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 1.1321666280453039e-19,
+          "best_token": " wasp",
+          "best_token_id": 186153,
+          "best_token_probability": 1.13214775798758e-19,
+          "best_token_rank": 219,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 3.0888351642755796e-25,
+          "best_token": " termite",
+          "best_token_id": 212513,
+          "best_token_probability": 3.086775744274887e-25,
+          "best_token_rank": 4933,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 1.2670349964799977e-14,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 1.2664162389120284e-14,
+          "best_token_rank": 26,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 7.300140581010389e-14,
+          "best_token": " Insect",
+          "best_token_id": 69532,
+          "best_token_probability": 7.287721722750926e-14,
+          "best_token_rank": 17,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "insect",
+        "bee",
+        "ant",
+        "wasp",
+        "termite"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 0.9999998807907104,
+      "greedy_completion": "Spider",
+      "greedy_token_ids": [
+        40046,
+        106
+      ],
+      "greedy_tokens": [
+        " Spider",
+        "<end_of_turn>"
+      ]
+    },
+    {
+      "condition": "ant_injection_only",
+      "spider_suppression": 0.0,
+      "ant_factor": 4.0,
+      "total_delta_norm": 7450.756869895024,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 96.64413833618164,
+          "current_activation": 96.64413833618164,
+          "reference_activation": 96.64413833618164,
+          "target_activation": 96.64413833618164,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 111.27387237548828,
+          "current_activation": 111.27387237548828,
+          "reference_activation": 111.27387237548828,
+          "target_activation": 111.27387237548828,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -64.96894454956055,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1243.6967468261719,
+          "current_activation": 1243.6967468261719,
+          "reference_activation": 1243.6967468261719,
+          "target_activation": 1243.6967468261719,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 81.92205810546875,
+          "current_activation": 0.0,
+          "reference_activation": 0.0,
+          "target_activation": 0.0,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1914.2265319824219,
+          "current_activation": 1914.2265319824219,
+          "reference_activation": 1914.2265319824219,
+          "target_activation": 1914.2265319824219,
+          "factor": -0.0,
+          "delta_norm": 0.0
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -979.8473052978516,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -578.7228164672852,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        }
+      ],
+      "answer": "Spider",
+      "top_token": " Spider",
+      "top_token_id": 40046,
+      "top_probability": 0.9999998807907104,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Spider",
+          "token_id": 40046,
+          "probability": 0.9999998807907104
+        },
+        {
+          "rank": 2,
+          "token": " spider",
+          "token_id": 32261,
+          "probability": 8.764247638737288e-08
+        },
+        {
+          "rank": 3,
+          "token": "Spider",
+          "token_id": 86757,
+          "probability": 7.194131956822503e-09
+        },
+        {
+          "rank": 4,
+          "token": " Sp",
+          "token_id": 2177,
+          "probability": 2.646573404874175e-09
+        },
+        {
+          "rank": 5,
+          "token": " Tarant",
+          "token_id": 165161,
+          "probability": 1.6918978718027944e-10
+        },
+        {
+          "rank": 6,
+          "token": " Arach",
+          "token_id": 212571,
+          "probability": 2.940077348245751e-11
+        },
+        {
+          "rank": 7,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 1.0815941024755471e-11
+        },
+        {
+          "rank": 8,
+          "token": "�",
+          "token_id": 432,
+          "probability": 1.879528650772233e-12
+        },
+        {
+          "rank": 9,
+          "token": " Ar",
+          "token_id": 1572,
+          "probability": 8.878264334648278e-13
+        },
+        {
+          "rank": 10,
+          "token": "spider",
+          "token_id": 48587,
+          "probability": 6.91439906632535e-13
+        },
+        {
+          "rank": 11,
+          "token": " T",
+          "token_id": 558,
+          "probability": 3.2661311264066406e-13
+        },
+        {
+          "rank": 12,
+          "token": " Crab",
+          "token_id": 88398,
+          "probability": 1.9810085375489977e-13
+        },
+        {
+          "rank": 13,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 9.357621556967122e-14
+        },
+        {
+          "rank": 14,
+          "token": " **",
+          "token_id": 5213,
+          "probability": 3.4424767452866795e-14
+        },
+        {
+          "rank": 15,
+          "token": "\n",
+          "token_id": 107,
+          "probability": 2.6810036124740727e-14
+        },
+        {
+          "rank": 16,
+          "token": " Beetle",
+          "token_id": 128740,
+          "probability": 1.2664164083186179e-14
+        },
+        {
+          "rank": 17,
+          "token": " Arac",
+          "token_id": 230415,
+          "probability": 4.658885768355414e-15
+        },
+        {
+          "rank": 18,
+          "token": " Weaver",
+          "token_id": 79781,
+          "probability": 3.628343556594943e-15
+        },
+        {
+          "rank": 19,
+          "token": " Insect",
+          "token_id": 69532,
+          "probability": 3.628343556594943e-15
+        },
+        {
+          "rank": 20,
+          "token": "蜘蛛",
+          "token_id": 182236,
+          "probability": 1.3347930582824265e-15
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 0.9999999403953552,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 0.9999998807907104,
+          "best_token_rank": 1,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 9.731985667863743e-19,
+          "best_token": " Ants",
+          "best_token_id": 190788,
+          "best_token_probability": 9.479358504935454e-19,
+          "best_token_rank": 65,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 1.614928681161375e-21,
+          "best_token": " wasp",
+          "best_token_id": 186153,
+          "best_token_probability": 1.6149223197870354e-21,
+          "best_token_rank": 249,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 2.2375447930915084e-26,
+          "best_token": " termite",
+          "best_token_id": 212513,
+          "best_token_probability": 2.2360530447937838e-26,
+          "best_token_rank": 2980,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 8.096929820822522e-16,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 8.095929263153578e-16,
+          "best_token_rank": 22,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 3.639893274347229e-15,
+          "best_token": " Insect",
+          "best_token_id": 69532,
+          "best_token_probability": 3.628343556594943e-15,
+          "best_token_rank": 18,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "insect",
+        "bee",
+        "ant",
+        "wasp",
+        "termite"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 0.9999999403953552,
+      "greedy_completion": "Spider",
+      "greedy_token_ids": [
+        40046,
+        106
+      ],
+      "greedy_tokens": [
+        " Spider",
+        "<end_of_turn>"
+      ]
+    },
+    {
+      "condition": "full_edit",
+      "spider_suppression": 1.0,
+      "ant_factor": 4.0,
+      "total_delta_norm": 7816.775202180167,
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 96.64413833618164,
+          "current_activation": 96.64413833618164,
+          "reference_activation": 96.64413833618164,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 96.64413452148438
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 111.27387237548828,
+          "current_activation": 111.27387237548828,
+          "reference_activation": 111.27387237548828,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 111.27388000488281
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -64.96894454956055,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1346.6357116699219,
+          "current_activation": 1346.6357116699219,
+          "reference_activation": 1346.6357116699219,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1346.6358642578125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 137.16552734375,
+          "current_activation": 137.16552734375,
+          "reference_activation": 137.16552734375,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 137.16552734375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1932.4159851074219,
+          "current_activation": 1932.4159851074219,
+          "reference_activation": 1932.4159851074219,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1932.4161376953125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1000.5711212158203,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -567.9904861450195,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        }
+      ],
+      "answer": "Spider",
+      "top_token": " Spider",
+      "top_token_id": 40046,
+      "top_probability": 0.9999998807907104,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Spider",
+          "token_id": 40046,
+          "probability": 0.9999998807907104
+        },
+        {
+          "rank": 2,
+          "token": " spider",
+          "token_id": 32261,
+          "probability": 1.1253516163378663e-07
+        },
+        {
+          "rank": 3,
+          "token": " Sp",
+          "token_id": 2177,
+          "probability": 9.23744902792123e-09
+        },
+        {
+          "rank": 4,
+          "token": "Spider",
+          "token_id": 86757,
+          "probability": 7.194131956822503e-09
+        },
+        {
+          "rank": 5,
+          "token": " Tarant",
+          "token_id": 165161,
+          "probability": 2.1724397281097652e-10
+        },
+        {
+          "rank": 6,
+          "token": " Arach",
+          "token_id": 212571,
+          "probability": 1.3887942011681087e-11
+        },
+        {
+          "rank": 7,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 1.0815941024755471e-11
+        },
+        {
+          "rank": 8,
+          "token": "�",
+          "token_id": 432,
+          "probability": 3.97896212506188e-12
+        },
+        {
+          "rank": 9,
+          "token": " T",
+          "token_id": 558,
+          "probability": 2.4133626954497833e-12
+        },
+        {
+          "rank": 10,
+          "token": "spider",
+          "token_id": 48587,
+          "probability": 8.878264334648278e-13
+        },
+        {
+          "rank": 11,
+          "token": " Ar",
+          "token_id": 1572,
+          "probability": 5.384939998250016e-13
+        },
+        {
+          "rank": 12,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 1.2015423920576362e-13
+        },
+        {
+          "rank": 13,
+          "token": " Beetle",
+          "token_id": 128740,
+          "probability": 9.357621556967122e-14
+        },
+        {
+          "rank": 14,
+          "token": " Bee",
+          "token_id": 42854,
+          "probability": 5.675684531733505e-14
+        },
+        {
+          "rank": 15,
+          "token": " Insect",
+          "token_id": 69532,
+          "probability": 4.4202272050930524e-14
+        },
+        {
+          "rank": 16,
+          "token": "\n",
+          "token_id": 107,
+          "probability": 3.4424767452866795e-14
+        },
+        {
+          "rank": 17,
+          "token": " Crab",
+          "token_id": 88398,
+          "probability": 2.6810036124740727e-14
+        },
+        {
+          "rank": 18,
+          "token": " **",
+          "token_id": 5213,
+          "probability": 2.6810036124740727e-14
+        },
+        {
+          "rank": 19,
+          "token": " Sil",
+          "token_id": 7966,
+          "probability": 9.862860955191493e-15
+        },
+        {
+          "rank": 20,
+          "token": " Arac",
+          "token_id": 230415,
+          "probability": 2.8257569691819175e-15
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 1.0,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 0.9999998807907104,
+          "best_token_rank": 1,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 4.231411652396226e-17,
+          "best_token": " Ants",
+          "best_token_id": 190788,
+          "best_token_probability": 4.030726055262286e-17,
+          "best_token_rank": 44,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 1.532211043997695e-20,
+          "best_token": " wasp",
+          "best_token_id": 186153,
+          "best_token_probability": 1.5321955343612096e-20,
+          "best_token_rank": 165,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 2.560734449946669e-25,
+          "best_token": " termite",
+          "best_token_id": 212513,
+          "best_token_probability": 2.5590273056439643e-25,
+          "best_token_rank": 2000,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 5.6765847583498466e-14,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 5.675684531733505e-14,
+          "best_token_rank": 14,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 4.4382944178579867e-14,
+          "best_token": " Insect",
+          "best_token_id": 69532,
+          "best_token_probability": 4.4202272050930524e-14,
+          "best_token_rank": 15,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "bee",
+        "insect",
+        "ant",
+        "wasp",
+        "termite"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 1.0,
+      "greedy_completion": "Spider",
+      "greedy_token_ids": [
+        40046,
+        106
+      ],
+      "greedy_tokens": [
+        " Spider",
+        "<end_of_turn>"
+      ]
+    }
+  ],
+  "positive_control": {
+    "prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does a web-spinning animal have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+    "clean": {
+      "condition": "clean",
+      "spider_suppression": 0.0,
+      "ant_factor": 0.0,
+      "total_delta_norm": 0.0,
+      "answer": "Eight",
+      "top_token": " Eight",
+      "top_token_id": 38923,
+      "top_probability": 0.9999825954437256,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.9999825954437256
+        },
+        {
+          "rank": 2,
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 1.670140954956878e-05
+        },
+        {
+          "rank": 3,
+          "token": "Eight",
+          "token_id": 80357,
+          "probability": 6.475839882114087e-07
+        },
+        {
+          "rank": 4,
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 1.1253321474669065e-07
+        },
+        {
+          "rank": 5,
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 4.3633860968839144e-09
+        },
+        {
+          "rank": 6,
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 1.6052000839650304e-09
+        },
+        {
+          "rank": 7,
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 5.905201327927045e-10
+        },
+        {
+          "rank": 8,
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.789419528692605e-10
+        },
+        {
+          "rank": 9,
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 2.789419528692605e-10
+        },
+        {
+          "rank": 10,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 2.789419528692605e-10
+        },
+        {
+          "rank": 11,
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 2.789419528692605e-10
+        },
+        {
+          "rank": 12,
+          "token": " None",
+          "token_id": 5450,
+          "probability": 2.789419528692605e-10
+        },
+        {
+          "rank": 13,
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 2.172402258082684e-10
+        },
+        {
+          "rank": 14,
+          "token": " Multiple",
+          "token_id": 34489,
+          "probability": 1.69186858967052e-10
+        },
+        {
+          "rank": 15,
+          "token": " Several",
+          "token_id": 22624,
+          "probability": 1.69186858967052e-10
+        },
+        {
+          "rank": 16,
+          "token": " ",
+          "token_id": 236743,
+          "probability": 5.4926927589571406e-11
+        },
+        {
+          "rank": 17,
+          "token": " eight",
+          "token_id": 6589,
+          "probability": 4.847284379438932e-11
+        },
+        {
+          "rank": 18,
+          "token": "  ",
+          "token_id": 138,
+          "probability": 2.289694996104874e-11
+        },
+        {
+          "rank": 19,
+          "token": " N",
+          "token_id": 646,
+          "probability": 2.289694996104874e-11
+        },
+        {
+          "rank": 20,
+          "token": " More",
+          "token_id": 4643,
+          "probability": 2.289694996104874e-11
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 1.6586498884432754e-12,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 1.6586495631826237e-12,
+          "best_token_rank": 41,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 5.0896458136375985e-14,
+          "best_token": " Ants",
+          "best_token_id": 190788,
+          "best_token_probability": 5.008687420978569e-14,
+          "best_token_rank": 106,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 2.1748733440457725e-24,
+          "best_token": " wasps",
+          "best_token_id": 195052,
+          "best_token_probability": 2.074662173888058e-24,
+          "best_token_rank": 39463,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 5.1945872141853934e-23,
+          "best_token": " termites",
+          "best_token_id": 153967,
+          "best_token_probability": 5.191069525636832e-23,
+          "best_token_rank": 21828,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 2.7969160267235006e-17,
+          "best_token": " Bees",
+          "best_token_id": 127488,
+          "best_token_probability": 2.4447165839688348e-17,
+          "best_token_rank": 933,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 1.2035687659180117e-13,
+          "best_token": " Insects",
+          "best_token_id": 193663,
+          "best_token_probability": 1.2015216566910875e-13,
+          "best_token_rank": 81,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "spider",
+        "insect",
+        "ant",
+        "bee",
+        "termite",
+        "wasp"
+      ],
+      "top_animal_family": "spider",
+      "top_animal_family_probability": 1.6586498884432754e-12
+    },
+    "full_edit": {
+      "condition": "full_edit",
+      "spider_suppression": 1.0,
+      "ant_factor": 4.0,
+      "total_delta_norm": 7674.541511973184,
+      "answer": "Six",
+      "top_token": " Six",
+      "top_token_id": 19759,
+      "top_probability": 0.9522213339805603,
+      "top_tokens": [
+        {
+          "rank": 1,
+          "token": " Six",
+          "token_id": 19759,
+          "probability": 0.9522213339805603
+        },
+        {
+          "rank": 2,
+          "token": " Eight",
+          "token_id": 38923,
+          "probability": 0.04740830883383751
+        },
+        {
+          "rank": 3,
+          "token": " Four",
+          "token_id": 13038,
+          "probability": 0.00031943467911332846
+        },
+        {
+          "rank": 4,
+          "token": " Two",
+          "token_id": 8512,
+          "probability": 4.323078246670775e-05
+        },
+        {
+          "rank": 5,
+          "token": " Some",
+          "token_id": 4943,
+          "probability": 2.763651309578563e-06
+        },
+        {
+          "rank": 6,
+          "token": " Zero",
+          "token_id": 31234,
+          "probability": 1.305456521549786e-06
+        },
+        {
+          "rank": 7,
+          "token": " None",
+          "token_id": 5450,
+          "probability": 1.305456521549786e-06
+        },
+        {
+          "rank": 8,
+          "token": " Many",
+          "token_id": 8732,
+          "probability": 1.305456521549786e-06
+        },
+        {
+          "rank": 9,
+          "token": " Legs",
+          "token_id": 156403,
+          "probability": 7.917993798400857e-07
+        },
+        {
+          "rank": 10,
+          "token": "Six",
+          "token_id": 44955,
+          "probability": 1.071583923817343e-07
+        },
+        {
+          "rank": 11,
+          "token": " Usually",
+          "token_id": 34645,
+          "probability": 5.061804131401004e-08
+        },
+        {
+          "rank": 12,
+          "token": " Typically",
+          "token_id": 50338,
+          "probability": 5.061804131401004e-08
+        },
+        {
+          "rank": 13,
+          "token": "Eight",
+          "token_id": 80357,
+          "probability": 3.9421369280034924e-08
+        },
+        {
+          "rank": 14,
+          "token": " Several",
+          "token_id": 22624,
+          "probability": 3.070139342753464e-08
+        },
+        {
+          "rank": 15,
+          "token": " Variable",
+          "token_id": 37785,
+          "probability": 2.39102693200266e-08
+        },
+        {
+          "rank": 16,
+          "token": " Vary",
+          "token_id": 167407,
+          "probability": 1.129441162817102e-08
+        },
+        {
+          "rank": 17,
+          "token": " Sixteen",
+          "token_id": 177456,
+          "probability": 6.850406908398554e-09
+        },
+        {
+          "rank": 18,
+          "token": "\n\n",
+          "token_id": 108,
+          "probability": 5.335102137848935e-09
+        },
+        {
+          "rank": 19,
+          "token": " Three",
+          "token_id": 14019,
+          "probability": 5.335102137848935e-09
+        },
+        {
+          "rank": 20,
+          "token": " Multiple",
+          "token_id": 34489,
+          "probability": 3.2359031010287254e-09
+        }
+      ],
+      "animal_families": {
+        "spider": {
+          "family": "spider",
+          "family_probability": 3.524183169682088e-13,
+          "best_token": " Spider",
+          "best_token_id": 40046,
+          "best_token_probability": 3.5241823565304586e-13,
+          "best_token_rank": 188,
+          "variants": [
+            {
+              "token_id": 32261,
+              "surface": " spider",
+              "decoded": " spider"
+            },
+            {
+              "token_id": 40046,
+              "surface": " Spider",
+              "decoded": " Spider"
+            },
+            {
+              "token_id": 48587,
+              "surface": "spider",
+              "decoded": "spider"
+            },
+            {
+              "token_id": 86757,
+              "surface": "Spider",
+              "decoded": "Spider"
+            },
+            {
+              "token_id": 92664,
+              "surface": " spiders",
+              "decoded": " spiders"
+            }
+          ]
+        },
+        "ant": {
+          "family": "ant",
+          "family_probability": 1.1528645605437399e-13,
+          "best_token": " Ants",
+          "best_token_id": 190788,
+          "best_token_probability": 6.124110550273509e-14,
+          "best_token_rank": 301,
+          "variants": [
+            {
+              "token_id": 638,
+              "surface": "ant",
+              "decoded": "ant"
+            },
+            {
+              "token_id": 2314,
+              "surface": " ant",
+              "decoded": " ant"
+            },
+            {
+              "token_id": 5307,
+              "surface": " Ant",
+              "decoded": " Ant"
+            },
+            {
+              "token_id": 14054,
+              "surface": "Ant",
+              "decoded": "Ant"
+            },
+            {
+              "token_id": 63272,
+              "surface": " ants",
+              "decoded": " ants"
+            },
+            {
+              "token_id": 190788,
+              "surface": " Ants",
+              "decoded": " Ants"
+            }
+          ]
+        },
+        "wasp": {
+          "family": "wasp",
+          "family_probability": 4.079882263353049e-23,
+          "best_token": " wasps",
+          "best_token_id": 195052,
+          "best_token_probability": 3.546524570090985e-23,
+          "best_token_rank": 35985,
+          "variants": [
+            {
+              "token_id": 186153,
+              "surface": " wasp",
+              "decoded": " wasp"
+            },
+            {
+              "token_id": 195052,
+              "surface": " wasps",
+              "decoded": " wasps"
+            }
+          ]
+        },
+        "termite": {
+          "family": "termite",
+          "family_probability": 9.777056736113712e-22,
+          "best_token": " termites",
+          "best_token_id": 153967,
+          "best_token_probability": 9.77462022876741e-22,
+          "best_token_rank": 19828,
+          "variants": [
+            {
+              "token_id": 153967,
+              "surface": " termites",
+              "decoded": " termites"
+            },
+            {
+              "token_id": 212513,
+              "surface": " termite",
+              "decoded": " termite"
+            }
+          ]
+        },
+        "bee": {
+          "family": "bee",
+          "family_probability": 2.568789209076481e-17,
+          "best_token": " Bee",
+          "best_token_id": 42854,
+          "best_token_probability": 1.8130104961267858e-17,
+          "best_token_rank": 2632,
+          "variants": [
+            {
+              "token_id": 31479,
+              "surface": "bee",
+              "decoded": "bee"
+            },
+            {
+              "token_id": 32737,
+              "surface": " bee",
+              "decoded": " bee"
+            },
+            {
+              "token_id": 42854,
+              "surface": " Bee",
+              "decoded": " Bee"
+            },
+            {
+              "token_id": 43618,
+              "surface": " bees",
+              "decoded": " bees"
+            },
+            {
+              "token_id": 81468,
+              "surface": "Bee",
+              "decoded": "Bee"
+            },
+            {
+              "token_id": 127488,
+              "surface": " Bees",
+              "decoded": " Bees"
+            }
+          ]
+        },
+        "insect": {
+          "family": "insect",
+          "family_probability": 6.918710743208933e-11,
+          "best_token": " Insects",
+          "best_token_id": 193663,
+          "best_token_probability": 6.715902833853704e-11,
+          "best_token_rank": 59,
+          "variants": [
+            {
+              "token_id": 16368,
+              "surface": " insect",
+              "decoded": " insect"
+            },
+            {
+              "token_id": 30348,
+              "surface": " insects",
+              "decoded": " insects"
+            },
+            {
+              "token_id": 69532,
+              "surface": " Insect",
+              "decoded": " Insect"
+            },
+            {
+              "token_id": 182852,
+              "surface": "insect",
+              "decoded": "insect"
+            },
+            {
+              "token_id": 193663,
+              "surface": " Insects",
+              "decoded": " Insects"
+            },
+            {
+              "token_id": 194848,
+              "surface": "Insect",
+              "decoded": "Insect"
+            }
+          ]
+        }
+      },
+      "animal_family_ranking": [
+        "insect",
+        "spider",
+        "ant",
+        "bee",
+        "termite",
+        "wasp"
+      ],
+      "top_animal_family": "insect",
+      "top_animal_family_probability": 6.918710743208933e-11
+    }
+  },
+  "post_cleanup_identity": {
+    "condition": "post_cleanup",
+    "spider_suppression": 0.0,
+    "ant_factor": 0.0,
+    "total_delta_norm": 0.0,
+    "answer": "Spider",
+    "top_token": " Spider",
+    "top_token_id": 40046,
+    "top_probability": 0.9999997615814209,
+    "top_tokens": [
+      {
+        "rank": 1,
+        "token": " Spider",
+        "token_id": 40046,
+        "probability": 0.9999997615814209
+      },
+      {
+        "rank": 2,
+        "token": " spider",
+        "token_id": 32261,
+        "probability": 1.1253514742293191e-07
+      },
+      {
+        "rank": 3,
+        "token": " Sp",
+        "token_id": 2177,
+        "probability": 5.3157837243134054e-08
+      },
+      {
+        "rank": 4,
+        "token": "Spider",
+        "token_id": 86757,
+        "probability": 1.522997550296168e-08
+      },
+      {
+        "rank": 5,
+        "token": "\n\n",
+        "token_id": 108,
+        "probability": 7.582558469998446e-10
+      },
+      {
+        "rank": 6,
+        "token": " Arach",
+        "token_id": 212571,
+        "probability": 3.7751333309410384e-11
+      },
+      {
+        "rank": 7,
+        "token": "�",
+        "token_id": 432,
+        "probability": 2.2897343743277787e-11
+      },
+      {
+        "rank": 8,
+        "token": "  ",
+        "token_id": 138,
+        "probability": 1.0815939290031995e-11
+      },
+      {
+        "rank": 9,
+        "token": " Ar",
+        "token_id": 1572,
+        "probability": 6.5601985649310635e-12
+      },
+      {
+        "rank": 10,
+        "token": " Tarant",
+        "token_id": 165161,
+        "probability": 3.978961691381011e-12
+      },
+      {
+        "rank": 11,
+        "token": " **",
+        "token_id": 5213,
+        "probability": 3.0988185108216104e-12
+      },
+      {
+        "rank": 12,
+        "token": "spider",
+        "token_id": 48587,
+        "probability": 1.8795284339317986e-12
+      },
+      {
+        "rank": 13,
+        "token": " Weaver",
+        "token_id": 79781,
+        "probability": 1.8795284339317986e-12
+      },
+      {
+        "rank": 14,
+        "token": "\n",
+        "token_id": 107,
+        "probability": 1.139991529994222e-12
+      },
+      {
+        "rank": 15,
+        "token": " Spinner",
+        "token_id": 88464,
+        "probability": 4.193794562925429e-13
+      },
+      {
+        "rank": 16,
+        "token": " Crab",
+        "token_id": 88398,
+        "probability": 3.2661305843055544e-13
+      },
+      {
+        "rank": 17,
+        "token": " ",
+        "token_id": 236743,
+        "probability": 9.357620879340764e-14
+      },
+      {
+        "rank": 18,
+        "token": " Web",
+        "token_id": 6940,
+        "probability": 5.675683854107147e-14
+      },
+      {
+        "rank": 19,
+        "token": " Arac",
+        "token_id": 230415,
+        "probability": 3.4424764064735006e-14
+      },
+      {
+        "rank": 20,
+        "token": "蜘蛛",
+        "token_id": 182236,
+        "probability": 3.4424764064735006e-14
+      }
+    ],
+    "animal_families": {
+      "spider": {
+        "family": "spider",
+        "family_probability": 0.9999998807907104,
+        "best_token": " Spider",
+        "best_token_id": 40046,
+        "best_token_probability": 0.9999997615814209,
+        "best_token_rank": 1,
+        "variants": [
+          {
+            "token_id": 32261,
+            "surface": " spider",
+            "decoded": " spider"
+          },
+          {
+            "token_id": 40046,
+            "surface": " Spider",
+            "decoded": " Spider"
+          },
+          {
+            "token_id": 48587,
+            "surface": "spider",
+            "decoded": "spider"
+          },
+          {
+            "token_id": 86757,
+            "surface": "Spider",
+            "decoded": "Spider"
+          },
+          {
+            "token_id": 92664,
+            "surface": " spiders",
+            "decoded": " spiders"
+          }
+        ]
+      },
+      "ant": {
+        "family": "ant",
+        "family_probability": 6.327397658227197e-17,
+        "best_token": " Ant",
+        "best_token_id": 5307,
+        "best_token_probability": 3.5571026197213685e-17,
+        "best_token_rank": 64,
+        "variants": [
+          {
+            "token_id": 638,
+            "surface": "ant",
+            "decoded": "ant"
+          },
+          {
+            "token_id": 2314,
+            "surface": " ant",
+            "decoded": " ant"
+          },
+          {
+            "token_id": 5307,
+            "surface": " Ant",
+            "decoded": " Ant"
+          },
+          {
+            "token_id": 14054,
+            "surface": "Ant",
+            "decoded": "Ant"
+          },
+          {
+            "token_id": 63272,
+            "surface": " ants",
+            "decoded": " ants"
+          },
+          {
+            "token_id": 190788,
+            "surface": " Ants",
+            "decoded": " Ants"
+          }
+        ]
+      },
+      "wasp": {
+        "family": "wasp",
+        "family_probability": 2.862541874035861e-20,
+        "best_token": " wasp",
+        "best_token_id": 186153,
+        "best_token_probability": 2.8625179633462795e-20,
+        "best_token_rank": 304,
+        "variants": [
+          {
+            "token_id": 186153,
+            "surface": " wasp",
+            "decoded": " wasp"
+          },
+          {
+            "token_id": 195052,
+            "surface": " wasps",
+            "decoded": " wasps"
+          }
+        ]
+      },
+      "termite": {
+        "family": "termite",
+        "family_probability": 6.892418861062305e-26,
+        "best_token": " termite",
+        "best_token_id": 212513,
+        "best_token_probability": 6.887527307152352e-26,
+        "best_token_rank": 6817,
+        "variants": [
+          {
+            "token_id": 153967,
+            "surface": " termites",
+            "decoded": " termites"
+          },
+          {
+            "token_id": 212513,
+            "surface": " termite",
+            "decoded": " termite"
+          }
+        ]
+      },
+      "bee": {
+        "family": "bee",
+        "family_probability": 6.307835299961461e-16,
+        "best_token": " Bee",
+        "best_token_id": 42854,
+        "best_token_probability": 6.305115265409591e-16,
+        "best_token_rank": 36,
+        "variants": [
+          {
+            "token_id": 31479,
+            "surface": "bee",
+            "decoded": "bee"
+          },
+          {
+            "token_id": 32737,
+            "surface": " bee",
+            "decoded": " bee"
+          },
+          {
+            "token_id": 42854,
+            "surface": " Bee",
+            "decoded": " Bee"
+          },
+          {
+            "token_id": 43618,
+            "surface": " bees",
+            "decoded": " bees"
+          },
+          {
+            "token_id": 81468,
+            "surface": "Bee",
+            "decoded": "Bee"
+          },
+          {
+            "token_id": 127488,
+            "surface": " Bees",
+            "decoded": " Bees"
+          }
+        ]
+      },
+      "insect": {
+        "family": "insect",
+        "family_probability": 7.698008219368321e-15,
+        "best_token": " Insect",
+        "best_token_id": 69532,
+        "best_token_probability": 7.681203085694796e-15,
+        "best_token_rank": 25,
+        "variants": [
+          {
+            "token_id": 16368,
+            "surface": " insect",
+            "decoded": " insect"
+          },
+          {
+            "token_id": 30348,
+            "surface": " insects",
+            "decoded": " insects"
+          },
+          {
+            "token_id": 69532,
+            "surface": " Insect",
+            "decoded": " Insect"
+          },
+          {
+            "token_id": 182852,
+            "surface": "insect",
+            "decoded": "insect"
+          },
+          {
+            "token_id": 193663,
+            "surface": " Insects",
+            "decoded": " Insects"
+          },
+          {
+            "token_id": 194848,
+            "surface": "Insect",
+            "decoded": "Insect"
+          }
+        ]
+      }
+    },
+    "animal_family_ranking": [
+      "spider",
+      "insect",
+      "bee",
+      "ant",
+      "wasp",
+      "termite"
+    ],
+    "top_animal_family": "spider",
+    "top_animal_family_probability": 0.9999998807907104
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.16.1",
+    "cuda": "12.8",
+    "gpu_name": "NVIDIA A40",
+    "gpu_capability": [
+      8,
+      6
+    ],
+    "model_revision_requested": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "model_revision_resolved": "093f9f388b31de276ce2de164bdc2081324b9767"
+  },
+  "validation": {
+    "both_prompts_have_27_tokens": true,
+    "edited_positions_exactly_aligned": true,
+    "clean_identity_answer_is_spider": true,
+    "zero_strength_matches_clean_logits": true,
+    "hooks_removed": true,
+    "legs_clean_answer_is_eight": true,
+    "legs_full_answer_is_six": true
+  },
+  "artifacts": {
+    "json": "spider_ant_identity_control.json",
+    "csv": "spider_ant_identity_control.csv",
+    "manifest": "spider_ant_identity_control_manifest.json",
+    "figure": "spider_ant_identity_control.png"
+  }
+}

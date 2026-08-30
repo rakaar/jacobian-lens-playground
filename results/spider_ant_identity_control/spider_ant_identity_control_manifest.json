@@ -1,0 +1,579 @@
+{
+  "experiment": "matched-token spider-to-ant animal-identity control",
+  "created_at_unix": 1788082172.872429,
+  "model": "google/gemma-3-4b-it",
+  "source_manifest": "results/spider_ant_layer_specific_optimization/spider_ant_layer_specific_manifest.json",
+  "identity_prompt": "<bos><start_of_turn>user\nAnswer in one word: What animal is famous for web-spinning behavior worldwide?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+  "legs_prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does a web-spinning animal have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+  "identity_prompt_tokens": [
+    {
+      "position": 0,
+      "token_id": 2,
+      "token": "<bos>"
+    },
+    {
+      "position": 1,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 2,
+      "token_id": 2364,
+      "token": "user"
+    },
+    {
+      "position": 3,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 4,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 5,
+      "token_id": 528,
+      "token": " in"
+    },
+    {
+      "position": 6,
+      "token_id": 886,
+      "token": " one"
+    },
+    {
+      "position": 7,
+      "token_id": 3658,
+      "token": " word"
+    },
+    {
+      "position": 8,
+      "token_id": 236787,
+      "token": ":"
+    },
+    {
+      "position": 9,
+      "token_id": 2900,
+      "token": " What"
+    },
+    {
+      "position": 10,
+      "token_id": 7626,
+      "token": " animal"
+    },
+    {
+      "position": 11,
+      "token_id": 563,
+      "token": " is"
+    },
+    {
+      "position": 12,
+      "token_id": 9639,
+      "token": " famous"
+    },
+    {
+      "position": 13,
+      "token_id": 573,
+      "token": " for"
+    },
+    {
+      "position": 14,
+      "token_id": 4108,
+      "token": " web"
+    },
+    {
+      "position": 15,
+      "token_id": 236772,
+      "token": "-"
+    },
+    {
+      "position": 16,
+      "token_id": 208971,
+      "token": "spinning"
+    },
+    {
+      "position": 17,
+      "token_id": 6868,
+      "token": " behavior"
+    },
+    {
+      "position": 18,
+      "token_id": 15454,
+      "token": " worldwide"
+    },
+    {
+      "position": 19,
+      "token_id": 236881,
+      "token": "?"
+    },
+    {
+      "position": 20,
+      "token_id": 106,
+      "token": "<end_of_turn>"
+    },
+    {
+      "position": 21,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 22,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 23,
+      "token_id": 4368,
+      "token": "model"
+    },
+    {
+      "position": 24,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 25,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 26,
+      "token_id": 236787,
+      "token": ":"
+    }
+  ],
+  "legs_prompt_tokens": [
+    {
+      "position": 0,
+      "token_id": 2,
+      "token": "<bos>"
+    },
+    {
+      "position": 1,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 2,
+      "token_id": 2364,
+      "token": "user"
+    },
+    {
+      "position": 3,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 4,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 5,
+      "token_id": 528,
+      "token": " in"
+    },
+    {
+      "position": 6,
+      "token_id": 886,
+      "token": " one"
+    },
+    {
+      "position": 7,
+      "token_id": 3658,
+      "token": " word"
+    },
+    {
+      "position": 8,
+      "token_id": 236787,
+      "token": ":"
+    },
+    {
+      "position": 9,
+      "token_id": 2088,
+      "token": " How"
+    },
+    {
+      "position": 10,
+      "token_id": 1551,
+      "token": " many"
+    },
+    {
+      "position": 11,
+      "token_id": 14897,
+      "token": " legs"
+    },
+    {
+      "position": 12,
+      "token_id": 1677,
+      "token": " does"
+    },
+    {
+      "position": 13,
+      "token_id": 496,
+      "token": " a"
+    },
+    {
+      "position": 14,
+      "token_id": 4108,
+      "token": " web"
+    },
+    {
+      "position": 15,
+      "token_id": 236772,
+      "token": "-"
+    },
+    {
+      "position": 16,
+      "token_id": 208971,
+      "token": "spinning"
+    },
+    {
+      "position": 17,
+      "token_id": 7626,
+      "token": " animal"
+    },
+    {
+      "position": 18,
+      "token_id": 735,
+      "token": " have"
+    },
+    {
+      "position": 19,
+      "token_id": 236881,
+      "token": "?"
+    },
+    {
+      "position": 20,
+      "token_id": 106,
+      "token": "<end_of_turn>"
+    },
+    {
+      "position": 21,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 22,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 23,
+      "token_id": 4368,
+      "token": "model"
+    },
+    {
+      "position": 24,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 25,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 26,
+      "token_id": 236787,
+      "token": ":"
+    }
+  ],
+  "edited_position_alignment": [
+    {
+      "position": 16,
+      "legs_token": "spinning",
+      "identity_token": "spinning",
+      "exact_match": true
+    },
+    {
+      "position": 21,
+      "legs_token": "\n",
+      "identity_token": "\n",
+      "exact_match": true
+    }
+  ],
+  "layers": [
+    7,
+    22
+  ],
+  "spider_suppression": 1.0,
+  "ant_factor": 4.0,
+  "spider_instances": [
+    {
+      "role": "spider",
+      "layer": 7,
+      "feature": 14209,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider silk or webbing",
+      "clean_activation": 84.83981323242188,
+      "max_act_approx": 154.2984,
+      "normalized_activation": 0.5498424690886093,
+      "learned_threshold": 13.859237670898438
+    },
+    {
+      "role": "spider",
+      "layer": 7,
+      "feature": 137239,
+      "position": 16,
+      "token": "spinning",
+      "description": "all things spider",
+      "clean_activation": 133.324951171875,
+      "max_act_approx": 187.8817,
+      "normalized_activation": 0.709621805486511,
+      "learned_threshold": 15.177665710449219
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and spiders",
+      "clean_activation": 1855.89599609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6425053560439912,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 21,
+      "token": "\n",
+      "description": "spider and spiders",
+      "clean_activation": 1739.02099609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6020435986795186,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 60476,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and webs",
+      "clean_activation": 562.7435913085938,
+      "max_act_approx": 1082.1075,
+      "normalized_activation": 0.5200440726162546,
+      "learned_threshold": 104.35870361328125
+    }
+  ],
+  "ant_instances": [
+    {
+      "role": "ant",
+      "layer": 7,
+      "feature": 42685,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ants, ant colonies",
+      "forced": false,
+      "reference_preactivation": 126.26797485351562,
+      "reference_activation": 126.26797485351562,
+      "max_act_approx": 190.487,
+      "normalized_reference_activation": 0.662869250151011,
+      "learned_threshold": 12.059738159179688,
+      "clean_spider_prompt_preactivation": -69.82457733154297,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 1703,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ant agonist antarctic anticipate antenna",
+      "forced": true,
+      "reference_preactivation": 1823.1155242919922,
+      "reference_activation": 1823.1155242919922,
+      "max_act_approx": 3003.5374,
+      "normalized_reference_activation": 0.6069894532666689,
+      "learned_threshold": 76.20599365234375,
+      "clean_spider_prompt_preactivation": -1042.3992462158203,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 197021,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ANT, cannot, ant",
+      "forced": true,
+      "reference_preactivation": 360.43941497802734,
+      "reference_activation": 360.43941497802734,
+      "max_act_approx": 748.1075,
+      "normalized_reference_activation": 0.4818016327573609,
+      "learned_threshold": 134.7215576171875,
+      "clean_spider_prompt_preactivation": -659.6901626586914,
+      "clean_spider_prompt_activation": 0.0
+    }
+  ],
+  "animal_token_variants": {
+    "spider": [
+      {
+        "token_id": 32261,
+        "surface": " spider",
+        "decoded": " spider"
+      },
+      {
+        "token_id": 40046,
+        "surface": " Spider",
+        "decoded": " Spider"
+      },
+      {
+        "token_id": 48587,
+        "surface": "spider",
+        "decoded": "spider"
+      },
+      {
+        "token_id": 86757,
+        "surface": "Spider",
+        "decoded": "Spider"
+      },
+      {
+        "token_id": 92664,
+        "surface": " spiders",
+        "decoded": " spiders"
+      }
+    ],
+    "ant": [
+      {
+        "token_id": 638,
+        "surface": "ant",
+        "decoded": "ant"
+      },
+      {
+        "token_id": 2314,
+        "surface": " ant",
+        "decoded": " ant"
+      },
+      {
+        "token_id": 5307,
+        "surface": " Ant",
+        "decoded": " Ant"
+      },
+      {
+        "token_id": 14054,
+        "surface": "Ant",
+        "decoded": "Ant"
+      },
+      {
+        "token_id": 63272,
+        "surface": " ants",
+        "decoded": " ants"
+      },
+      {
+        "token_id": 190788,
+        "surface": " Ants",
+        "decoded": " Ants"
+      }
+    ],
+    "wasp": [
+      {
+        "token_id": 186153,
+        "surface": " wasp",
+        "decoded": " wasp"
+      },
+      {
+        "token_id": 195052,
+        "surface": " wasps",
+        "decoded": " wasps"
+      }
+    ],
+    "termite": [
+      {
+        "token_id": 153967,
+        "surface": " termites",
+        "decoded": " termites"
+      },
+      {
+        "token_id": 212513,
+        "surface": " termite",
+        "decoded": " termite"
+      }
+    ],
+    "bee": [
+      {
+        "token_id": 31479,
+        "surface": "bee",
+        "decoded": "bee"
+      },
+      {
+        "token_id": 32737,
+        "surface": " bee",
+        "decoded": " bee"
+      },
+      {
+        "token_id": 42854,
+        "surface": " Bee",
+        "decoded": " Bee"
+      },
+      {
+        "token_id": 43618,
+        "surface": " bees",
+        "decoded": " bees"
+      },
+      {
+        "token_id": 81468,
+        "surface": "Bee",
+        "decoded": "Bee"
+      },
+      {
+        "token_id": 127488,
+        "surface": " Bees",
+        "decoded": " Bees"
+      }
+    ],
+    "insect": [
+      {
+        "token_id": 16368,
+        "surface": " insect",
+        "decoded": " insect"
+      },
+      {
+        "token_id": 30348,
+        "surface": " insects",
+        "decoded": " insects"
+      },
+      {
+        "token_id": 69532,
+        "surface": " Insect",
+        "decoded": " Insect"
+      },
+      {
+        "token_id": 182852,
+        "surface": "insect",
+        "decoded": "insect"
+      },
+      {
+        "token_id": 193663,
+        "surface": " Insects",
+        "decoded": " Insects"
+      },
+      {
+        "token_id": 194848,
+        "surface": "Insect",
+        "decoded": "Insect"
+      }
+    ]
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.16.1",
+    "cuda": "12.8",
+    "gpu_name": "NVIDIA A40",
+    "gpu_capability": [
+      8,
+      6
+    ],
+    "model_revision_requested": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "model_revision_resolved": "093f9f388b31de276ce2de164bdc2081324b9767"
+  }
+}
