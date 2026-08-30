@@ -58,6 +58,7 @@ DEFAULT_FEATURE_MANIFEST = Path(
     "spider_ant_layer_specific_manifest.json"
 )
 DEFAULT_OUTPUT_DIR = Path("results/sae_jlens_before_after")
+DEFAULT_MODEL_REVISION = "093f9f388b31de276ce2de164bdc2081324b9767"
 DEFAULT_LENS_REPO = "neuronpedia/jacobian-lens"
 DEFAULT_LENS_FILENAME = (
     "gemma-3-4b-it/jlens/Salesforce-wikitext/"
@@ -102,6 +103,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--feature-manifest", type=Path, default=DEFAULT_FEATURE_MANIFEST)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--model-id", default=MODEL_ID)
+    parser.add_argument("--model-revision", default=DEFAULT_MODEL_REVISION)
+    parser.add_argument(
+        "--attention-implementation",
+        choices=("eager", "sdpa"),
+        default="eager",
+        help="Attention backend; eager matches the established 95.22%% SAE sweep.",
+    )
     parser.add_argument("--spider-prompt", default=SPIDER_PROMPT)
     parser.add_argument("--lens-repo", default=DEFAULT_LENS_REPO)
     parser.add_argument("--lens-filename", default=DEFAULT_LENS_FILENAME)
@@ -817,13 +825,18 @@ def main() -> None:
 
     print(f"Loading model {args.model_id}")
     tokenizer = AutoTokenizer.from_pretrained(
-        args.model_id, token=os.environ.get("HF_TOKEN") or None
+        args.model_id,
+        token=os.environ.get("HF_TOKEN") or None,
+        revision=args.model_revision,
     )
     model = AutoModelForCausalLM.from_pretrained(
         args.model_id,
         torch_dtype=torch.bfloat16,
-        device_map="auto",
+        device_map="cuda",
         token=os.environ.get("HF_TOKEN") or None,
+        revision=args.model_revision,
+        attn_implementation=args.attention_implementation,
+        low_cpu_mem_usage=True,
     )
     model.eval()
     layers = find_text_layers(model)
@@ -839,7 +852,9 @@ def main() -> None:
         "jlens_version": importlib.metadata.version("jlens"),
         "cuda_version": torch.version.cuda,
         "gpu_name": torch.cuda.get_device_name(device) if torch.cuda.is_available() else None,
-        "model_commit_hash": getattr(model.config, "_commit_hash", None),
+        "model_revision_requested": args.model_revision,
+        "model_revision_resolved": getattr(model.config, "_commit_hash", None),
+        "attention_implementation": args.attention_implementation,
     }
     for layer, position in CAPTURE_CELLS:
         if position >= len(prompt_rows):
