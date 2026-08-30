@@ -1,0 +1,20 @@
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading pinned google/gemma-3-4b-it with eager attention
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Running clean trajectory
+Running full L7+L22 intervention trajectory
+L22: ||delta h||=1362.839, cosine=0.999161; clean=[ usually,  typically,  generally,  naturally,  normally] -> edited=[ when,  anymore,  fewer,  usually,  nowadays]
+L23: ||delta h||=1444.145, cosine=0.998996; clean=[ when,  usually,  typically,  proportionally,  normally] -> edited=[ when, when,  anymore,  anyway,  fewer]
+L24: ||delta h||=1582.727, cosine=0.998846; clean=[ fewer,  legs,  besides,  minus,  when] -> edited=[ when,  fewer,  legs,  indoors,  anyway]
+L25: ||delta h||=1799.256, cosine=0.998688; clean=[ legs,  when,  limbs,  fewer,  appendages] -> edited=[ when,  legs,  limbs,  fewer,  appendages]
+L26: ||delta h||=1958.598, cosine=0.998727; clean=[ legs,  when,  limbs,  fewer,  spider] -> edited=[ when,  legs,  limbs,  fewer,  now]
+L27: ||delta h||=2078.235, cosine=0.998873; clean=[ legs,  limbs,  when,  fewer,  spider] -> edited=[ legs,  when,  limbs,  fewer,  mostly]
+L28: ||delta h||=2376.123, cosine=0.999084; clean=[ legs,  when,  limbs,  Legs,  fewer] -> edited=[ legs,  when,  limbs,  fewer,  Legs]
+L29: ||delta h||=2477.077, cosine=0.999088; clean=[ legs,  Legs,  when,  limbs, legs] -> edited=[ legs,  when,  limbs,  Legs,  fewer]
+L30: ||delta h||=2961.153, cosine=0.998811; clean=[ legs,  when,  Legs,  leg,  if] -> edited=[ legs,  when,  Legs,  limbs,  leg]
+L31: ||delta h||=3084.945, cosine=0.998705; clean=[ legs,  Legs,  leg,  when,  limbs] -> edited=[ legs,  when,  Legs,  limbs,  leg]
+L32: ||delta h||=3192.573, cosine=0.998738; clean=[ legs,  when,  in,  that,  generally] -> edited=[ legs,  when,  now,  in,  more]
+L33: ||delta h||=3123.357, cosine=0.998263; clean=[ legs,  in,  when,  on,  that] -> edited=[ when,  legs,  in,  now,  on]
+Finished: P(Six)=95.222110%, P(Eight)=4.740829%.
+Saved results to results/sae_jlens_p18_downstream

@@ -1,0 +1,41 @@
+{
+  "experiment": "P16-P21 downstream J-Lens position comparison",
+  "positions": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "layers": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "directly_edited_positions": {
+    "16": "L7 and L22 spider suppression plus ant injection",
+    "21": "L22 spider suppression only"
+  },
+  "source_results": [
+    "results/sae_jlens_p16_downstream/sae_jlens_p16_downstream.json",
+    "results/sae_jlens_p17_downstream/sae_jlens_p17_downstream.json",
+    "results/sae_jlens_p18_downstream/sae_jlens_p18_downstream.json",
+    "results/sae_jlens_p19_downstream/sae_jlens_p19_downstream.json",
+    "results/sae_jlens_p20_downstream/sae_jlens_p20_downstream.json",
+    "results/sae_jlens_p21_downstream/sae_jlens_p21_downstream.json"
+  ],
+  "artifacts": {
+    "figure": "sae_jlens_position_comparison.png",
+    "csv": "sae_jlens_position_comparison.csv"
+  }
+}

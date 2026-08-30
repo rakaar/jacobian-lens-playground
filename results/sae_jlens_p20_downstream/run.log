@@ -1,0 +1,20 @@
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading pinned google/gemma-3-4b-it with eager attention
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Running clean trajectory
+Running full L7+L22 intervention trajectory
+L22: ||delta h||=360.717, cosine=0.999942; clean=[ Antwort, Answer, answer, Reply, ChatGPT] -> edited=[ Antwort, Answer, answer, Reply, ChatGPT]
+L23: ||delta h||=505.414, cosine=0.999918; clean=[answer, Answer,  Antwort, Resposta, answers] -> edited=[answer, Answer,  Antwort, Resposta, resposta]
+L24: ||delta h||=583.453, cosine=0.999886; clean=[Answer,  Answer, answer,  answer,  Antwort] -> edited=[Answer, answer,  Answer,  answer,  Antwort]
+L25: ||delta h||=711.829, cosine=0.999845; clean=[Answer,  Answer, answer,  answer, ANSWER] -> edited=[Answer, answer,  Answer,  answer, ANSWER]
+L26: ||delta h||=886.196, cosine=0.999798; clean=[ answer, Answer,  Answer, answer, ANSWER] -> edited=[ answer, Answer,  Answer, answer, ANSWER]
+L27: ||delta h||=1094.138, cosine=0.999740; clean=[ Answer, Answer,  answer,  Response,  Reply] -> edited=[ Answer, Answer,  answer,  Reply,  Response]
+L28: ||delta h||=1393.198, cosine=0.999709; clean=[ Answer, Answer,  Response,  Reply,  Respond] -> edited=[ Answer, Answer,  Response,  Reply,  Respond]
+L29: ||delta h||=1691.194, cosine=0.999590; clean=[Answer,  Answer,  crane,  Response,  answer] -> edited=[Answer,  Answer,  crane, answer,  answer]
+L30: ||delta h||=2437.435, cosine=0.999051; clean=[ crane,  WD,  scre,  Crane, acetyl] -> edited=[ crane, acetyl, Cher,  Crane,  WD]
+L31: ||delta h||=2657.607, cosine=0.998791; clean=[ Answer,  Response,  More,  Att,  physical] -> edited=[ Answer,  More,  physical,  Response,  Att]
+L32: ||delta h||=3517.458, cosine=0.997933; clean=[ scre,  Buttons,  Four,  More,  Dev] -> edited=[ Buttons,  scre,  shelf,  More,  inventory]
+L33: ||delta h||=4980.298, cosine=0.990307; clean=[ Buttons,  Four, Four, e, shelf] -> edited=[ Buttons, shelf,  Attached, e,  Button]
+Finished: P(Six)=95.222110%, P(Eight)=4.740829%.
+Saved results to results/sae_jlens_p20_downstream
