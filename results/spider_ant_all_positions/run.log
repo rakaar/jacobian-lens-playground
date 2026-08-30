@@ -1,0 +1,47 @@
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading pinned Gemma-3-4B-IT in bfloat16...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Fetching 2 files:  50%|█████     | 1/2 [00:21<00:21, 21.89s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:24<00:00, 10.26s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:24<00:00, 12.00s/it]
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 4/883 [00:00<00:23, 37.19it/s]
+Loading weights:   3%|▎         | 29/883 [00:00<00:05, 154.87it/s]
+Loading weights:   6%|▌         | 55/883 [00:00<00:04, 194.55it/s]
+Loading weights:   9%|▊         | 77/883 [00:00<00:03, 203.76it/s]
+Loading weights:  11%|█         | 98/883 [00:00<00:04, 186.58it/s]
+Loading weights:  14%|█▎        | 121/883 [00:00<00:03, 193.58it/s]
+Loading weights:  17%|█▋        | 146/883 [00:00<00:03, 203.84it/s]
+Loading weights:  19%|█▉        | 167/883 [00:00<00:03, 199.02it/s]
+Loading weights:  21%|██        | 187/883 [00:01<00:03, 187.70it/s]
+Loading weights:  24%|██▍       | 212/883 [00:01<00:03, 199.37it/s]
+Loading weights:  27%|██▋       | 237/883 [00:01<00:03, 197.82it/s]
+Loading weights:  30%|██▉       | 264/883 [00:01<00:02, 210.62it/s]
+Loading weights:  33%|███▎      | 289/883 [00:01<00:02, 215.23it/s]
+Loading weights:  36%|███▌      | 315/883 [00:01<00:02, 219.10it/s]
+Loading weights:  39%|███▊      | 340/883 [00:01<00:02, 223.01it/s]
+Loading weights:  42%|████▏     | 368/883 [00:01<00:02, 237.22it/s]
+Loading weights:  45%|████▍     | 393/883 [00:01<00:02, 239.39it/s]
+Loading weights:  47%|████▋     | 419/883 [00:02<00:02, 226.97it/s]
+Loading weights:  53%|█████▎    | 470/883 [00:02<00:01, 303.79it/s]
+Loading weights:  70%|███████   | 622/883 [00:02<00:00, 643.67it/s]
+Loading weights:  87%|████████▋ | 766/883 [00:02<00:00, 871.18it/s]
+Loading weights: 100%|██████████| 883/883 [00:02<00:00, 367.96it/s]
+Running zero_suffix_control at positions 16..26...
+  top=' Eight' P(Six)=0.000011% P(Eight)=99.998248% P(Four)=0.001670%
+Running established_sparse_both at positions 16..21...
+  top=' Six' P(Six)=95.222110% P(Eight)=4.740829% P(Four)=0.031943%
+Running position16_both at positions 16..16...
+  top=' Eight' P(Six)=9.521361% P(Eight)=90.336162% P(Four)=0.135815%
+Running suffix_spider_only at positions 16..26...
+  top=' Eight' P(Six)=0.002754% P(Eight)=99.996912% P(Four)=0.000290%
+Running suffix_ant_only at positions 16..26...
+  top=' Two' P(Six)=0.000010% P(Eight)=35.669425% P(Four)=0.068858%
+Running suffix_both at positions 16..26...
+  top=' Two' P(Six)=0.000009% P(Eight)=4.742359% P(Four)=0.059697%
+Finished suffix experiment: top=' Two', P(Six)=0.000009%, P(Eight)=4.742359%, P(Four)=0.059697%.
+Saved results/spider_ant_all_positions/spider_ant_all_positions.json, results/spider_ant_all_positions/spider_ant_all_positions.csv, results/spider_ant_all_positions/spider_ant_all_positions_manifest.json, and results/spider_ant_all_positions/spider_ant_all_positions_probabilities.png.
