@@ -1,0 +1,91 @@
+comparison,before_condition,after_condition,layer,position,direction,rank,token_id,token,delta_logit
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,1,78929, Haiti,8.21875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,2,159319, Haitian,7.849609375
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,3,210118, isra,7.65625
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,4,23670, toe,7.546875
+L7_P16_clean_to_full,clean,L7_L22,7,16,increase,5,110240, dictator,7.34375
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,1,167404, watercolour,-9.53125
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,2,99724, folklore,-8.625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,3,212464, folklor,-8.421875
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,4,177453, Hoyt,-8.140625
+L7_P16_clean_to_full,clean,L7_L22,7,16,decrease,5,176333, VFX,-7.984375
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,1,232377, supon,35.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,2,93369,llr,32.3125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,3,99159, ij,30.8125
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,4,27349,LR,29.625
+L22_P16_clean_to_full,clean,L7_L22,22,16,increase,5,67701,nden,28.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,1,32261, spider,-59.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,2,40046, Spider,-57.5
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,3,48587,spider,-53.25
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,4,92664, spiders,-51.0
+L22_P16_clean_to_full,clean,L7_L22,22,16,decrease,5,86757,Spider,-49.0
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,1,71170, hlav,23.125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,2,30937, bhi,21.359375
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,3,236732, gax,21.125
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,4,128099, lahat,20.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,increase,5,13097, aussi,20.4375
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,1,92664, spiders,-61.0
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,2,32261, spider,-56.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,3,40046, Spider,-51.5
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,4,48587,spider,-51.0
+L22_P21_clean_to_full,clean,L7_L22,22,21,decrease,5,86757,Spider,-48.25
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,1,147161,Bacteria,11.75
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,2,28878,atte,11.46875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,3,70851, Buhari,11.4375
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,4,70465,Covid,11.296875
+L22_P16_upstream_L7,clean,L7_only,22,16,increase,5,151703,bacteria,11.25
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,1,32261, spider,-13.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,2,40046, Spider,-12.5
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,3,206499, Dragonfly,-12.0
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,4,30835, specialists,-11.1875
+L22_P16_upstream_L7,clean,L7_only,22,16,decrease,5,189597, Paisley,-11.0
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,1,71170, hlav,20.59375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,2,30937, bhi,20.0625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,3,12873, juga,19.65625
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,4,135020, meeste,19.4375
+L22_P21_upstream_L7,clean,L7_only,22,21,increase,5,58299, maggior,19.40625
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,1,92664, spiders,-50.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,2,32261, spider,-45.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,3,48587,spider,-40.25
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,4,40046, Spider,-38.75
+L22_P21_upstream_L7,clean,L7_only,22,21,decrease,5,86757,Spider,-37.25
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,1,99159, ij,29.9375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,2,93369,llr,27.9375
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,3,232377, supon,27.8125
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,4,175963, Byl,25.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,increase,5,131596, mesmos,25.6875
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,1,32261, spider,-46.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,2,40046, Spider,-45.0
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,3,48587,spider,-42.75
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,4,86757,Spider,-40.5
+L22_P16_local_after_L7,L7_only,L7_L22,22,16,decrease,5,92664, spiders,-40.0
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,1,44933,kotlin,5.37109375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,2,25188,Fun,5.37109375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,3,15170,fun,5.34375
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,4,93875,Kot,5.3310546875
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,increase,5,61253,FUN,4.90625
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,1,40046, Spider,-12.75
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,2,32261, spider,-11.25
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,3,86757,Spider,-11.0
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,4,48587,spider,-10.75
+L22_P21_local_after_L7,L7_only,L7_L22,22,21,decrease,5,92664, spiders,-10.25
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,1,232377, supon,30.8125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,2,93369,llr,29.875
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,3,99159, ij,29.3125
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,4,27349,LR,26.75
+L22_P16_local_clean_context,clean,L22_only,22,16,increase,5,175963, Byl,25.625
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,1,32261, spider,-55.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,2,40046, Spider,-54.5
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,3,48587,spider,-50.75
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,4,86757,Spider,-48.0
+L22_P16_local_clean_context,clean,L22_only,22,16,decrease,5,92664, spiders,-48.0
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,1,44933,kotlin,11.859375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,2,93875,Kot,11.7109375
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,3,15170,fun,11.578125
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,4,25188,Fun,11.55322265625
+L22_P21_local_clean_context,clean,L22_only,22,21,increase,5,51836,Think,11.234375
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,1,40046, Spider,-23.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,2,86757,Spider,-19.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,3,32261, spider,-19.0
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,4,48587,spider,-18.5
+L22_P21_local_clean_context,clean,L22_only,22,21,decrease,5,6940, Web,-18.375

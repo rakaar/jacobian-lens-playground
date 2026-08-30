@@ -1,0 +1,4181 @@
+{
+  "experiment": "J-Lens readout before and after frozen L7+L22 transcoder intervention",
+  "model": "google/gemma-3-4b-it",
+  "feature_manifest": "results/spider_ant_layer_specific_optimization/spider_ant_layer_specific_manifest.json",
+  "lens": {
+    "repo": "neuronpedia/jacobian-lens",
+    "filename": "gemma-3-4b-it/jlens/Salesforce-wikitext/gemma-3-4b-it_jacobian_lens.pt",
+    "resolved_path": "/workspace/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/0731326edff4ae730ffc5356fe1a4728c748b3a6/gemma-3-4b-it/jlens/Salesforce-wikitext/gemma-3-4b-it_jacobian_lens.pt",
+    "resolved_revision": "0731326edff4ae730ffc5356fe1a4728c748b3a6",
+    "n_prompts": 546,
+    "d_model": 2560,
+    "source_layers_used": [
+      7,
+      22
+    ]
+  },
+  "runtime": {
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "5.16.1",
+    "jlens_version": "0.1.0",
+    "cuda_version": "12.8",
+    "gpu_name": "NVIDIA A40",
+    "model_revision_requested": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "model_revision_resolved": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "attention_implementation": "eager"
+  },
+  "capture_cells": [
+    {
+      "layer": 7,
+      "position": 16,
+      "token": "spinning"
+    },
+    {
+      "layer": 22,
+      "position": 16,
+      "token": "spinning"
+    },
+    {
+      "layer": 22,
+      "position": 21,
+      "token": "\n"
+    }
+  ],
+  "conditions": {
+    "clean": {
+      "active_layers": [],
+      "ant_factors": {},
+      "metrics": {
+        "p_six": 1.1253320053583593e-07,
+        "p_eight": 0.999982476234436,
+        "p_four": 1.6701407730579376e-05,
+        "log_p_six_minus_log_p_eight": -16.000000019046855,
+        "top_token": " Eight",
+        "top_token_id": 38923,
+        "top_probability": 0.999982476234436,
+        "top_tokens": [
+          {
+            "token": " Eight",
+            "token_id": 38923,
+            "probability": 0.999982476234436
+          },
+          {
+            "token": " Four",
+            "token_id": 13038,
+            "probability": 1.6701407730579376e-05
+          },
+          {
+            "token": "Eight",
+            "token_id": 80357,
+            "probability": 6.47583874524571e-07
+          },
+          {
+            "token": " Six",
+            "token_id": 19759,
+            "probability": 1.1253320053583593e-07
+          },
+          {
+            "token": " Many",
+            "token_id": 8732,
+            "probability": 4.3633860968839144e-09
+          }
+        ]
+      },
+      "operations": []
+    },
+    "L7_only": {
+      "active_layers": [
+        7
+      ],
+      "ant_factors": {
+        "7": 4.0
+      },
+      "metrics": {
+        "p_six": 0.003171592950820923,
+        "p_eight": 0.9964848756790161,
+        "p_four": 0.00033428342430852354,
+        "log_p_six_minus_log_p_eight": -5.749999992275986,
+        "top_token": " Eight",
+        "top_token_id": 38923,
+        "top_probability": 0.9964848756790161,
+        "top_tokens": [
+          {
+            "token": " Eight",
+            "token_id": 38923,
+            "probability": 0.9964848756790161
+          },
+          {
+            "token": " Six",
+            "token_id": 19759,
+            "probability": 0.003171592950820923
+          },
+          {
+            "token": " Four",
+            "token_id": 13038,
+            "probability": 0.00033428342430852354
+          },
+          {
+            "token": " Two",
+            "token_id": 8512,
+            "probability": 6.122614649939351e-06
+          },
+          {
+            "token": " Some",
+            "token_id": 4943,
+            "probability": 8.286057777695532e-07
+          }
+        ]
+      },
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        }
+      ]
+    },
+    "L22_only": {
+      "active_layers": [
+        22
+      ],
+      "ant_factors": {
+        "22": 4.0
+      },
+      "metrics": {
+        "p_six": 2.1444575395435095e-05,
+        "p_eight": 0.9999611377716064,
+        "p_four": 1.670105120865628e-05,
+        "log_p_six_minus_log_p_eight": -10.749999976907823,
+        "top_token": " Eight",
+        "top_token_id": 38923,
+        "top_probability": 0.9999611377716064,
+        "top_tokens": [
+          {
+            "token": " Eight",
+            "token_id": 38923,
+            "probability": 0.9999611377716064
+          },
+          {
+            "token": " Six",
+            "token_id": 19759,
+            "probability": 2.1444575395435095e-05
+          },
+          {
+            "token": " Four",
+            "token_id": 13038,
+            "probability": 1.670105120865628e-05
+          },
+          {
+            "token": "Eight",
+            "token_id": 80357,
+            "probability": 6.475700615737878e-07
+          },
+          {
+            "token": " Two",
+            "token_id": 8512,
+            "probability": 1.5229389305204677e-08
+          }
+        ]
+      },
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1855.8959655761719,
+          "current_activation": 1855.8959655761719,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1855.8961181640625
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 562.7435913085938,
+          "current_activation": 562.7435913085938,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 562.7435302734375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1739.0209655761719,
+          "current_activation": 1739.0209655761719,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1739.021240234375
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1042.3992462158203,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -659.6901626586914,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        }
+      ]
+    },
+    "L7_L22": {
+      "active_layers": [
+        7,
+        22
+      ],
+      "ant_factors": {
+        "7": 4.0,
+        "22": 4.0
+      },
+      "metrics": {
+        "p_six": 0.9522210955619812,
+        "p_eight": 0.047408293932676315,
+        "p_four": 0.0003194345918018371,
+        "log_p_six_minus_log_p_eight": 3.0000000601875754,
+        "top_token": " Six",
+        "top_token_id": 19759,
+        "top_probability": 0.9522210955619812,
+        "top_tokens": [
+          {
+            "token": " Six",
+            "token_id": 19759,
+            "probability": 0.9522210955619812
+          },
+          {
+            "token": " Eight",
+            "token_id": 38923,
+            "probability": 0.047408293932676315
+          },
+          {
+            "token": " Four",
+            "token_id": 13038,
+            "probability": 0.0003194345918018371
+          },
+          {
+            "token": " Two",
+            "token_id": 8512,
+            "probability": 4.323077155277133e-05
+          },
+          {
+            "token": " Some",
+            "token_id": 4943,
+            "probability": 2.763650854831212e-06
+          }
+        ]
+      },
+      "operations": [
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 14209,
+          "position": 16,
+          "current_preactivation": 84.83981704711914,
+          "current_activation": 84.83981704711914,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 84.8398208618164
+        },
+        {
+          "role": "spider",
+          "layer": 7,
+          "feature": 137239,
+          "position": 16,
+          "current_preactivation": 133.32495880126953,
+          "current_activation": 133.32495880126953,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 133.32498168945312
+        },
+        {
+          "role": "ant",
+          "layer": 7,
+          "feature": 42685,
+          "position": 16,
+          "current_preactivation": -69.82457733154297,
+          "current_activation": 0.0,
+          "reference_activation": 126.26797485351562,
+          "target_activation": 505.0718994140625,
+          "factor": 4.0,
+          "delta_norm": 505.07196044921875
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 16,
+          "current_preactivation": 1493.5412292480469,
+          "current_activation": 1493.5412292480469,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1493.5413818359375
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 60476,
+          "position": 16,
+          "current_preactivation": 247.36016845703125,
+          "current_activation": 247.36016845703125,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 247.36016845703125
+        },
+        {
+          "role": "spider",
+          "layer": 22,
+          "feature": 23422,
+          "position": 21,
+          "current_preactivation": 1033.4325866699219,
+          "current_activation": 1033.4325866699219,
+          "target_activation": 0.0,
+          "factor": -1.0,
+          "delta_norm": 1033.4327392578125
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 1703,
+          "position": 16,
+          "current_preactivation": -1057.4222564697266,
+          "current_activation": 0.0,
+          "reference_activation": 1823.1155242919922,
+          "target_activation": 7292.462097167969,
+          "factor": 4.0,
+          "delta_norm": 7292.462890625
+        },
+        {
+          "role": "ant",
+          "layer": 22,
+          "feature": 197021,
+          "position": 16,
+          "current_preactivation": -634.0713272094727,
+          "current_activation": 0.0,
+          "reference_activation": 360.43941497802734,
+          "target_activation": 1441.7576599121094,
+          "factor": 4.0,
+          "delta_norm": 1441.7576904296875
+        }
+      ]
+    }
+  },
+  "cleanup_metrics": {
+    "p_six": 1.1253320053583593e-07,
+    "p_eight": 0.999982476234436,
+    "p_four": 1.6701407730579376e-05,
+    "log_p_six_minus_log_p_eight": -16.000000019046855,
+    "top_token": " Eight",
+    "top_token_id": 38923,
+    "top_probability": 0.999982476234436,
+    "top_tokens": [
+      {
+        "token": " Eight",
+        "token_id": 38923,
+        "probability": 0.999982476234436
+      },
+      {
+        "token": " Four",
+        "token_id": 13038,
+        "probability": 1.6701407730579376e-05
+      },
+      {
+        "token": "Eight",
+        "token_id": 80357,
+        "probability": 6.47583874524571e-07
+      },
+      {
+        "token": " Six",
+        "token_id": 19759,
+        "probability": 1.1253320053583593e-07
+      },
+      {
+        "token": " Many",
+        "token_id": 8732,
+        "probability": 4.3633860968839144e-09
+      }
+    ]
+  },
+  "validations": {
+    "clean_top_token_is_eight": true,
+    "full_top_token_is_six": true,
+    "full_p_six_above_90_percent": true,
+    "hook_cleanup_exact": true,
+    "L7_only_equals_full_at_L7_P16": true,
+    "selected_jacobians_finite": true
+  },
+  "readouts": {
+    "clean": {
+      "L7_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 8455,
+            "token": "\\\"",
+            "display_token": "\\\"",
+            "logit": 98.5,
+            "log_probability": -0.004989790264517069,
+            "probability": 0.9950226545333862,
+            "readable": false
+          },
+          {
+            "rank": 2,
+            "token_id": 255999,
+            "token": "<start_of_image>",
+            "display_token": "<start_of_image>",
+            "logit": 93.0,
+            "log_probability": -5.5049896240234375,
+            "probability": 0.00406643096357584,
+            "readable": false
+          },
+          {
+            "rank": 3,
+            "token_id": 7339,
+            "token": " \\\"",
+            "display_token": " \\\"",
+            "logit": 91.5,
+            "log_probability": -7.0049896240234375,
+            "probability": 0.0009073433466255665,
+            "readable": false
+          },
+          {
+            "rank": 4,
+            "token_id": 63985,
+            "token": ".\\\"",
+            "display_token": ".\\\"",
+            "logit": 85.0,
+            "log_probability": -13.504989624023438,
+            "probability": 1.3641355280924472e-06,
+            "readable": false
+          },
+          {
+            "rank": 5,
+            "token_id": 179255,
+            "token": "\\\";",
+            "display_token": "\\\";",
+            "logit": 85.0,
+            "log_probability": -13.504989624023438,
+            "probability": 1.3641355280924472e-06,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 14,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 69.5,
+            "log_probability": -29.004989624023438,
+            "probability": 2.531005190587604e-13,
+            "readable": true
+          },
+          {
+            "rank": 22,
+            "token_id": 67619,
+            "token": "Spin",
+            "display_token": "Spin",
+            "logit": 64.5,
+            "log_probability": -34.00498962402344,
+            "probability": 1.7053780195191819e-15,
+            "readable": true
+          },
+          {
+            "rank": 28,
+            "token_id": 194848,
+            "token": "Insect",
+            "display_token": "Insect",
+            "logit": 62.25,
+            "log_probability": -36.25498962402344,
+            "probability": 1.7974551330971546e-16,
+            "readable": true
+          },
+          {
+            "rank": 38,
+            "token_id": 49080,
+            "token": "Spinner",
+            "display_token": "Spinner",
+            "logit": 57.75,
+            "log_probability": -40.75498962402344,
+            "probability": 1.9967922852119293e-18,
+            "readable": true
+          },
+          {
+            "rank": 40,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 57.5,
+            "log_probability": -41.00498962402344,
+            "probability": 1.555103377310025e-18,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 86757,
+            "best_token": "Spider",
+            "best_surface": "Spider",
+            "best_rank": 14,
+            "best_logit": 69.5,
+            "family_log_probability": -29.004981994628906,
+            "family_probability": 2.5310246336612793e-13
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 1095,
+            "best_logit": 32.5,
+            "family_log_probability": -66.00496673583984,
+            "family_probability": 2.1597683292942443e-29
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 182852,
+            "best_token": "insect",
+            "best_surface": "insect",
+            "best_rank": 78,
+            "best_logit": 51.25,
+            "family_log_probability": -47.25272750854492,
+            "family_probability": 3.0088545083840567e-21
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 44955,
+            "best_token": "Six",
+            "best_surface": "Six",
+            "best_rank": 20136,
+            "best_logit": 14.9375,
+            "family_log_probability": -83.56410217285156,
+            "family_probability": 5.111772781009877e-37
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 11501,
+            "best_logit": 18.5,
+            "family_log_probability": -80.00455474853516,
+            "family_probability": 1.7966494367225026e-35
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 25545,
+            "best_logit": 13.3125,
+            "family_log_probability": -85.19195556640625,
+            "family_probability": 1.0036997014352496e-37
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 208971,
+            "best_token": "spinning",
+            "best_surface": "spinning",
+            "best_rank": 120,
+            "best_logit": 47.75,
+            "family_log_probability": -50.75175476074219,
+            "family_probability": 9.09479596642996e-23
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -36.99998474121094
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -18.247745513916016
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -3.5595474243164062
+          }
+        }
+      },
+      "L22_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 131.0,
+            "log_probability": -0.0119492681697011,
+            "probability": 0.9881218671798706,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 126.5,
+            "log_probability": -4.511949062347412,
+            "probability": 0.010977044701576233,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 124.0,
+            "log_probability": -7.011949062347412,
+            "probability": 0.0009010506910271943,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 114.5,
+            "log_probability": -16.51194953918457,
+            "probability": 6.744525649082789e-08,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 111.0,
+            "log_probability": -20.01194953918457,
+            "probability": 2.036670387894901e-09,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 131.0,
+            "log_probability": -0.0119492681697011,
+            "probability": 0.9881218671798706,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 126.5,
+            "log_probability": -4.511949062347412,
+            "probability": 0.010977044701576233,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 124.0,
+            "log_probability": -7.011949062347412,
+            "probability": 0.0009010506910271943,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 114.5,
+            "log_probability": -16.51194953918457,
+            "probability": 6.744525649082789e-08,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 111.0,
+            "log_probability": -20.01194953918457,
+            "probability": 2.036670387894901e-09,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 32261,
+            "best_token": " spider",
+            "best_surface": " spider",
+            "best_rank": 1,
+            "best_logit": 131.0,
+            "family_log_probability": 0.0,
+            "family_probability": 1.0
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 31,
+            "best_logit": 74.0,
+            "family_log_probability": -57.01194763183594,
+            "family_probability": 1.7379038324676268e-25
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 6,
+            "best_logit": 90.0,
+            "family_log_probability": -41.01044464111328,
+            "family_probability": 1.5466433975657128e-18
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 19759,
+            "best_token": " Six",
+            "best_surface": " Six",
+            "best_rank": 43839,
+            "best_logit": 13.5625,
+            "family_log_probability": -117.43962097167969,
+            "family_probability": 9.92248966409042e-52
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 33536,
+            "best_logit": 16.125,
+            "family_log_probability": -114.64100646972656,
+            "family_probability": 1.6294591989392728e-50
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 13038,
+            "best_token": " Four",
+            "best_surface": " Four",
+            "best_rank": 104316,
+            "best_logit": 4.6875,
+            "family_log_probability": -125.9704818725586,
+            "family_probability": 1.9575589083862413e-55
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 15743,
+            "best_token": " webs",
+            "best_surface": " webs",
+            "best_rank": 45,
+            "best_logit": 72.0,
+            "family_log_probability": -59.011878967285156,
+            "family_probability": 2.3521585784172872e-26
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -57.01194763183594
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -41.01044464111328
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -2.798614501953125
+          }
+        }
+      },
+      "L22_P21": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 112.0,
+            "log_probability": -0.00012385078298393637,
+            "probability": 0.9998761415481567,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 103.0,
+            "log_probability": -9.000123977661133,
+            "probability": 0.00012339450768195093,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 97.5,
+            "log_probability": -14.500123977661133,
+            "probability": 5.042851398684434e-07,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 88.0,
+            "log_probability": -24.000123977661133,
+            "probability": 3.7746666903260007e-11,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 84.5,
+            "log_probability": -27.500123977661133,
+            "probability": 1.1398504752915817e-12,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 112.0,
+            "log_probability": -0.00012385078298393637,
+            "probability": 0.9998761415481567,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 103.0,
+            "log_probability": -9.000123977661133,
+            "probability": 0.00012339450768195093,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 97.5,
+            "log_probability": -14.500123977661133,
+            "probability": 5.042851398684434e-07,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 88.0,
+            "log_probability": -24.000123977661133,
+            "probability": 3.7746666903260007e-11,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 84.5,
+            "log_probability": -27.500123977661133,
+            "probability": 1.1398504752915817e-12,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 1,
+            "best_logit": 112.0,
+            "family_log_probability": 0.0,
+            "family_probability": 1.0
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 23,
+            "best_logit": 63.25,
+            "family_log_probability": -48.7501220703125,
+            "family_probability": 6.73117672154735e-22
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 6,
+            "best_logit": 80.5,
+            "family_log_probability": -31.500123977661133,
+            "family_probability": 2.0877090663135784e-14
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 34699,
+            "best_token": "six",
+            "best_surface": "six",
+            "best_rank": 4038,
+            "best_logit": 26.875,
+            "family_log_probability": -85.1202621459961,
+            "family_probability": 1.0783006123427053e-37
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 6589,
+            "best_token": " eight",
+            "best_surface": " eight",
+            "best_rank": 6750,
+            "best_logit": 23.75,
+            "family_log_probability": -88.08009338378906,
+            "family_probability": 5.588580073357159e-39
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 3212,
+            "best_logit": 28.25,
+            "family_log_probability": -83.71533966064453,
+            "family_probability": 4.394302344724495e-37
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 57031,
+            "best_token": "webs",
+            "best_surface": "webs",
+            "best_rank": 40,
+            "best_logit": 59.5,
+            "family_log_probability": -52.3354377746582,
+            "family_probability": 1.8664147865748054e-23
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -48.7501220703125
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -31.500123977661133
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 2.9598312377929688
+          }
+        }
+      }
+    },
+    "L7_only": {
+      "L7_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 8455,
+            "token": "\\\"",
+            "display_token": "\\\"",
+            "logit": 106.0,
+            "log_probability": -0.029794618487358093,
+            "probability": 0.9706448912620544,
+            "readable": false
+          },
+          {
+            "rank": 2,
+            "token_id": 255999,
+            "token": "<start_of_image>",
+            "display_token": "<start_of_image>",
+            "logit": 102.5,
+            "log_probability": -3.529794692993164,
+            "probability": 0.029310932382941246,
+            "readable": false
+          },
+          {
+            "rank": 3,
+            "token_id": 7339,
+            "token": " \\\"",
+            "display_token": " \\\"",
+            "logit": 96.0,
+            "log_probability": -10.029794692993164,
+            "probability": 4.4067204726161435e-05,
+            "readable": false
+          },
+          {
+            "rank": 4,
+            "token_id": 179255,
+            "token": "\\\";",
+            "display_token": "\\\";",
+            "logit": 90.0,
+            "log_probability": -16.029794692993164,
+            "probability": 1.0923167792498134e-07,
+            "readable": false
+          },
+          {
+            "rank": 5,
+            "token_id": 63985,
+            "token": ".\\\"",
+            "display_token": ".\\\"",
+            "logit": 89.0,
+            "log_probability": -17.029794692993164,
+            "probability": 4.018409072159557e-08,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 23,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 67.5,
+            "log_probability": -38.52979278564453,
+            "probability": 1.8480920530857723e-17,
+            "readable": true
+          },
+          {
+            "rank": 24,
+            "token_id": 194848,
+            "token": "Insect",
+            "display_token": "Insect",
+            "logit": 64.5,
+            "log_probability": -41.52979278564453,
+            "probability": 9.20110838855757e-19,
+            "readable": true
+          },
+          {
+            "rank": 25,
+            "token_id": 67619,
+            "token": "Spin",
+            "display_token": "Spin",
+            "logit": 63.25,
+            "log_probability": -42.77979278564453,
+            "probability": 2.6361617981787335e-19,
+            "readable": true
+          },
+          {
+            "rank": 48,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 56.0,
+            "log_probability": -50.02979278564453,
+            "probability": 1.8721345452546024e-22,
+            "readable": true
+          },
+          {
+            "rank": 61,
+            "token_id": 49080,
+            "token": "Spinner",
+            "display_token": "Spinner",
+            "logit": 53.75,
+            "log_probability": -52.27979278564453,
+            "probability": 1.9732153320084053e-23,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 86757,
+            "best_token": "Spider",
+            "best_surface": "Spider",
+            "best_rank": 23,
+            "best_logit": 67.5,
+            "family_log_probability": -38.529781341552734,
+            "family_probability": 1.8481132232702044e-17
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 390,
+            "best_logit": 39.25,
+            "family_log_probability": -66.77979278564453,
+            "family_probability": 9.951865332238668e-30
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 182852,
+            "best_token": "insect",
+            "best_surface": "insect",
+            "best_rank": 84,
+            "best_logit": 51.5,
+            "family_log_probability": -54.5245475769043,
+            "family_probability": 2.0906910451796724e-24
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 44955,
+            "best_token": "Six",
+            "best_surface": "Six",
+            "best_rank": 14685,
+            "best_logit": 16.875,
+            "family_log_probability": -89.15438842773438,
+            "family_probability": 1.9087149203274637e-39
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 11587,
+            "best_logit": 18.375,
+            "family_log_probability": -87.65375518798828,
+            "family_probability": 8.559685414018043e-39
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 21195,
+            "best_logit": 14.4375,
+            "family_log_probability": -91.59156036376953,
+            "family_probability": 1.6683637504858054e-40
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 208971,
+            "best_token": "spinning",
+            "best_surface": "spinning",
+            "best_rank": 229,
+            "best_logit": 43.0,
+            "family_log_probability": -63.01839065551758,
+            "family_probability": 4.280166660974903e-28
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -28.250011444091797
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -15.994766235351562
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -1.5006332397460938
+          }
+        }
+      },
+      "L22_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 118.0,
+            "log_probability": -0.08028392493724823,
+            "probability": 0.9228543043136597,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 115.5,
+            "log_probability": -2.5802838802337646,
+            "probability": 0.07575249671936035,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 111.5,
+            "log_probability": -6.580284118652344,
+            "probability": 0.0013874550350010395,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 106.0,
+            "log_probability": -12.080284118652344,
+            "probability": 5.670211521646706e-06,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 100.5,
+            "log_probability": -17.580284118652344,
+            "probability": 2.317285918707057e-08,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 118.0,
+            "log_probability": -0.08028392493724823,
+            "probability": 0.9228543043136597,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 115.5,
+            "log_probability": -2.5802838802337646,
+            "probability": 0.07575249671936035,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 111.5,
+            "log_probability": -6.580284118652344,
+            "probability": 0.0013874550350010395,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 106.0,
+            "log_probability": -12.080284118652344,
+            "probability": 5.670211521646706e-06,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 100.5,
+            "log_probability": -17.580284118652344,
+            "probability": 2.317285918707057e-08,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 32261,
+            "best_token": " spider",
+            "best_surface": " spider",
+            "best_rank": 1,
+            "best_logit": 118.0,
+            "family_log_probability": 0.0,
+            "family_probability": 1.0
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 10,
+            "best_logit": 79.0,
+            "family_log_probability": -39.080284118652344,
+            "family_probability": 1.0657326130521783e-17
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 6,
+            "best_logit": 89.0,
+            "family_log_probability": -29.07994842529297,
+            "family_probability": 2.34822044449423e-13
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 19759,
+            "best_token": " Six",
+            "best_surface": " Six",
+            "best_rank": 54848,
+            "best_logit": 11.9375,
+            "family_log_probability": -105.53898620605469,
+            "family_probability": 1.4621794135303983e-46
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 32606,
+            "best_logit": 16.875,
+            "family_log_probability": -101.1867446899414,
+            "family_probability": 1.1354163385713735e-44
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 110062,
+            "best_logit": 4.75,
+            "family_log_probability": -113.28593444824219,
+            "family_probability": 6.317478780689556e-50
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 15743,
+            "best_token": " webs",
+            "best_surface": " webs",
+            "best_rank": 84,
+            "best_logit": 63.5,
+            "family_log_probability": -54.58018112182617,
+            "family_probability": 1.977554756489735e-24
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -39.080284118652344
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -29.07994842529297
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -4.352241516113281
+          }
+        }
+      },
+      "L22_P21": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 61.25,
+            "log_probability": -0.1624625325202942,
+            "probability": 0.8500479459762573,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 218685,
+            "token": " crustaceans",
+            "display_token": " crustaceans",
+            "logit": 58.5,
+            "log_probability": -2.9124624729156494,
+            "probability": 0.05434174835681915,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 149047,
+            "token": " invertebrates",
+            "display_token": " invertebrates",
+            "logit": 58.0,
+            "log_probability": -3.4124624729156494,
+            "probability": 0.032959938049316406,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 57.75,
+            "log_probability": -3.6624624729156494,
+            "probability": 0.025669224560260773,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 57.25,
+            "log_probability": -4.1624627113342285,
+            "probability": 0.015569168142974377,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 61.25,
+            "log_probability": -0.1624625325202942,
+            "probability": 0.8500479459762573,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 218685,
+            "token": " crustaceans",
+            "display_token": " crustaceans",
+            "logit": 58.5,
+            "log_probability": -2.9124624729156494,
+            "probability": 0.05434174835681915,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 149047,
+            "token": " invertebrates",
+            "display_token": " invertebrates",
+            "logit": 58.0,
+            "log_probability": -3.4124624729156494,
+            "probability": 0.032959938049316406,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 57.75,
+            "log_probability": -3.6624624729156494,
+            "probability": 0.025669224560260773,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 57.25,
+            "log_probability": -4.1624627113342285,
+            "probability": 0.015569168142974377,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 1,
+            "best_logit": 61.25,
+            "family_log_probability": -0.11506301909685135,
+            "family_probability": 0.8913099725874299
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 127,
+            "best_logit": 37.0,
+            "family_log_probability": -24.41246223449707,
+            "family_probability": 2.4992077669613555e-11
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 6,
+            "best_logit": 57.0,
+            "family_log_probability": -4.411548614501953,
+            "family_probability": 0.012136369212274591
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 34699,
+            "best_token": "six",
+            "best_surface": "six",
+            "best_rank": 1685,
+            "best_logit": 25.0,
+            "family_log_probability": -36.36919403076172,
+            "family_probability": 1.6034658730597385e-16
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 44622,
+            "best_token": "eight",
+            "best_surface": "eight",
+            "best_rank": 3818,
+            "best_logit": 21.25,
+            "family_log_probability": -39.4931640625,
+            "family_probability": 7.052397369232113e-18
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 1685,
+            "best_logit": 25.0,
+            "family_log_probability": -36.40247344970703,
+            "family_probability": 1.5509816269679388e-16
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 57031,
+            "best_token": "webs",
+            "best_surface": "webs",
+            "best_rank": 162,
+            "best_logit": 35.75,
+            "family_log_probability": -25.62527084350586,
+            "family_probability": 7.431667580846136e-12
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -24.29739921540022
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -4.296485595405102
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 3.1239700317382812
+          }
+        }
+      }
+    },
+    "L22_only": {
+      "L7_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 8455,
+            "token": "\\\"",
+            "display_token": "\\\"",
+            "logit": 98.5,
+            "log_probability": -0.004989790264517069,
+            "probability": 0.9950226545333862,
+            "readable": false
+          },
+          {
+            "rank": 2,
+            "token_id": 255999,
+            "token": "<start_of_image>",
+            "display_token": "<start_of_image>",
+            "logit": 93.0,
+            "log_probability": -5.5049896240234375,
+            "probability": 0.00406643096357584,
+            "readable": false
+          },
+          {
+            "rank": 3,
+            "token_id": 7339,
+            "token": " \\\"",
+            "display_token": " \\\"",
+            "logit": 91.5,
+            "log_probability": -7.0049896240234375,
+            "probability": 0.0009073433466255665,
+            "readable": false
+          },
+          {
+            "rank": 4,
+            "token_id": 63985,
+            "token": ".\\\"",
+            "display_token": ".\\\"",
+            "logit": 85.0,
+            "log_probability": -13.504989624023438,
+            "probability": 1.3641355280924472e-06,
+            "readable": false
+          },
+          {
+            "rank": 5,
+            "token_id": 179255,
+            "token": "\\\";",
+            "display_token": "\\\";",
+            "logit": 85.0,
+            "log_probability": -13.504989624023438,
+            "probability": 1.3641355280924472e-06,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 14,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 69.5,
+            "log_probability": -29.004989624023438,
+            "probability": 2.531005190587604e-13,
+            "readable": true
+          },
+          {
+            "rank": 22,
+            "token_id": 67619,
+            "token": "Spin",
+            "display_token": "Spin",
+            "logit": 64.5,
+            "log_probability": -34.00498962402344,
+            "probability": 1.7053780195191819e-15,
+            "readable": true
+          },
+          {
+            "rank": 28,
+            "token_id": 194848,
+            "token": "Insect",
+            "display_token": "Insect",
+            "logit": 62.25,
+            "log_probability": -36.25498962402344,
+            "probability": 1.7974551330971546e-16,
+            "readable": true
+          },
+          {
+            "rank": 38,
+            "token_id": 49080,
+            "token": "Spinner",
+            "display_token": "Spinner",
+            "logit": 57.75,
+            "log_probability": -40.75498962402344,
+            "probability": 1.9967922852119293e-18,
+            "readable": true
+          },
+          {
+            "rank": 40,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 57.5,
+            "log_probability": -41.00498962402344,
+            "probability": 1.555103377310025e-18,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 86757,
+            "best_token": "Spider",
+            "best_surface": "Spider",
+            "best_rank": 14,
+            "best_logit": 69.5,
+            "family_log_probability": -29.004981994628906,
+            "family_probability": 2.5310246336612793e-13
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 1095,
+            "best_logit": 32.5,
+            "family_log_probability": -66.00496673583984,
+            "family_probability": 2.1597683292942443e-29
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 182852,
+            "best_token": "insect",
+            "best_surface": "insect",
+            "best_rank": 78,
+            "best_logit": 51.25,
+            "family_log_probability": -47.25272750854492,
+            "family_probability": 3.0088545083840567e-21
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 44955,
+            "best_token": "Six",
+            "best_surface": "Six",
+            "best_rank": 20136,
+            "best_logit": 14.9375,
+            "family_log_probability": -83.56410217285156,
+            "family_probability": 5.111772781009877e-37
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 11501,
+            "best_logit": 18.5,
+            "family_log_probability": -80.00455474853516,
+            "family_probability": 1.7966494367225026e-35
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 25545,
+            "best_logit": 13.3125,
+            "family_log_probability": -85.19195556640625,
+            "family_probability": 1.0036997014352496e-37
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 208971,
+            "best_token": "spinning",
+            "best_surface": "spinning",
+            "best_rank": 120,
+            "best_logit": 47.75,
+            "family_log_probability": -50.75175476074219,
+            "family_probability": 9.09479596642996e-23
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -36.99998474121094
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -18.247745513916016
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -3.5595474243164062
+          }
+        }
+      },
+      "L22_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 78.5,
+            "log_probability": -0.5813537240028381,
+            "probability": 0.5591409206390381,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 191,
+            "token": "</h1>",
+            "display_token": "</h1>",
+            "logit": 78.0,
+            "log_probability": -1.0813536643981934,
+            "probability": 0.33913612365722656,
+            "readable": false
+          },
+          {
+            "rank": 3,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 76.0,
+            "log_probability": -3.0813536643981934,
+            "probability": 0.04589708521962166,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 192,
+            "token": "</h2>",
+            "display_token": "</h2>",
+            "logit": 75.5,
+            "log_probability": -3.5813536643981934,
+            "probability": 0.02783798985183239,
+            "readable": false
+          },
+          {
+            "rank": 5,
+            "token_id": 207,
+            "token": "</strong>",
+            "display_token": "</strong>",
+            "logit": 75.5,
+            "log_probability": -3.5813536643981934,
+            "probability": 0.02783798985183239,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 78.5,
+            "log_probability": -0.5813537240028381,
+            "probability": 0.5591409206390381,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 76.0,
+            "log_probability": -3.0813536643981934,
+            "probability": 0.04589708521962166,
+            "readable": true
+          },
+          {
+            "rank": 6,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 69.5,
+            "log_probability": -9.581354141235352,
+            "probability": 6.900344305904582e-05,
+            "readable": true
+          },
+          {
+            "rank": 7,
+            "token_id": 63272,
+            "token": " ants",
+            "display_token": " ants",
+            "logit": 69.0,
+            "log_probability": -10.081354141235352,
+            "probability": 4.185270518064499e-05,
+            "readable": true
+          },
+          {
+            "rank": 8,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 68.5,
+            "log_probability": -10.581354141235352,
+            "probability": 2.538494845794048e-05,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 1,
+            "best_logit": 78.5,
+            "family_log_probability": -0.5023442506790161,
+            "family_probability": 0.6051104650982437
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 7,
+            "best_logit": 69.0,
+            "family_log_probability": -10.081354141235352,
+            "family_probability": 4.1852704425734166e-05
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 8,
+            "best_logit": 68.5,
+            "family_log_probability": -10.581231117248535,
+            "family_probability": 2.5388071575766125e-05
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 19759,
+            "best_token": " Six",
+            "best_surface": " Six",
+            "best_rank": 86486,
+            "best_logit": 6.34375,
+            "family_log_probability": -72.696533203125,
+            "family_probability": 2.680999767907555e-32
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 121799,
+            "best_logit": 2.59375,
+            "family_log_probability": -76.45288848876953,
+            "family_probability": 6.265163422651545e-34
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 13038,
+            "best_token": " Four",
+            "best_surface": " Four",
+            "best_rank": 146653,
+            "best_logit": 0.140625,
+            "family_log_probability": -78.87722778320312,
+            "family_probability": 5.546962449795891e-35
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 34888,
+            "best_token": " spinning",
+            "best_surface": " spinning",
+            "best_rank": 336,
+            "best_logit": 40.75,
+            "family_log_probability": -38.325782775878906,
+            "family_probability": 2.26633458240892e-17
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -9.579009890556335
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -10.078886866569519
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 3.7563552856445312
+          }
+        }
+      },
+      "L22_P21": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 96.0,
+            "log_probability": -9.894321920000948e-06,
+            "probability": 0.9999901056289673,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 84.0,
+            "log_probability": -12.000009536743164,
+            "probability": 6.144153758214088e-06,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 83.5,
+            "log_probability": -12.500009536743164,
+            "probability": 3.7266177059791517e-06,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 79.0,
+            "log_probability": -17.000009536743164,
+            "probability": 4.1398983796625544e-08,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 103796,
+            "token": " crabs",
+            "display_token": " crabs",
+            "logit": 69.5,
+            "log_probability": -26.500009536743164,
+            "probability": 3.0987896710438223e-12,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 96.0,
+            "log_probability": -9.894321920000948e-06,
+            "probability": 0.9999901056289673,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 84.0,
+            "log_probability": -12.000009536743164,
+            "probability": 6.144153758214088e-06,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 83.5,
+            "log_probability": -12.500009536743164,
+            "probability": 3.7266177059791517e-06,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 48587,
+            "token": "spider",
+            "display_token": "spider",
+            "logit": 79.0,
+            "log_probability": -17.000009536743164,
+            "probability": 4.1398983796625544e-08,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 103796,
+            "token": " crabs",
+            "display_token": " crabs",
+            "logit": 69.5,
+            "log_probability": -26.500009536743164,
+            "probability": 3.0987896710438223e-12,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 1,
+            "best_logit": 96.0,
+            "family_log_probability": -3.6954579627490602e-06,
+            "family_probability": 0.9999963045488655
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 21,
+            "best_logit": 62.0,
+            "family_log_probability": -34.0000114440918,
+            "family_probability": 1.7138888175288235e-15
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 3,
+            "best_logit": 83.5,
+            "family_log_probability": -12.500009536743164,
+            "family_probability": 3.7266176321139755e-06
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 34699,
+            "best_token": "six",
+            "best_surface": "six",
+            "best_rank": 1881,
+            "best_logit": 32.25,
+            "family_log_probability": -63.74906539916992,
+            "family_probability": 2.061259501913788e-28
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 8330,
+            "best_logit": 23.125,
+            "family_log_probability": -72.11328887939453,
+            "family_probability": 4.8039288638420044e-32
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 2094,
+            "best_logit": 31.625,
+            "family_log_probability": -64.36923217773438,
+            "family_probability": 1.1086581676564502e-28
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 208971,
+            "best_token": "spinning",
+            "best_surface": "spinning",
+            "best_rank": 136,
+            "best_logit": 49.0,
+            "family_log_probability": -46.524391174316406,
+            "family_probability": 6.233236987726751e-21
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -34.000007748633834
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -12.500005841285201
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 8.36422348022461
+          }
+        }
+      }
+    },
+    "L7_L22": {
+      "L7_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 8455,
+            "token": "\\\"",
+            "display_token": "\\\"",
+            "logit": 106.0,
+            "log_probability": -0.029794618487358093,
+            "probability": 0.9706448912620544,
+            "readable": false
+          },
+          {
+            "rank": 2,
+            "token_id": 255999,
+            "token": "<start_of_image>",
+            "display_token": "<start_of_image>",
+            "logit": 102.5,
+            "log_probability": -3.529794692993164,
+            "probability": 0.029310932382941246,
+            "readable": false
+          },
+          {
+            "rank": 3,
+            "token_id": 7339,
+            "token": " \\\"",
+            "display_token": " \\\"",
+            "logit": 96.0,
+            "log_probability": -10.029794692993164,
+            "probability": 4.4067204726161435e-05,
+            "readable": false
+          },
+          {
+            "rank": 4,
+            "token_id": 179255,
+            "token": "\\\";",
+            "display_token": "\\\";",
+            "logit": 90.0,
+            "log_probability": -16.029794692993164,
+            "probability": 1.0923167792498134e-07,
+            "readable": false
+          },
+          {
+            "rank": 5,
+            "token_id": 63985,
+            "token": ".\\\"",
+            "display_token": ".\\\"",
+            "logit": 89.0,
+            "log_probability": -17.029794692993164,
+            "probability": 4.018409072159557e-08,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 23,
+            "token_id": 86757,
+            "token": "Spider",
+            "display_token": "Spider",
+            "logit": 67.5,
+            "log_probability": -38.52979278564453,
+            "probability": 1.8480920530857723e-17,
+            "readable": true
+          },
+          {
+            "rank": 24,
+            "token_id": 194848,
+            "token": "Insect",
+            "display_token": "Insect",
+            "logit": 64.5,
+            "log_probability": -41.52979278564453,
+            "probability": 9.20110838855757e-19,
+            "readable": true
+          },
+          {
+            "rank": 25,
+            "token_id": 67619,
+            "token": "Spin",
+            "display_token": "Spin",
+            "logit": 63.25,
+            "log_probability": -42.77979278564453,
+            "probability": 2.6361617981787335e-19,
+            "readable": true
+          },
+          {
+            "rank": 48,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 56.0,
+            "log_probability": -50.02979278564453,
+            "probability": 1.8721345452546024e-22,
+            "readable": true
+          },
+          {
+            "rank": 61,
+            "token_id": 49080,
+            "token": "Spinner",
+            "display_token": "Spinner",
+            "logit": 53.75,
+            "log_probability": -52.27979278564453,
+            "probability": 1.9732153320084053e-23,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 86757,
+            "best_token": "Spider",
+            "best_surface": "Spider",
+            "best_rank": 23,
+            "best_logit": 67.5,
+            "family_log_probability": -38.529781341552734,
+            "family_probability": 1.8481132232702044e-17
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 390,
+            "best_logit": 39.25,
+            "family_log_probability": -66.77979278564453,
+            "family_probability": 9.951865332238668e-30
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 182852,
+            "best_token": "insect",
+            "best_surface": "insect",
+            "best_rank": 84,
+            "best_logit": 51.5,
+            "family_log_probability": -54.5245475769043,
+            "family_probability": 2.0906910451796724e-24
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 44955,
+            "best_token": "Six",
+            "best_surface": "Six",
+            "best_rank": 14685,
+            "best_logit": 16.875,
+            "family_log_probability": -89.15438842773438,
+            "family_probability": 1.9087149203274637e-39
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 11587,
+            "best_logit": 18.375,
+            "family_log_probability": -87.65375518798828,
+            "family_probability": 8.559685414018043e-39
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 21195,
+            "best_logit": 14.4375,
+            "family_log_probability": -91.59156036376953,
+            "family_probability": 1.6683637504858054e-40
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 208971,
+            "best_token": "spinning",
+            "best_surface": "spinning",
+            "best_rank": 229,
+            "best_logit": 43.0,
+            "family_log_probability": -63.01839065551758,
+            "family_probability": 4.280166660974903e-28
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -28.250011444091797
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -15.994766235351562
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": -1.5006332397460938
+          }
+        }
+      },
+      "L22_P16": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 75.5,
+            "log_probability": -0.3797907829284668,
+            "probability": 0.6840044856071472,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 63272,
+            "token": " ants",
+            "display_token": " ants",
+            "logit": 74.5,
+            "log_probability": -1.3797907829284668,
+            "probability": 0.2516312003135681,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 191,
+            "token": "</h1>",
+            "display_token": "</h1>",
+            "logit": 72.5,
+            "log_probability": -3.379790782928467,
+            "probability": 0.034054577350616455,
+            "readable": false
+          },
+          {
+            "rank": 4,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 72.0,
+            "log_probability": -3.879790782928467,
+            "probability": 0.02065514586865902,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 192,
+            "token": "</h2>",
+            "display_token": "</h2>",
+            "logit": 71.0,
+            "log_probability": -4.879790782928467,
+            "probability": 0.00759860360994935,
+            "readable": false
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 92664,
+            "token": " spiders",
+            "display_token": " spiders",
+            "logit": 75.5,
+            "log_probability": -0.3797907829284668,
+            "probability": 0.6840044856071472,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 63272,
+            "token": " ants",
+            "display_token": " ants",
+            "logit": 74.5,
+            "log_probability": -1.3797907829284668,
+            "probability": 0.2516312003135681,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 32261,
+            "token": " spider",
+            "display_token": " spider",
+            "logit": 72.0,
+            "log_probability": -3.879790782928467,
+            "probability": 0.02065514586865902,
+            "readable": true
+          },
+          {
+            "rank": 6,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 69.5,
+            "log_probability": -6.379790782928467,
+            "probability": 0.0016954776365309954,
+            "readable": true
+          },
+          {
+            "rank": 8,
+            "token_id": 40046,
+            "token": " Spider",
+            "display_token": " Spider",
+            "logit": 66.5,
+            "log_probability": -9.379791259765625,
+            "probability": 8.441282261628658e-05,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 1,
+            "best_logit": 75.5,
+            "family_log_probability": -0.3498765230178833,
+            "family_probability": 0.704775107849623
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 2,
+            "best_logit": 74.5,
+            "family_log_probability": -1.3797907829284668,
+            "family_probability": 0.25163119309429316
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 6,
+            "best_logit": 69.5,
+            "family_log_probability": -6.379769325256348,
+            "family_probability": 0.0016955140237796525
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 19759,
+            "best_token": " Six",
+            "best_surface": " Six",
+            "best_rank": 101055,
+            "best_logit": 5.3125,
+            "family_log_probability": -70.03131866455078,
+            "family_probability": 3.8528734411258026e-31
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 80357,
+            "best_token": "Eight",
+            "best_surface": "Eight",
+            "best_rank": 120540,
+            "best_logit": 3.34375,
+            "family_log_probability": -72.52952575683594,
+            "family_probability": 3.168306503053704e-32
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 13038,
+            "best_token": " Four",
+            "best_surface": " Four",
+            "best_rank": 174361,
+            "best_logit": -2.078125,
+            "family_log_probability": -77.53595733642578,
+            "family_probability": 2.121102128161655e-34
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 34888,
+            "best_token": " spinning",
+            "best_surface": " spinning",
+            "best_rank": 1044,
+            "best_logit": 36.0,
+            "family_log_probability": -39.86284255981445,
+            "family_probability": 4.8728993746463906e-18
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -1.0299142599105835
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": -6.029892802238464
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 2.4982070922851562
+          }
+        }
+      },
+      "L22_P21": {
+        "top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 149047,
+            "token": " invertebrates",
+            "display_token": " invertebrates",
+            "logit": 57.0,
+            "log_probability": -0.945728063583374,
+            "probability": 0.388396680355072,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 218685,
+            "token": " crustaceans",
+            "display_token": " crustaceans",
+            "logit": 56.75,
+            "log_probability": -1.195728063583374,
+            "probability": 0.3024836480617523,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 56.25,
+            "log_probability": -1.695728063583374,
+            "probability": 0.1834656000137329,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 133071,
+            "token": " vertebrates",
+            "display_token": " vertebrates",
+            "logit": 55.25,
+            "log_probability": -2.695728063583374,
+            "probability": 0.06749322265386581,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 226821,
+            "token": " invertebrate",
+            "display_token": " invertebrate",
+            "logit": 55.0,
+            "log_probability": -2.945728063583374,
+            "probability": 0.05256377533078194,
+            "readable": true
+          }
+        ],
+        "readable_top_tokens": [
+          {
+            "rank": 1,
+            "token_id": 149047,
+            "token": " invertebrates",
+            "display_token": " invertebrates",
+            "logit": 57.0,
+            "log_probability": -0.945728063583374,
+            "probability": 0.388396680355072,
+            "readable": true
+          },
+          {
+            "rank": 2,
+            "token_id": 218685,
+            "token": " crustaceans",
+            "display_token": " crustaceans",
+            "logit": 56.75,
+            "log_probability": -1.195728063583374,
+            "probability": 0.3024836480617523,
+            "readable": true
+          },
+          {
+            "rank": 3,
+            "token_id": 30348,
+            "token": " insects",
+            "display_token": " insects",
+            "logit": 56.25,
+            "log_probability": -1.695728063583374,
+            "probability": 0.1834656000137329,
+            "readable": true
+          },
+          {
+            "rank": 4,
+            "token_id": 133071,
+            "token": " vertebrates",
+            "display_token": " vertebrates",
+            "logit": 55.25,
+            "log_probability": -2.695728063583374,
+            "probability": 0.06749322265386581,
+            "readable": true
+          },
+          {
+            "rank": 5,
+            "token_id": 226821,
+            "token": " invertebrate",
+            "display_token": " invertebrate",
+            "logit": 55.0,
+            "log_probability": -2.945728063583374,
+            "probability": 0.05256377533078194,
+            "readable": true
+          }
+        ],
+        "tracked": {
+          "spider": {
+            "family": "spider",
+            "variant_count": 5,
+            "token_ids": [
+              32261,
+              40046,
+              48587,
+              86757,
+              92664
+            ],
+            "best_token_id": 92664,
+            "best_token": " spiders",
+            "best_surface": " spiders",
+            "best_rank": 7,
+            "best_logit": 51.0,
+            "family_log_probability": -6.923740863800049,
+            "family_probability": 0.0009841415065320518
+          },
+          "ant": {
+            "family": "ant",
+            "variant_count": 6,
+            "token_ids": [
+              638,
+              1639,
+              2314,
+              5307,
+              14054,
+              63272
+            ],
+            "best_token_id": 63272,
+            "best_token": " ants",
+            "best_surface": " ants",
+            "best_rank": 169,
+            "best_logit": 34.75,
+            "family_log_probability": -23.195728302001953,
+            "family_probability": 8.437682798172421e-11
+          },
+          "insect": {
+            "family": "insect",
+            "variant_count": 3,
+            "token_ids": [
+              16368,
+              30348,
+              182852
+            ],
+            "best_token_id": 30348,
+            "best_token": " insects",
+            "best_surface": " insects",
+            "best_rank": 3,
+            "best_logit": 56.25,
+            "family_log_probability": -1.6950080394744873,
+            "family_probability": 0.1835977529923335
+          },
+          "six": {
+            "family": "six",
+            "variant_count": 5,
+            "token_ids": [
+              3962,
+              19759,
+              34699,
+              44955,
+              236825
+            ],
+            "best_token_id": 34699,
+            "best_token": "six",
+            "best_surface": "six",
+            "best_rank": 1116,
+            "best_logit": 26.625,
+            "family_log_probability": -31.294340133666992,
+            "family_probability": 2.564724763661157e-14
+          },
+          "eight": {
+            "family": "eight",
+            "variant_count": 5,
+            "token_ids": [
+              6589,
+              38923,
+              44622,
+              80357,
+              236828
+            ],
+            "best_token_id": 44622,
+            "best_token": "eight",
+            "best_surface": "eight",
+            "best_rank": 3422,
+            "best_logit": 21.625,
+            "family_log_probability": -35.82551574707031,
+            "family_probability": 2.7616980908120665e-16
+          },
+          "four": {
+            "family": "four",
+            "variant_count": 5,
+            "token_ids": [
+              2390,
+              13038,
+              19025,
+              26391,
+              236812
+            ],
+            "best_token_id": 19025,
+            "best_token": "four",
+            "best_surface": "four",
+            "best_rank": 1365,
+            "best_logit": 25.75,
+            "family_log_probability": -32.188316345214844,
+            "family_probability": 1.049039471767333e-14
+          },
+          "web": {
+            "family": "web",
+            "variant_count": 6,
+            "token_ids": [
+              4108,
+              5166,
+              15743,
+              34888,
+              57031,
+              208971
+            ],
+            "best_token_id": 57031,
+            "best_token": "webs",
+            "best_surface": "webs",
+            "best_rank": 586,
+            "best_logit": 29.375,
+            "family_log_probability": -28.31675148010254,
+            "family_probability": 5.03722194546845e-13
+          }
+        },
+        "contrasts": {
+          "ant_minus_spider": {
+            "name": "ant_minus_spider",
+            "positive_family": "ant",
+            "negative_family": "spider",
+            "log_probability_difference": -16.271987438201904
+          },
+          "insect_minus_spider": {
+            "name": "insect_minus_spider",
+            "positive_family": "insect",
+            "negative_family": "spider",
+            "log_probability_difference": 5.2287328243255615
+          },
+          "six_minus_eight": {
+            "name": "six_minus_eight",
+            "positive_family": "six",
+            "negative_family": "eight",
+            "log_probability_difference": 4.53117561340332
+          }
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "name": "L7_P16_clean_to_full",
+      "before_condition": "clean",
+      "after_condition": "L7_L22",
+      "layer": 7,
+      "position": 16,
+      "prompt_token": "spinning",
+      "residual_delta_norm": 616.452880859375,
+      "top_increases": [
+        {
+          "token_id": 78929,
+          "token": " Haiti",
+          "display_token": " Haiti",
+          "delta_logit": 8.21875
+        },
+        {
+          "token_id": 159319,
+          "token": " Haitian",
+          "display_token": " Haitian",
+          "delta_logit": 7.849609375
+        },
+        {
+          "token_id": 210118,
+          "token": " isra",
+          "display_token": " isra",
+          "delta_logit": 7.65625
+        },
+        {
+          "token_id": 23670,
+          "token": " toe",
+          "display_token": " toe",
+          "delta_logit": 7.546875
+        },
+        {
+          "token_id": 110240,
+          "token": " dictator",
+          "display_token": " dictator",
+          "delta_logit": 7.34375
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 167404,
+          "token": " watercolour",
+          "display_token": " watercolour",
+          "delta_logit": -9.53125
+        },
+        {
+          "token_id": 99724,
+          "token": " folklore",
+          "display_token": " folklore",
+          "delta_logit": -8.625
+        },
+        {
+          "token_id": 212464,
+          "token": " folklor",
+          "display_token": " folklor",
+          "delta_logit": -8.421875
+        },
+        {
+          "token_id": 177453,
+          "token": " Hoyt",
+          "display_token": " Hoyt",
+          "delta_logit": -8.140625
+        },
+        {
+          "token_id": 176333,
+          "token": " VFX",
+          "display_token": " VFX",
+          "delta_logit": -7.984375
+        }
+      ]
+    },
+    {
+      "name": "L22_P16_clean_to_full",
+      "before_condition": "clean",
+      "after_condition": "L7_L22",
+      "layer": 22,
+      "position": 16,
+      "prompt_token": "spinning",
+      "residual_delta_norm": 9042.205078125,
+      "top_increases": [
+        {
+          "token_id": 232377,
+          "token": " supon",
+          "display_token": " supon",
+          "delta_logit": 35.0
+        },
+        {
+          "token_id": 93369,
+          "token": "llr",
+          "display_token": "llr",
+          "delta_logit": 32.3125
+        },
+        {
+          "token_id": 99159,
+          "token": " ij",
+          "display_token": " ij",
+          "delta_logit": 30.8125
+        },
+        {
+          "token_id": 27349,
+          "token": "LR",
+          "display_token": "LR",
+          "delta_logit": 29.625
+        },
+        {
+          "token_id": 67701,
+          "token": "nden",
+          "display_token": "nden",
+          "delta_logit": 28.25
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -59.0
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -57.5
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -53.25
+        },
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -51.0
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -49.0
+        }
+      ]
+    },
+    {
+      "name": "L22_P21_clean_to_full",
+      "before_condition": "clean",
+      "after_condition": "L7_L22",
+      "layer": 22,
+      "position": 21,
+      "prompt_token": "\n",
+      "residual_delta_norm": 3707.36083984375,
+      "top_increases": [
+        {
+          "token_id": 71170,
+          "token": " hlav",
+          "display_token": " hlav",
+          "delta_logit": 23.125
+        },
+        {
+          "token_id": 30937,
+          "token": " bhi",
+          "display_token": " bhi",
+          "delta_logit": 21.359375
+        },
+        {
+          "token_id": 236732,
+          "token": " gax",
+          "display_token": " gax",
+          "delta_logit": 21.125
+        },
+        {
+          "token_id": 128099,
+          "token": " lahat",
+          "display_token": " lahat",
+          "delta_logit": 20.5
+        },
+        {
+          "token_id": 13097,
+          "token": " aussi",
+          "display_token": " aussi",
+          "delta_logit": 20.4375
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -61.0
+        },
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -56.5
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -51.5
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -51.0
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -48.25
+        }
+      ]
+    },
+    {
+      "name": "L22_P16_upstream_L7",
+      "before_condition": "clean",
+      "after_condition": "L7_only",
+      "layer": 22,
+      "position": 16,
+      "prompt_token": "spinning",
+      "residual_delta_norm": 2967.70556640625,
+      "top_increases": [
+        {
+          "token_id": 147161,
+          "token": "Bacteria",
+          "display_token": "Bacteria",
+          "delta_logit": 11.75
+        },
+        {
+          "token_id": 28878,
+          "token": "atte",
+          "display_token": "atte",
+          "delta_logit": 11.46875
+        },
+        {
+          "token_id": 70851,
+          "token": " Buhari",
+          "display_token": " Buhari",
+          "delta_logit": 11.4375
+        },
+        {
+          "token_id": 70465,
+          "token": "Covid",
+          "display_token": "Covid",
+          "delta_logit": 11.296875
+        },
+        {
+          "token_id": 151703,
+          "token": "bacteria",
+          "display_token": "bacteria",
+          "delta_logit": 11.25
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -13.0
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -12.5
+        },
+        {
+          "token_id": 206499,
+          "token": " Dragonfly",
+          "display_token": " Dragonfly",
+          "delta_logit": -12.0
+        },
+        {
+          "token_id": 30835,
+          "token": " specialists",
+          "display_token": " specialists",
+          "delta_logit": -11.1875
+        },
+        {
+          "token_id": 189597,
+          "token": " Paisley",
+          "display_token": " Paisley",
+          "delta_logit": -11.0
+        }
+      ]
+    },
+    {
+      "name": "L22_P21_upstream_L7",
+      "before_condition": "clean",
+      "after_condition": "L7_only",
+      "layer": 22,
+      "position": 21,
+      "prompt_token": "\n",
+      "residual_delta_norm": 3226.385986328125,
+      "top_increases": [
+        {
+          "token_id": 71170,
+          "token": " hlav",
+          "display_token": " hlav",
+          "delta_logit": 20.59375
+        },
+        {
+          "token_id": 30937,
+          "token": " bhi",
+          "display_token": " bhi",
+          "delta_logit": 20.0625
+        },
+        {
+          "token_id": 12873,
+          "token": " juga",
+          "display_token": " juga",
+          "delta_logit": 19.65625
+        },
+        {
+          "token_id": 135020,
+          "token": " meeste",
+          "display_token": " meeste",
+          "delta_logit": 19.4375
+        },
+        {
+          "token_id": 58299,
+          "token": " maggior",
+          "display_token": " maggior",
+          "delta_logit": 19.40625
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -50.75
+        },
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -45.25
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -40.25
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -38.75
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -37.25
+        }
+      ]
+    },
+    {
+      "name": "L22_P16_local_after_L7",
+      "before_condition": "L7_only",
+      "after_condition": "L7_L22",
+      "layer": 22,
+      "position": 16,
+      "prompt_token": "spinning",
+      "residual_delta_norm": 8253.7451171875,
+      "top_increases": [
+        {
+          "token_id": 99159,
+          "token": " ij",
+          "display_token": " ij",
+          "delta_logit": 29.9375
+        },
+        {
+          "token_id": 93369,
+          "token": "llr",
+          "display_token": "llr",
+          "delta_logit": 27.9375
+        },
+        {
+          "token_id": 232377,
+          "token": " supon",
+          "display_token": " supon",
+          "delta_logit": 27.8125
+        },
+        {
+          "token_id": 175963,
+          "token": " Byl",
+          "display_token": " Byl",
+          "delta_logit": 25.75
+        },
+        {
+          "token_id": 131596,
+          "token": " mesmos",
+          "display_token": " mesmos",
+          "delta_logit": 25.6875
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -46.0
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -45.0
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -42.75
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -40.5
+        },
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -40.0
+        }
+      ]
+    },
+    {
+      "name": "L22_P21_local_after_L7",
+      "before_condition": "L7_only",
+      "after_condition": "L7_L22",
+      "layer": 22,
+      "position": 21,
+      "prompt_token": "\n",
+      "residual_delta_norm": 1041.065673828125,
+      "top_increases": [
+        {
+          "token_id": 44933,
+          "token": "kotlin",
+          "display_token": "kotlin",
+          "delta_logit": 5.37109375
+        },
+        {
+          "token_id": 25188,
+          "token": "Fun",
+          "display_token": "Fun",
+          "delta_logit": 5.37109375
+        },
+        {
+          "token_id": 15170,
+          "token": "fun",
+          "display_token": "fun",
+          "delta_logit": 5.34375
+        },
+        {
+          "token_id": 93875,
+          "token": "Kot",
+          "display_token": "Kot",
+          "delta_logit": 5.3310546875
+        },
+        {
+          "token_id": 61253,
+          "token": "FUN",
+          "display_token": "FUN",
+          "delta_logit": 4.90625
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -12.75
+        },
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -11.25
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -11.0
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -10.75
+        },
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -10.25
+        }
+      ]
+    },
+    {
+      "name": "L22_P16_local_clean_context",
+      "before_condition": "clean",
+      "after_condition": "L22_only",
+      "layer": 22,
+      "position": 16,
+      "prompt_token": "spinning",
+      "residual_delta_norm": 8391.58203125,
+      "top_increases": [
+        {
+          "token_id": 232377,
+          "token": " supon",
+          "display_token": " supon",
+          "delta_logit": 30.8125
+        },
+        {
+          "token_id": 93369,
+          "token": "llr",
+          "display_token": "llr",
+          "delta_logit": 29.875
+        },
+        {
+          "token_id": 99159,
+          "token": " ij",
+          "display_token": " ij",
+          "delta_logit": 29.3125
+        },
+        {
+          "token_id": 27349,
+          "token": "LR",
+          "display_token": "LR",
+          "delta_logit": 26.75
+        },
+        {
+          "token_id": 175963,
+          "token": " Byl",
+          "display_token": " Byl",
+          "delta_logit": 25.625
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -55.0
+        },
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -54.5
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -50.75
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -48.0
+        },
+        {
+          "token_id": 92664,
+          "token": " spiders",
+          "display_token": " spiders",
+          "delta_logit": -48.0
+        }
+      ]
+    },
+    {
+      "name": "L22_P21_local_clean_context",
+      "before_condition": "clean",
+      "after_condition": "L22_only",
+      "layer": 22,
+      "position": 21,
+      "prompt_token": "\n",
+      "residual_delta_norm": 1742.4088134765625,
+      "top_increases": [
+        {
+          "token_id": 44933,
+          "token": "kotlin",
+          "display_token": "kotlin",
+          "delta_logit": 11.859375
+        },
+        {
+          "token_id": 93875,
+          "token": "Kot",
+          "display_token": "Kot",
+          "delta_logit": 11.7109375
+        },
+        {
+          "token_id": 15170,
+          "token": "fun",
+          "display_token": "fun",
+          "delta_logit": 11.578125
+        },
+        {
+          "token_id": 25188,
+          "token": "Fun",
+          "display_token": "Fun",
+          "delta_logit": 11.55322265625
+        },
+        {
+          "token_id": 51836,
+          "token": "Think",
+          "display_token": "Think",
+          "delta_logit": 11.234375
+        }
+      ],
+      "top_decreases": [
+        {
+          "token_id": 40046,
+          "token": " Spider",
+          "display_token": " Spider",
+          "delta_logit": -23.5
+        },
+        {
+          "token_id": 86757,
+          "token": "Spider",
+          "display_token": "Spider",
+          "delta_logit": -19.5
+        },
+        {
+          "token_id": 32261,
+          "token": " spider",
+          "display_token": " spider",
+          "delta_logit": -19.0
+        },
+        {
+          "token_id": 48587,
+          "token": "spider",
+          "display_token": "spider",
+          "delta_logit": -18.5
+        },
+        {
+          "token_id": 6940,
+          "token": " Web",
+          "display_token": " Web",
+          "delta_logit": -18.375
+        }
+      ]
+    }
+  ],
+  "artifacts": {
+    "json": "sae_jlens_before_after.json",
+    "manifest": "sae_jlens_before_after_manifest.json",
+    "top_concepts_csv": "sae_jlens_top_concepts.csv",
+    "tracked_concepts_csv": "sae_jlens_tracked_concepts.csv",
+    "contrasts_csv": "sae_jlens_contrasts.csv",
+    "delta_concepts_csv": "sae_jlens_delta_concepts.csv",
+    "residual_states": "sae_jlens_residual_states.pt",
+    "top_concepts_figure": "sae_jlens_top_concepts_before_after.png",
+    "tracked_changes_figure": "sae_jlens_tracked_concept_changes.png"
+  }
+}
