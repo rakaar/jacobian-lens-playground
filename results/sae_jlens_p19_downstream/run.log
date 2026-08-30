@@ -1,0 +1,21 @@
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading pinned google/gemma-3-4b-it with eager attention
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 3/883 [00:00<00:31, 27.80it/s]Loading weights:   3%|▎         | 29/883 [00:00<00:05, 154.80it/s]Loading weights:   5%|▌         | 48/883 [00:00<00:04, 170.28it/s]Loading weights:   8%|▊         | 69/883 [00:00<00:04, 181.49it/s]Loading weights:  11%|█         | 94/883 [00:00<00:03, 199.91it/s]Loading weights:  13%|█▎        | 115/883 [00:00<00:03, 203.13it/s]Loading weights:  15%|█▌        | 136/883 [00:00<00:03, 195.01it/s]Loading weights:  18%|█▊        | 160/883 [00:00<00:03, 205.46it/s]Loading weights:  21%|██        | 185/883 [00:00<00:03, 216.02it/s]Loading weights:  23%|██▎       | 207/883 [00:01<00:03, 216.90it/s]Loading weights:  26%|██▌       | 229/883 [00:01<00:03, 207.65it/s]Loading weights:  28%|██▊       | 251/883 [00:01<00:03, 209.02it/s]Loading weights:  31%|███▏      | 276/883 [00:01<00:02, 219.00it/s]Loading weights:  34%|███▎      | 298/883 [00:01<00:02, 217.16it/s]Loading weights:  36%|███▌      | 320/883 [00:01<00:02, 207.01it/s]Loading weights:  39%|███▉      | 343/883 [00:01<00:02, 204.21it/s]Loading weights:  42%|████▏     | 368/883 [00:01<00:02, 212.40it/s]Loading weights:  45%|████▍     | 393/883 [00:01<00:02, 220.49it/s]Loading weights:  47%|████▋     | 416/883 [00:02<00:02, 221.03it/s]Loading weights:  50%|████▉     | 439/883 [00:02<00:02, 215.19it/s]Loading weights:  61%|██████    | 538/883 [00:02<00:00, 433.69it/s]Loading weights:  73%|███████▎  | 641/883 [00:02<00:00, 604.77it/s]Loading weights:  85%|████████▍ | 747/883 [00:02<00:00, 736.22it/s]Loading weights:  96%|█████████▋| 850/883 [00:02<00:00, 818.92it/s]Loading weights: 100%|██████████| 883/883 [00:02<00:00, 342.94it/s]
+Running clean trajectory
+Running full L7+L22 intervention trajectory
+L22: ||delta h||=2721.853, cosine=0.998209; clean=[ Typically,  Usually,  Depends, Typically, Usually] -> edited=[ Fewer,  Depends,  whatever,  whichever, Whatever]
+L23: ||delta h||=2980.225, cosine=0.997297; clean=[ Depends, Depends,  Typically,  Usually,  Same] -> edited=[Same,  Depends,  Same,  Fewer, Depends]
+L24: ||delta h||=3423.217, cosine=0.996378; clean=[ Legs,  legs,  Depends,  Fewer,  Many] -> edited=[ Fewer,  fewer,  Depends,  Those,  Same]
+L25: ||delta h||=4177.055, cosine=0.995448; clean=[ legs,  Legs,  limbs, legs,  feet] -> edited=[ legs,  fewer,  Fewer,  Legs,  limbs]
+L26: ||delta h||=5015.178, cosine=0.994202; clean=[ legs,  Legs, legs,  limbs,  feet] -> edited=[ legs,  Legs,  Fewer,  Depends, legs]
+L27: ||delta h||=5950.504, cosine=0.993522; clean=[ legs,  Legs,  limbs, legs,  leg] -> edited=[ Legs,  legs,  Fewer,  Some,  Two]
+L28: ||delta h||=6925.428, cosine=0.993272; clean=[ legs,  Legs,  Four,  four,  limbs] -> edited=[ legs,  Legs,  Some,  Two,  Same]
+L29: ||delta h||=7465.359, cosine=0.991867; clean=[ Legs,  legs,  Four,  four,  Eight] -> edited=[ Legs,  legs,  Some,  Two,  Same]
+L30: ||delta h||=9571.180, cosine=0.990156; clean=[ legs,  Legs,  Four,  four,  Eight] -> edited=[ legs,  Legs,  Leg,  leg, legs]
+L31: ||delta h||=10209.475, cosine=0.990929; clean=[ Four,  Legs,  four,  legs,  Six] -> edited=[ Legs,  legs,  Two,  Leg,  Four]
+L32: ||delta h||=12002.786, cosine=0.992702; clean=[ Four,  The,  Typically,  Usually,  Legs] -> edited=[ Two,  Legs,  The,  Same,  Leg]
+L33: ||delta h||=15026.024, cosine=0.994438; clean=[ Four,  Typically,  The,  Usually,  Generally] -> edited=[ The,  Two,  Some,  Legs,  Same]
+Finished: P(Six)=95.222110%, P(Eight)=4.740829%.
+Saved results to results/sae_jlens_p19_downstream

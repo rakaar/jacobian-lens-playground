@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Trace the successful SAE edit through downstream J-Lens readouts at P16.
+"""Trace the SAE edit through downstream J-Lens readouts at one position.
 
 The frozen intervention is the established eager-attention L7+L22 edit:
 
 * suppress the selected spider features at L7/P16 and L22/P16+P21;
 * inject the calibrated ant features at L7/P16 and L22/P16 with factor 4.
 
-For clean and edited runs, capture the residual at position 16 after every
-block from L22 through the final model block.  Published layer-specific
-J-Lens matrices transport L22 through the penultimate source layer.  The final
-block uses identity transport because its output is already the terminal
-residual.  No full residual tensors are written to disk.
+For clean and edited runs, capture the residual at the requested position
+after every block from L22 through the final model block. Published
+layer-specific J-Lens matrices transport L22 through the penultimate source
+layer. The final block uses identity transport because its output is already
+the terminal residual. No full residual tensors are written to disk.
 """
 
 from __future__ import annotations
@@ -67,16 +67,12 @@ DEFAULT_START_LAYER = 22
 DEFAULT_POSITION = 16
 INTERVENTION_LAYERS = (7, 22)
 
-OUTPUT_JSON = "sae_jlens_p16_downstream.json"
-OUTPUT_MANIFEST = "sae_jlens_p16_downstream_manifest.json"
-TRAJECTORY_CSV = "sae_jlens_p16_downstream_trajectory.csv"
-TOP_CONCEPTS_CSV = "sae_jlens_p16_downstream_top_concepts.csv"
-FIGURE = "sae_jlens_p16_downstream_top5.png"
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Trace P16 J-Lens concepts from L22 through the final block"
+        description=(
+            "Trace J-Lens concepts at one prompt position from L22 through "
+            "the final block"
+        )
     )
     parser.add_argument("--feature-manifest", type=Path, default=DEFAULT_FEATURE_MANIFEST)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
@@ -665,9 +661,15 @@ def main() -> None:
             f"clean=[{clean_tokens}] -> edited=[{edited_tokens}]"
         )
 
-    figure_path = args.output_dir / FIGURE
-    trajectory_csv_path = args.output_dir / TRAJECTORY_CSV
-    top_csv_path = args.output_dir / TOP_CONCEPTS_CSV
+    artifact_prefix = f"sae_jlens_p{args.position}_downstream"
+    figure_name = f"{artifact_prefix}_top5.png"
+    trajectory_csv_name = f"{artifact_prefix}_trajectory.csv"
+    top_concepts_csv_name = f"{artifact_prefix}_top_concepts.csv"
+    manifest_name = f"{artifact_prefix}_manifest.json"
+    json_name = f"{artifact_prefix}.json"
+    figure_path = args.output_dir / figure_name
+    trajectory_csv_path = args.output_dir / trajectory_csv_name
+    top_csv_path = args.output_dir / top_concepts_csv_name
     plot_trajectory(
         output_path=figure_path,
         capture_position=args.position,
@@ -691,7 +693,9 @@ def main() -> None:
         "attention_implementation": "eager",
     }
     manifest = {
-        "experiment": "P16 downstream J-Lens trajectory after L7+L22 SAE edit",
+        "experiment": (
+            f"P{args.position} downstream J-Lens trajectory after L7+L22 SAE edit"
+        ),
         "created_at_unix": time.time(),
         "model": args.model_id,
         "source_feature_manifest": str(args.feature_manifest),
@@ -717,7 +721,7 @@ def main() -> None:
         "runtime": runtime,
         "residual_tensor_exported": False,
     }
-    manifest_path = args.output_dir / OUTPUT_MANIFEST
+    manifest_path = args.output_dir / manifest_name
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
 
     result = {
@@ -756,14 +760,14 @@ def main() -> None:
             "full_residual_tensors_not_exported": True,
         },
         "artifacts": {
-            "json": OUTPUT_JSON,
-            "manifest": OUTPUT_MANIFEST,
-            "trajectory_csv": TRAJECTORY_CSV,
-            "top_concepts_csv": TOP_CONCEPTS_CSV,
-            "figure": FIGURE,
+            "json": json_name,
+            "manifest": manifest_name,
+            "trajectory_csv": trajectory_csv_name,
+            "top_concepts_csv": top_concepts_csv_name,
+            "figure": figure_name,
         },
     }
-    json_path = args.output_dir / OUTPUT_JSON
+    json_path = args.output_dir / json_name
     json_path.write_text(json.dumps(result, ensure_ascii=False, indent=2))
     print(
         "Finished: "

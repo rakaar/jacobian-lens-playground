@@ -1,0 +1,21 @@
+Loaded 3 encoder/decoder row pairs from L7
+Loaded 4 encoder/decoder row pairs from L22
+Loading pinned google/gemma-3-4b-it with eager attention
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 3/883 [00:00<00:31, 27.94it/s]Loading weights:   3%|▎         | 30/883 [00:00<00:05, 158.21it/s]Loading weights:   6%|▌         | 55/883 [00:00<00:04, 195.24it/s]Loading weights:   9%|▊         | 76/883 [00:00<00:04, 200.12it/s]Loading weights:  11%|█         | 97/883 [00:00<00:04, 192.24it/s]Loading weights:  14%|█▎        | 121/883 [00:00<00:03, 204.48it/s]Loading weights:  17%|█▋        | 146/883 [00:00<00:03, 215.46it/s]Loading weights:  19%|█▉        | 168/883 [00:00<00:03, 214.65it/s]Loading weights:  22%|██▏       | 190/883 [00:00<00:03, 208.71it/s]Loading weights:  24%|██▍       | 212/883 [00:01<00:03, 211.30it/s]Loading weights:  27%|██▋       | 237/883 [00:01<00:02, 220.04it/s]Loading weights:  29%|██▉       | 260/883 [00:01<00:02, 218.86it/s]Loading weights:  32%|███▏      | 282/883 [00:01<00:02, 209.00it/s]Loading weights:  34%|███▍      | 303/883 [00:01<00:02, 208.21it/s]Loading weights:  37%|███▋      | 328/883 [00:01<00:02, 218.42it/s]Loading weights:  40%|███▉      | 350/883 [00:01<00:02, 217.30it/s]Loading weights:  42%|████▏     | 372/883 [00:01<00:02, 209.62it/s]Loading weights:  45%|████▍     | 394/883 [00:01<00:02, 211.42it/s]Loading weights:  47%|████▋     | 419/883 [00:02<00:02, 218.89it/s]Loading weights:  50%|████▉     | 441/883 [00:02<00:02, 217.32it/s]Loading weights:  62%|██████▏   | 551/883 [00:02<00:00, 468.75it/s]Loading weights:  75%|███████▌  | 665/883 [00:02<00:00, 656.99it/s]Loading weights:  88%|████████▊ | 777/883 [00:02<00:00, 791.81it/s]Loading weights: 100%|██████████| 883/883 [00:02<00:00, 349.73it/s]
+Running clean trajectory
+Running full L7+L22 intervention trajectory
+L22: ||delta h||=3707.361, cosine=0.991818; clean=[ spiders,  spider, spider, Spider,  Spider] -> edited=[ invertebrates,  crustaceans,  insects,  vertebrates,  invertebrate]
+L23: ||delta h||=4001.443, cosine=0.989471; clean=[ spiders,  spider, spider, Spider,  insects] -> edited=[ invertebrates,  invertebrate,  insects,  crustaceans,  vertebrates]
+L24: ||delta h||=4807.596, cosine=0.984338; clean=[ spiders,  spider, spider,  insects, Spider] -> edited=[ insects,  insect,  spiders,  invertebrates,  spider]
+L25: ||delta h||=5830.880, cosine=0.981578; clean=[ spiders,  spider,  insects, spider, Spider] -> edited=[ legs, legs,  insects,  insect,  Legs]
+L26: ||delta h||=6991.323, cosine=0.975287; clean=[ spiders,  spider, spider,  Spider,  insects] -> edited=[ legs,  insect,  insects,  spider, legs]
+L27: ||delta h||=8295.458, cosine=0.971599; clean=[ spider,  spiders, spider,  Spider, Spider] -> edited=[ legs,  insect,  insects,  arthrop,  spider]
+L28: ||delta h||=10211.092, cosine=0.970053; clean=[ spider,  spiders,  Spider, spider, Spider] -> edited=[ legs,  spider,  insects,  insect,  arthrop]
+L29: ||delta h||=11888.036, cosine=0.962611; clean=[ spider,  spiders,  Spider, spider, Spider] -> edited=[ legs,  insects,  spider,  arthrop,  Insects]
+L30: ||delta h||=14289.035, cosine=0.953855; clean=[ spider,  spiders,  Spider, spider, Spider] -> edited=[ six,  Six, Six, six,  legs]
+L31: ||delta h||=14404.165, cosine=0.960704; clean=[ spider,  spiders,  eight,  Spider, spider] -> edited=[ six,  Six, six, Six,  eight]
+L32: ||delta h||=15205.607, cosine=0.958247; clean=[ spider, spider,  spiders,  Spider, Spider] -> edited=[ Many,  Insects,  six,  arthrop,  Six]
+L33: ||delta h||=16262.109, cosine=0.870543; clean=[spider, Spider, eight, Eight, of] -> edited=[append, Six, Append, Many, There]
+Finished: P(Six)=95.222110%, P(Eight)=4.740829%.
+Saved results to results/sae_jlens_p21_downstream
