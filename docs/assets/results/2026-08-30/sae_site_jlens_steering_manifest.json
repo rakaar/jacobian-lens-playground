@@ -1,0 +1,491 @@
+{
+  "experiment": "SAE-site-matched direct J-Lens steering",
+  "created_at_unix": 1788087393.6340272,
+  "model": "google/gemma-3-4b-it",
+  "model_revision_requested": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "model_revision_resolved": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "prompt": "<bos><start_of_turn>user\nAnswer in one word: How many legs does a web-spinning animal have?<end_of_turn>\n<start_of_turn>model\nAnswer:",
+  "prompt_tokens": [
+    {
+      "position": 0,
+      "token_id": 2,
+      "token": "<bos>"
+    },
+    {
+      "position": 1,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 2,
+      "token_id": 2364,
+      "token": "user"
+    },
+    {
+      "position": 3,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 4,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 5,
+      "token_id": 528,
+      "token": " in"
+    },
+    {
+      "position": 6,
+      "token_id": 886,
+      "token": " one"
+    },
+    {
+      "position": 7,
+      "token_id": 3658,
+      "token": " word"
+    },
+    {
+      "position": 8,
+      "token_id": 236787,
+      "token": ":"
+    },
+    {
+      "position": 9,
+      "token_id": 2088,
+      "token": " How"
+    },
+    {
+      "position": 10,
+      "token_id": 1551,
+      "token": " many"
+    },
+    {
+      "position": 11,
+      "token_id": 14897,
+      "token": " legs"
+    },
+    {
+      "position": 12,
+      "token_id": 1677,
+      "token": " does"
+    },
+    {
+      "position": 13,
+      "token_id": 496,
+      "token": " a"
+    },
+    {
+      "position": 14,
+      "token_id": 4108,
+      "token": " web"
+    },
+    {
+      "position": 15,
+      "token_id": 236772,
+      "token": "-"
+    },
+    {
+      "position": 16,
+      "token_id": 208971,
+      "token": "spinning"
+    },
+    {
+      "position": 17,
+      "token_id": 7626,
+      "token": " animal"
+    },
+    {
+      "position": 18,
+      "token_id": 735,
+      "token": " have"
+    },
+    {
+      "position": 19,
+      "token_id": 236881,
+      "token": "?"
+    },
+    {
+      "position": 20,
+      "token_id": 106,
+      "token": "<end_of_turn>"
+    },
+    {
+      "position": 21,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 22,
+      "token_id": 105,
+      "token": "<start_of_turn>"
+    },
+    {
+      "position": 23,
+      "token_id": 4368,
+      "token": "model"
+    },
+    {
+      "position": 24,
+      "token_id": 107,
+      "token": "\n"
+    },
+    {
+      "position": 25,
+      "token_id": 7925,
+      "token": "Answer"
+    },
+    {
+      "position": 26,
+      "token_id": 236787,
+      "token": ":"
+    }
+  ],
+  "fixed_edit_cells": [
+    {
+      "layer": 7,
+      "position": 16,
+      "surface": "Spider",
+      "token_id": 86757
+    },
+    {
+      "layer": 22,
+      "position": 16,
+      "surface": " spider",
+      "token_id": 32261
+    },
+    {
+      "layer": 22,
+      "position": 21,
+      "surface": " spiders",
+      "token_id": 92664
+    }
+  ],
+  "layer_scale_definition": "mean clean block-output residual norm across this prompt's token positions; prompt-derived approximation because corpus means are absent from the checkpoint",
+  "layer_scales": {
+    "7": 9343.185546875,
+    "22": 47433.58203125
+  },
+  "direction_definition": "unit(J_layer.T @ unembedding[token])",
+  "directions": {
+    "sources": {
+      "L7_P16": {
+        "surface": "Spider",
+        "token_id": 86757,
+        "direction_norm": 1.0
+      },
+      "L22_P16": {
+        "surface": " spider",
+        "token_id": 32261,
+        "direction_norm": 1.0
+      },
+      "L22_P21": {
+        "surface": " spiders",
+        "token_id": 92664,
+        "direction_norm": 1.0
+      }
+    },
+    "targets": [
+      {
+        "name": "ants",
+        "surface": " ants",
+        "token_id": 63272,
+        "tier": "ant"
+      },
+      {
+        "name": "ant",
+        "surface": " ant",
+        "token_id": 2314,
+        "tier": "ant"
+      },
+      {
+        "name": "Ants",
+        "surface": " Ants",
+        "token_id": 190788,
+        "tier": "ant"
+      },
+      {
+        "name": "insects",
+        "surface": " insects",
+        "token_id": 30348,
+        "tier": "insect_surrogate"
+      },
+      {
+        "name": "insect",
+        "surface": " insect",
+        "token_id": 16368,
+        "tier": "insect_surrogate"
+      },
+      {
+        "name": "termite",
+        "surface": " termite",
+        "token_id": 212513,
+        "tier": "insect_surrogate"
+      },
+      {
+        "name": "wasp",
+        "surface": " wasp",
+        "token_id": 186153,
+        "tier": "insect_surrogate"
+      },
+      {
+        "name": "bee",
+        "surface": " bee",
+        "token_id": 32737,
+        "tier": "insect_surrogate"
+      },
+      {
+        "name": "lizards_control",
+        "surface": " lizards",
+        "token_id": 82404,
+        "tier": "off_target_control"
+      }
+    ],
+    "family_composite": {
+      "members": [
+        "ants",
+        "ant",
+        "Ants",
+        "insects",
+        "insect",
+        "termite",
+        "wasp",
+        "bee"
+      ],
+      "formula": "unit(sum(unit(direction_for_each_target)))",
+      "direction_norms": {
+        "7": 0.9999999403953552,
+        "22": 0.9999999403953552
+      }
+    }
+  },
+  "strengths": [
+    0.0,
+    0.03125,
+    0.0625,
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "overdrive_strengths": [
+    1.5,
+    2.0
+  ],
+  "refine_multipliers": [
+    0.0,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "primary_targets": [
+    {
+      "name": "ants",
+      "surface": " ants",
+      "token_id": 63272,
+      "tier": "ant"
+    },
+    {
+      "name": "ant",
+      "surface": " ant",
+      "token_id": 2314,
+      "tier": "ant"
+    },
+    {
+      "name": "Ants",
+      "surface": " Ants",
+      "token_id": 190788,
+      "tier": "ant"
+    }
+  ],
+  "secondary_targets": [
+    {
+      "name": "insects",
+      "surface": " insects",
+      "token_id": 30348,
+      "tier": "insect_surrogate"
+    },
+    {
+      "name": "insect",
+      "surface": " insect",
+      "token_id": 16368,
+      "tier": "insect_surrogate"
+    },
+    {
+      "name": "termite",
+      "surface": " termite",
+      "token_id": 212513,
+      "tier": "insect_surrogate"
+    },
+    {
+      "name": "wasp",
+      "surface": " wasp",
+      "token_id": 186153,
+      "tier": "insect_surrogate"
+    },
+    {
+      "name": "bee",
+      "surface": " bee",
+      "token_id": 32737,
+      "tier": "insect_surrogate"
+    }
+  ],
+  "off_target_control": {
+    "name": "lizards_control",
+    "surface": " lizards",
+    "token_id": 82404,
+    "tier": "off_target_control"
+  },
+  "source_feature_manifest": "results/spider_ant_layer_specific_optimization/spider_ant_layer_specific_manifest.json",
+  "sae_spider_instances": [
+    {
+      "role": "spider",
+      "layer": 7,
+      "feature": 14209,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider silk or webbing",
+      "clean_activation": 84.83981323242188,
+      "max_act_approx": 154.2984,
+      "normalized_activation": 0.5498424690886093,
+      "learned_threshold": 13.859237670898438
+    },
+    {
+      "role": "spider",
+      "layer": 7,
+      "feature": 137239,
+      "position": 16,
+      "token": "spinning",
+      "description": "all things spider",
+      "clean_activation": 133.324951171875,
+      "max_act_approx": 187.8817,
+      "normalized_activation": 0.709621805486511,
+      "learned_threshold": 15.177665710449219
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and spiders",
+      "clean_activation": 1855.89599609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6425053560439912,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 23422,
+      "position": 21,
+      "token": "\n",
+      "description": "spider and spiders",
+      "clean_activation": 1739.02099609375,
+      "max_act_approx": 2888.53,
+      "normalized_activation": 0.6020435986795186,
+      "learned_threshold": 85.48406982421875
+    },
+    {
+      "role": "spider",
+      "layer": 22,
+      "feature": 60476,
+      "position": 16,
+      "token": "spinning",
+      "description": "spider and webs",
+      "clean_activation": 562.7435913085938,
+      "max_act_approx": 1082.1075,
+      "normalized_activation": 0.5200440726162546,
+      "learned_threshold": 104.35870361328125
+    }
+  ],
+  "sae_ant_instances": [
+    {
+      "role": "ant",
+      "layer": 7,
+      "feature": 42685,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ants, ant colonies",
+      "forced": false,
+      "reference_preactivation": 126.26797485351562,
+      "reference_activation": 126.26797485351562,
+      "max_act_approx": 190.487,
+      "normalized_reference_activation": 0.662869250151011,
+      "learned_threshold": 12.059738159179688,
+      "clean_spider_prompt_preactivation": -69.82457733154297,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 1703,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ant agonist antarctic anticipate antenna",
+      "forced": true,
+      "reference_preactivation": 1823.1155242919922,
+      "reference_activation": 1823.1155242919922,
+      "max_act_approx": 3003.5374,
+      "normalized_reference_activation": 0.6069894532666689,
+      "learned_threshold": 76.20599365234375,
+      "clean_spider_prompt_preactivation": -1042.3992462158203,
+      "clean_spider_prompt_activation": 0.0
+    },
+    {
+      "role": "ant",
+      "layer": 22,
+      "feature": 197021,
+      "position": 16,
+      "reference_position": 14,
+      "reference_token": " ant",
+      "description": "ANT, cannot, ant",
+      "forced": true,
+      "reference_preactivation": 360.43941497802734,
+      "reference_activation": 360.43941497802734,
+      "max_act_approx": 748.1075,
+      "normalized_reference_activation": 0.4818016327573609,
+      "learned_threshold": 134.7215576171875,
+      "clean_spider_prompt_preactivation": -659.6901626586914,
+      "clean_spider_prompt_activation": 0.0
+    }
+  ],
+  "lens": {
+    "repo": "neuronpedia/jacobian-lens",
+    "filename": "gemma-3-4b-it/jlens/Salesforce-wikitext/gemma-3-4b-it_jacobian_lens.pt",
+    "revision_requested": "0731326edff4ae730ffc5356fe1a4728c748b3a6",
+    "revision_resolved": "0731326edff4ae730ffc5356fe1a4728c748b3a6",
+    "resolved_path": "/workspace/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/blobs/dcb23c8627b2ef94225f45550d792d7608bd96f6cf89aa8d1701bd6a4681277c",
+    "n_prompts": 546,
+    "d_model": 2560,
+    "published_layers_used": [
+      7,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.16.1",
+    "jlens": "0.1.0",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A40",
+    "attention_implementation": "eager"
+  }
+}
